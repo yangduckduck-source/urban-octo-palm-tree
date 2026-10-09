@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="북토크">
+  <title>북토크 캘린더</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23fff'/%3E%3Crect width='64' height='18' rx='0' fill='%23ff3b30'/%3E%3Ctext x='32' y='52' font-size='30' text-anchor='middle' font-family='-apple-system,sans-serif' font-weight='600' fill='%231d1d1f'%3E책%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div>
+        <h1>북토크 캘린더</h1>
+        <p class="sub" id="updated">서울 · 청주의 문학 · 글쓰기 · 철학 · 인문 강연</p>
+      </div>
+      <a class="subscribe" id="subscribe" href="calendar.ics" title="내 캘린더에서 구독">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v2M17 3v2M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm7 7v5m-2.5-2.5h5"/></svg>
+        <span>구독</span>
+      </a>
+    </div>
+    <div class="controls">
+      <div class="segmented" role="tablist" id="city">
+        <button role="tab" data-city="전체" aria-selected="true">전체</button>
+        <button role="tab" data-city="서울">서울</button>
+        <button role="tab" data-city="청주">청주</button>
+      </div>
+      <div class="chips" id="chips">
+        <button class="chip" data-cat="글쓰기" aria-pressed="true"><i></i>글쓰기</button>
+        <button class="chip" data-cat="문학" aria-pressed="true"><i></i>문학</button>
+        <button class="chip" data-cat="철학" aria-pressed="true"><i></i>철학</button>
+        <button class="chip" data-cat="인문" aria-pressed="true"><i></i>인문</button>
+        <button class="chip toggle" id="freeOnly" aria-pressed="false">무료만</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="picks">
+      <div class="block">
+        <h2 id="todayTitle">오늘</h2>
+        <div id="today" class="cards"></div>
+      </div>
+      <div class="block">
+        <h2 id="weekTitle">이번 주 추천</h2>
+        <ol id="week" class="ranked"></ol>
+      </div>
+    </section>
+
+    <section class="calendar block">
+      <div class="cal-head">
+        <h2 id="monthLabel"></h2>
+        <div class="cal-nav">
+          <button id="prev" aria-label="이전 달">‹</button>
+          <button id="goToday" class="today-btn">오늘</button>
+          <button id="next" aria-label="다음 달">›</button>
+        </div>
+      </div>
+      <div class="weekdays"><span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span></div>
+      <div id="grid" class="grid"></div>
+      <div class="day-list">
+        <h3 id="dayLabel"></h3>
+        <div id="dayEvents"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>매일 아침 웹을 검색해 자동으로 갱신됩니다. 일정·신청 조건은 바뀔 수 있으니 참석 전에 공식 안내를 확인하세요.</p>
+  </footer>
+
+  <dialog id="sheet" class="sheet">
+    <div class="sheet-body" id="sheetBody"></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

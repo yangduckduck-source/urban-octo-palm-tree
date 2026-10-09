@@ -1,0 +1,63 @@
+name: 북토크 캘린더 갱신
+
+on:
+  schedule:
+    - cron: "40 20 * * *"   # 매일 05:40 (KST)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["site/**", ".github/workflows/update.yml"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: booktalk-update
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r collector/requirements.txt
+      - name: 웹 검색으로 일정 수집
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::warning::ANTHROPIC_API_KEY 시크릿이 없어 수집을 건너뜁니다."
+            exit 0
+          fi
+          python collector/collect.py
+      - name: 변경 사항 커밋
+        run: |
+          git config user.name "booktalk-bot"
+          git config user.email "booktalk-bot@users.noreply.github.com"
+          git add site/data/events.json site/calendar.ics
+          git diff --cached --quiet || (git commit -m "일정 갱신 $(TZ=Asia/Seoul date +%F)" && git push)
+
+  deploy:
+    needs: collect
+    if: always() && (needs.collect.result == 'success' || needs.collect.result == 'skipped')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
