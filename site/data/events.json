@@ -1,14 +1,14 @@
 {
  "meta": {
-  "updated_at": "2026-10-09T23:00+09:00",
+  "updated_at": "2026-10-09T22:36+09:00",
   "runs": [
    {
-    "mission": "초기 조사",
-    "found": 25,
-    "kept": 25
+    "mission": "서울 문학관·문학재단",
+    "found": 3,
+    "kept": 3
    }
   ],
-  "count": 25
+  "count": 28
  },
  "events": [
   {
@@ -291,6 +291,38 @@
    "score": 82
   },
   {
+   "source": "서울 문학관·문학재단",
+   "title": "구병모 북토크 『파쇄』",
+   "date": "2026-10-20",
+   "city": "서울",
+   "venue": "서울책보고 (송파구 잠실나루역)",
+   "speakers": [
+    "구병모"
+   ],
+   "book": "파쇄",
+   "categories": [
+    "문학",
+    "글쓰기"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "서울책보고 가을 기획전 〈세계 엮기 – 문학의 시리즈〉",
+   "price": "미확인",
+   "registration": "서울책보고 누리집 일정 및 행사 게시판 확인",
+   "url": "https://view.asiae.co.kr/article/2026090815170306871",
+   "summary": "구병모 작가가 『파쇄』를 두고 독자와 이야기를 나눈다. 문학 시리즈 기획전 연계 북토크.",
+   "confidence": "보도",
+   "relevance": 0.9,
+   "speaker_weight": 0.85,
+   "start": "",
+   "end": "",
+   "price_note": "",
+   "first_seen": "2026-10-09",
+   "last_seen": "2026-10-09",
+   "id": "3d1887f384",
+   "score": 80
+  },
+  {
    "title": "퇴근길 스몰토크 ‘가을에 시작(詩作)하세요’ — 강원석 ‘어떻게 사세요’",
    "date": "2026-10-21",
    "start": "19:00",
@@ -320,6 +352,40 @@
    "last_seen": "2026-10-09",
    "id": "1cea19e873",
    "score": 64
+  },
+  {
+   "source": "서울 문학관·문학재단",
+   "title": "문학동네시인선 15주년 북토크 — 임유영 · 이기리 · 신이인",
+   "date": "2026-10-21",
+   "city": "서울",
+   "venue": "서울책보고 (송파구 잠실나루역)",
+   "speakers": [
+    "임유영",
+    "이기리",
+    "신이인"
+   ],
+   "categories": [
+    "문학",
+    "글쓰기"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "서울책보고 가을 기획전 〈세계 엮기 – 문학의 시리즈〉",
+   "price": "미확인",
+   "registration": "서울책보고 누리집 일정 및 행사 게시판 확인",
+   "url": "https://www.kyosu.net/news/articleView.html?idxno=209922",
+   "summary": "문학동네시인선 출간 15주년을 기념해 젊은 시인 세 명이 시 쓰기와 시집을 이야기한다.",
+   "confidence": "보도",
+   "relevance": 0.9,
+   "speaker_weight": 0.6,
+   "start": "",
+   "end": "",
+   "book": "",
+   "price_note": "",
+   "first_seen": "2026-10-09",
+   "last_seen": "2026-10-09",
+   "id": "e5b2445fc6",
+   "score": 80
   },
   {
    "title": "통섭의 광장 — 김상균 ‘두 번째 지능과 함께 진화하는 인류’",
@@ -539,6 +605,38 @@
    "last_seen": "2026-10-09",
    "id": "6a7257d5b2",
    "score": 48
+  },
+  {
+   "source": "서울 문학관·문학재단",
+   "title": "성해나 북토크 『우리가 열 번을 나고 죽을 때』",
+   "date": "2026-10-28",
+   "city": "서울",
+   "venue": "서울책보고 (송파구 잠실나루역)",
+   "speakers": [
+    "성해나"
+   ],
+   "book": "우리가 열 번을 나고 죽을 때",
+   "categories": [
+    "문학",
+    "글쓰기"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "서울책보고 가을 기획전 〈세계 엮기 – 문학의 시리즈〉",
+   "price": "미확인",
+   "registration": "서울책보고 누리집 일정 및 행사 게시판 확인",
+   "url": "https://view.asiae.co.kr/article/2026090815170306871",
+   "summary": "성해나 작가가 『우리가 열 번을 나고 죽을 때』를 중심으로 소설 쓰기를 이야기한다.",
+   "confidence": "보도",
+   "relevance": 0.9,
+   "speaker_weight": 0.75,
+   "start": "",
+   "end": "",
+   "price_note": "",
+   "first_seen": "2026-10-09",
+   "last_seen": "2026-10-09",
+   "id": "06ae9ee6c4",
+   "score": 80
   },
   {
    "title": "책읽는청주 20주년 — 문유석 『나로 살 결심』",
