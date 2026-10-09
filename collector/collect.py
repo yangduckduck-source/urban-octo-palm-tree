@@ -7,7 +7,8 @@
   4. scoring.py 규칙으로 추천 점수를 매기고 events.json 과 calendar.ics 를 쓴다.
 
 사용법
-  python collector/collect.py               # 전체 수집 (ANTHROPIC_API_KEY 필요)
+  python collector/collect.py --ingest collector/inbox.json  # 루틴이 찾은 행사 병합 (API 불필요)
+  python collector/collect.py               # API로 직접 수집 (ANTHROPIC_API_KEY 필요, 선택)
   python collector/collect.py --mission 청주  # 이름에 '청주'가 들어간 미션만
   python collector/collect.py --rescore     # 검색 없이 점수·ics만 다시 계산
 """
@@ -179,8 +180,15 @@ def norm(s: str) -> str:
     return re.sub(r"[\s\W_]+", "", (s or "").lower())
 
 
+REQUIRED_TEXT = ["title", "date", "start", "end", "city", "venue", "book", "format", "audience", "festival",
+                 "price", "price_note", "registration", "url", "summary", "confidence"]
+
+
 def clean(ev: dict, source: str, today: date, horizon: int) -> dict | None:
-    if ev.get("city") not in ("서울", "청주"):
+    for k in REQUIRED_TEXT:
+        ev[k] = str(ev.get(k) or "").strip()
+    ev["speakers"] = [str(x).strip() for x in ev.get("speakers") or [] if str(x).strip()]
+    if not ev["title"] or ev["city"] not in ("서울", "청주"):
         return None
     try:
         d = date.fromisoformat(ev.get("date", ""))
@@ -196,9 +204,13 @@ def clean(ev: dict, source: str, today: date, horizon: int) -> dict | None:
     for k, v in list(ev.items()):
         if isinstance(v, str) and v.strip() in ("미확인", "확인 필요", "-", "없음"):
             ev[k] = ""
-    ev["categories"] = [c for c in ev.get("categories", []) if c in CATEGORIES] or ["인문"]
-    ev["relevance"] = max(0.0, min(1.0, float(ev.get("relevance", 0.5))))
-    ev["speaker_weight"] = max(0.0, min(1.0, float(ev.get("speaker_weight", 0.5))))
+    ev["categories"] = [c for c in ev.get("categories") or [] if c in CATEGORIES] or ["인문"]
+    ev["format"] = ev["format"] if ev["format"] in FORMATS else "기타"
+    ev["audience"] = ev["audience"] if ev["audience"] in AUDIENCES else "성인"
+    ev["confidence"] = ev["confidence"] if ev["confidence"] in CONFIDENCES else "보도"
+    ev["price"] = ev["price"] if ev["price"] in PRICES else "미확인"
+    ev["relevance"] = clamp01(ev.get("relevance"))
+    ev["speaker_weight"] = clamp01(ev.get("speaker_weight"))
     ev["source"] = source
     return ev
 
@@ -211,6 +223,13 @@ def same_event(a: dict, b: dict) -> bool:
         return True
     sa, sb = {norm(s) for s in a.get("speakers", []) if s}, {norm(s) for s in b.get("speakers", []) if s}
     return bool(sa & sb) and (a.get("start") == b.get("start") or not a.get("start") or not b.get("start"))
+
+
+def clamp01(v) -> float:
+    try:
+        return max(0.0, min(1.0, float(v)))
+    except (TypeError, ValueError):
+        return 0.5
 
 
 RANK = {"확정": 3, "보도": 2, "추정": 1}
@@ -310,10 +329,36 @@ def load() -> tuple[list[dict], dict]:
     return data.get("events", []), data.get("meta", {})
 
 
+def ingest(path: Path, cfg: dict, today: date, existing: list[dict]) -> int:
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    raw = raw.get("events", []) if isinstance(raw, dict) else raw
+    horizon = cfg["general"]["horizon_days"]
+    kept, log = [], {}
+    for ev in raw:
+        src = str(ev.get("source") or "루틴 조사")
+        c = clean(dict(ev), src, today, horizon)
+        stat = log.setdefault(src, {"mission": src, "found": 0, "kept": 0})
+        stat["found"] += 1
+        if c:
+            stat["kept"] += 1
+            kept.append(c)
+    events = merge_all(existing, kept, today, cfg["general"]["keep_past_days"])
+    save(events, {
+        "updated_at": datetime.now(KST).isoformat(timespec="minutes"),
+        "runs": list(log.values()),
+        "count": len(events),
+    })
+    print(f"후보 {len(raw)}건 → 채택 {len(kept)}건, 달력 전체 {len(events)}건")
+    for r in log.values():
+        print(f"  [{r['mission']}] {r['found']} → {r['kept']}")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--mission", help="이름에 이 글자가 들어간 미션만 실행")
     ap.add_argument("--rescore", action="store_true", help="검색 없이 점수와 ics만 다시 계산")
+    ap.add_argument("--ingest", metavar="JSON", help="루틴이 조사해 적은 행사 목록 파일을 병합")
     args = ap.parse_args()
 
     cfg = tomllib.loads(CONFIG.read_text(encoding="utf-8"))
@@ -324,6 +369,9 @@ def main() -> int:
         save(existing, meta)
         print(f"{len(existing)}건 점수 재계산 완료")
         return 0
+
+    if args.ingest:
+        return ingest(Path(args.ingest), cfg, today, existing)
 
     import anthropic
 
