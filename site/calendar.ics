@@ -6,7 +6,7 @@ X-WR-CALNAME:북토크 캘린더
 X-WR-TIMEZONE:Asia/Seoul
 BEGIN:VEVENT
 UID:2d6c3527c3@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:김수영과 여름밤 — 옥상 시 낭독·필사
@@ -16,7 +16,7 @@ URL:https://munjang.or.kr/facilities/detail.es?mid=a70705000000&id=1244
 END:VEVENT
 BEGIN:VEVENT
 UID:d0d162394c@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261014T193000
 DTEND;TZID=Asia/Seoul:20261014T210000
 SUMMARY:명강의 Big10 — 이정모
@@ -26,7 +26,7 @@ URL:https://store.kyobobook.co.kr/culture/lecture-top-ten
 END:VEVENT
 BEGIN:VEVENT
 UID:372cf0c207@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261016T150000
 DTEND;TZID=Asia/Seoul:20261016T170000
 SUMMARY:2인2색 지역작가 책담회 — 장문석
@@ -36,7 +36,7 @@ URL:https://www.gdtimes.kr/1223292
 END:VEVENT
 BEGIN:VEVENT
 UID:887d39489c@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261016T193000
 DTEND;TZID=Asia/Seoul:20261016T213000
 SUMMARY:작가힙톡 — 지웅배(우주먼지)
@@ -46,7 +46,7 @@ URL:https://lib.seoul.go.kr/
 END:VEVENT
 BEGIN:VEVENT
 UID:2946d6dfa6@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261017T140000
 DTEND;TZID=Asia/Seoul:20261017T153000
 SUMMARY:보라토크 — 이정우 ‘사람이란 무엇인가’
@@ -56,7 +56,7 @@ URL:https://store.kyobobook.co.kr/culture/bora-show/859
 END:VEVENT
 BEGIN:VEVENT
 UID:ab5955f04a@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261017T150000
 DTEND;TZID=Asia/Seoul:20261017T170000
 SUMMARY:노원 야외도서관 ‘낭만보장’ — 김상근 북콘서트 ‘AI 시대\, 사람을 읽다’
@@ -66,7 +66,7 @@ URL:https://go.seoul.co.kr/news/newsView.php?id=20261007500125
 END:VEVENT
 BEGIN:VEVENT
 UID:0dd45428d0@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:연희시음회 Vol.2 — 서윤빈 × 오산하 ‘포스트 아포칼립스’
@@ -76,7 +76,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:16b215bda0@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:현대로 보는 문학 — 상주작가와 독자 대담 (1회)
@@ -86,7 +86,7 @@ URL:https://munjang.or.kr/facilities/detail.es?mid=a70705000000&id=1244
 END:VEVENT
 BEGIN:VEVENT
 UID:f9e58d47bb@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:마스터피스 토크 — 현기영 다시 읽기
@@ -95,8 +95,18 @@ DESCRIPTION:평론가 홍기돈과 소설가 정지아가 현기영의 주요 �
 URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
+UID:3d1887f384@booktalk-calendar
+DTSTAMP:20261009T133640Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:구병모 북토크 『파쇄』
+LOCATION:서울 서울책보고 (송파구 잠실나루역)
+DESCRIPTION:구병모 작가가 『파쇄』를 두고 독자와 이야기를 나눈다. 문학 시리즈 기획전 연계 북토크.\n연사: 구병모\n『파쇄』\n서울책보고 누리집 일정 및 행사 게시판 확인\nhttps://view.asiae.co.kr/article/2026090815170306871
+URL:https://view.asiae.co.kr/article/2026090815170306871
+END:VEVENT
+BEGIN:VEVENT
 UID:1cea19e873@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261021T190000
 DTEND;TZID=Asia/Seoul:20261021T210000
 SUMMARY:퇴근길 스몰토크 ‘가을에 시작(詩作)하세요’ — 강원석 ‘어떻게 사세요’
@@ -105,8 +115,18 @@ DESCRIPTION:시인의 강연과 가수 추가열의 공연을 엮은 청주 인�
 URL:http://www.cctimes.kr/news/articleView.html?idxno=929890
 END:VEVENT
 BEGIN:VEVENT
+UID:e5b2445fc6@booktalk-calendar
+DTSTAMP:20261009T133640Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:문학동네시인선 15주년 북토크 — 임유영 · 이기리 · 신이인
+LOCATION:서울 서울책보고 (송파구 잠실나루역)
+DESCRIPTION:문학동네시인선 출간 15주년을 기념해 젊은 시인 세 명이 시 쓰기와 시집을 이야기한다.\n연사: 임유영\, 이기리\, 신이인\n서울책보고 누리집 일정 및 행사 게시판 확인\nhttps://www.kyosu.net/news/articleView.html?idxno=209922
+URL:https://www.kyosu.net/news/articleView.html?idxno=209922
+END:VEVENT
+BEGIN:VEVENT
 UID:2d7e731cfb@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261022T193000
 DTEND;TZID=Asia/Seoul:20261022T213000
 SUMMARY:통섭의 광장 — 김상균 ‘두 번째 지능과 함께 진화하는 인류’
@@ -116,7 +136,7 @@ URL:https://www.krcom.co.kr/news/articleView.html?idxno=237037
 END:VEVENT
 BEGIN:VEVENT
 UID:22557f7c93@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261023T193000
 DTEND;TZID=Asia/Seoul:20261023T210000
 SUMMARY:보라토크 — 일라이자 리드
@@ -126,7 +146,7 @@ URL:https://store.kyobobook.co.kr/culture/bora-show
 END:VEVENT
 BEGIN:VEVENT
 UID:a6ee9046d8@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:2인2색 지역작가 책담회 — 김정태 수필가
@@ -136,7 +156,7 @@ URL:https://www.gdtimes.kr/1223292
 END:VEVENT
 BEGIN:VEVENT
 UID:e08773b5f7@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261024T100000
 DTEND;TZID=Asia/Seoul:20261024T120000
 SUMMARY:제14회 충북교육도서관 북 페스티벌 개막
@@ -146,7 +166,7 @@ URL:https://www.cctimes.kr/news/articleView.html?idxno=929895
 END:VEVENT
 BEGIN:VEVENT
 UID:14313635a0@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:북토크 — 은희경 『시간의 감촉』
@@ -156,7 +176,7 @@ URL:http://www.enewstoday.co.kr/news/articleView.html?idxno=2475327
 END:VEVENT
 BEGIN:VEVENT
 UID:e73f5644ca@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:마스터피스 토크 — 신달자 시인의 삶과 문학
@@ -166,7 +186,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:6a7257d5b2@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:강연 — 고명환 『독서의 기술』
@@ -175,8 +195,18 @@ DESCRIPTION:읽는 습관과 독서법에 관한 강연.\n연사: 고명환\n『
 URL:http://www.enewstoday.co.kr/news/articleView.html?idxno=2475327
 END:VEVENT
 BEGIN:VEVENT
+UID:06ae9ee6c4@booktalk-calendar
+DTSTAMP:20261009T133640Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:성해나 북토크 『우리가 열 번을 나고 죽을 때』
+LOCATION:서울 서울책보고 (송파구 잠실나루역)
+DESCRIPTION:성해나 작가가 『우리가 열 번을 나고 죽을 때』를 중심으로 소설 쓰기를 이야기한다.\n연사: 성해나\n『우리가 열 번을 나고 죽을 때』\n서울책보고 누리집 일정 및 행사 게시판 확인\nhttps://view.asiae.co.kr/article/2026090815170306871
+URL:https://view.asiae.co.kr/article/2026090815170306871
+END:VEVENT
+BEGIN:VEVENT
 UID:8afc445d90@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261031T143000
 DTEND;TZID=Asia/Seoul:20261031T163000
 SUMMARY:책읽는청주 20주년 — 문유석 『나로 살 결심』
@@ -186,7 +216,7 @@ URL:https://www.krcom.co.kr/news/articleView.html?idxno=240112
 END:VEVENT
 BEGIN:VEVENT
 UID:8ac6f1937b@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:편집자의 세 번 읽기 (1회) — 김준섭 편집자
@@ -196,7 +226,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:8b24ee87c1@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:퇴근길 스몰토크 — 도종환 시인
@@ -206,7 +236,7 @@ URL:http://www.cctimes.kr/news/articleView.html?idxno=929890
 END:VEVENT
 BEGIN:VEVENT
 UID:9c71792718@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;TZID=Asia/Seoul:20261105T160000
 DTEND;TZID=Asia/Seoul:20261105T180000
 SUMMARY:학부대학 명사 특강 — 정세랑
@@ -216,7 +246,7 @@ URL:https://cls.snu.ac.kr/notice/?mod=document&uid=80366
 END:VEVENT
 BEGIN:VEVENT
 UID:7bf5ef648c@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:편집자의 세 번 읽기 (2회) — 김준섭 편집자
@@ -226,7 +256,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:074f553bfb@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:편집자의 세 번 읽기 (3회) — 김준섭 편집자
@@ -236,7 +266,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:d8aef4b925@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:서로의 독자가 되는 법 — 정지아 × 김기창
@@ -246,7 +276,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:a41e46bcda@booktalk-calendar
-DTSTAMP:20261009T130519Z
+DTSTAMP:20261009T133640Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:서로의 독자가 되는 법 — 강화길 × 임솔아\, 여성 서사
