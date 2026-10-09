@@ -1,0 +1,33 @@
+name: 북토크 캘린더 배포
+
+# 일정 수집은 Claude Code 루틴이 collector/RUNBOOK.md 절차로 매일 아침 main에 push한다.
+# 여기서는 그 결과를 GitHub Pages로 배포만 한다 (API 키 불필요).
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", ".github/workflows/update.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

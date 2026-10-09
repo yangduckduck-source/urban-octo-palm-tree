@@ -1,0 +1,257 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//bookTalk-calendar//KO
+CALSCALE:GREGORIAN
+X-WR-CALNAME:북토크 캘린더
+X-WR-TIMEZONE:Asia/Seoul
+BEGIN:VEVENT
+UID:2d6c3527c3@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:김수영과 여름밤 — 옥상 시 낭독·필사
+LOCATION:서울 김수영문학관 (도봉구)
+DESCRIPTION:김수영문학관 옥상에서 김수영의 시를 함께 낭독하고 필사하는 하루 행사.\n김수영문학관 누리집 확인\nhttps://munjang.or.kr/facilities/detail.es?mid=a70705000000&id=1244
+URL:https://munjang.or.kr/facilities/detail.es?mid=a70705000000&id=1244
+END:VEVENT
+BEGIN:VEVENT
+UID:d0d162394c@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261014T193000
+DTEND;TZID=Asia/Seoul:20261014T210000
+SUMMARY:명강의 Big10 — 이정모
+LOCATION:서울 광화문 교보빌딩 23층 대산홀
+DESCRIPTION:과학 커뮤니케이터 이정모의 교보문고 명강의 시리즈 강연.\n연사: 이정모\n교보문고 문화공간에서 예매\nhttps://store.kyobobook.co.kr/culture/lecture-top-ten
+URL:https://store.kyobobook.co.kr/culture/lecture-top-ten
+END:VEVENT
+BEGIN:VEVENT
+UID:372cf0c207@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261016T150000
+DTEND;TZID=Asia/Seoul:20261016T170000
+SUMMARY:2인2색 지역작가 책담회 — 장문석
+LOCATION:청주 청주시립도서관
+DESCRIPTION:청주 지역 작가가 자신의 책과 창작 이야기를 들려주는 책담회 첫 회.\n연사: 장문석\n『곰이 문을 열고 들어왔다』\n청주시 도서관 누리집 공지사항에서 신청\, 당일 현장 참여 가능\nhttps://www.gdtimes.kr/1223292
+URL:https://www.gdtimes.kr/1223292
+END:VEVENT
+BEGIN:VEVENT
+UID:887d39489c@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261016T193000
+DTEND;TZID=Asia/Seoul:20261016T213000
+SUMMARY:작가힙톡 — 지웅배(우주먼지)
+LOCATION:서울 서울도서관 생각마루
+DESCRIPTION:서울형 작가와의 만남 '10월 작가힙톡: 사이언스\, 상상과 현실 사이' 회차.\n연사: 지웅배\n서울도서관 누리집\nhttps://lib.seoul.go.kr/
+URL:https://lib.seoul.go.kr/
+END:VEVENT
+BEGIN:VEVENT
+UID:2946d6dfa6@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261017T140000
+DTEND;TZID=Asia/Seoul:20261017T153000
+SUMMARY:보라토크 — 이정우 ‘사람이란 무엇인가’
+LOCATION:서울 광화문 교보빌딩 23층 대산홀
+DESCRIPTION:AI 시대에 다시 떠오른 존재론적 질문을 의학·역사·철학·신학·뇌과학을 넘나들며 묻는 강연.\n연사: 이정우\n교보문고 문화공간 페이지에서 신청\nhttps://store.kyobobook.co.kr/culture/bora-show/859
+URL:https://store.kyobobook.co.kr/culture/bora-show/859
+END:VEVENT
+BEGIN:VEVENT
+UID:ab5955f04a@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261017T150000
+DTEND;TZID=Asia/Seoul:20261017T170000
+SUMMARY:노원 야외도서관 ‘낭만보장’ — 김상근 북콘서트 ‘AI 시대\, 사람을 읽다’
+LOCATION:서울 경춘선숲길 일대 (노원구)
+DESCRIPTION:이틀(10.17~18)간 열리는 야외 북페스티벌의 인문학 북콘서트. 17일인지 18일인지 공지 확인 필요.\n연사: 김상근\nhttps://go.seoul.co.kr/news/newsView.php?id=20261007500125
+URL:https://go.seoul.co.kr/news/newsView.php?id=20261007500125
+END:VEVENT
+BEGIN:VEVENT
+UID:0dd45428d0@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:연희시음회 Vol.2 — 서윤빈 × 오산하 ‘포스트 아포칼립스’
+LOCATION:서울 연희문학창작촌 (서대문구)
+DESCRIPTION:연희문학창작촌 입주작가인 소설가와 시인이 '포스트 아포칼립스'를 주제로 서로의 창작을 이야기한다.\n연사: 서윤빈\, 오산하\n서울문화재단 누리집·연희문학창작촌 인스타그램(@artspace_yeonhui)에서 안내\nhttps://www.newscj.com/news/articleView.html?idxno=3438999
+URL:https://www.newscj.com/news/articleView.html?idxno=3438999
+END:VEVENT
+BEGIN:VEVENT
+UID:16b215bda0@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:현대로 보는 문학 — 상주작가와 독자 대담 (1회)
+LOCATION:서울 김수영문학관 (도봉구)
+DESCRIPTION:최신 한국문학을 함께 읽고 문학관 상주작가와 자유롭게 대담하는 5회 프로그램의 첫 회.\n김수영문학관 누리집 확인 (10.17~11.14\, 총 5회)\nhttps://munjang.or.kr/facilities/detail.es?mid=a70705000000&id=1244
+URL:https://munjang.or.kr/facilities/detail.es?mid=a70705000000&id=1244
+END:VEVENT
+BEGIN:VEVENT
+UID:f9e58d47bb@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:마스터피스 토크 — 현기영 다시 읽기
+LOCATION:서울 연희문학창작촌 (서대문구)
+DESCRIPTION:평론가 홍기돈과 소설가 정지아가 현기영의 주요 작품을 다시 읽으며 그 안의 시대의 기억과 역사를 짚는다.\n연사: 홍기돈\, 정지아\n서울문화재단 누리집·연희문학창작촌 인스타그램(@artspace_yeonhui)에서 안내\nhttps://www.newscj.com/news/articleView.html?idxno=3438999
+URL:https://www.newscj.com/news/articleView.html?idxno=3438999
+END:VEVENT
+BEGIN:VEVENT
+UID:1cea19e873@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261021T190000
+DTEND;TZID=Asia/Seoul:20261021T210000
+SUMMARY:퇴근길 스몰토크 ‘가을에 시작(詩作)하세요’ — 강원석 ‘어떻게 사세요’
+LOCATION:청주 한국공예관 공연장
+DESCRIPTION:시인의 강연과 가수 추가열의 공연을 엮은 청주 인문학 콘서트 두 번째 무대.\n연사: 강원석\nhttp://www.cctimes.kr/news/articleView.html?idxno=929890
+URL:http://www.cctimes.kr/news/articleView.html?idxno=929890
+END:VEVENT
+BEGIN:VEVENT
+UID:2d7e731cfb@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261022T193000
+DTEND;TZID=Asia/Seoul:20261022T213000
+SUMMARY:통섭의 광장 — 김상균 ‘두 번째 지능과 함께 진화하는 인류’
+LOCATION:청주 MBC충북 공개홀
+DESCRIPTION:AI와 인간의 미래를 다루는 충북교육도서관 교양 강연. 사전 질문 중심 질의응답.\n연사: 김상균\n충북교육도서관 누리집 사전 신청 (300명)\nhttps://www.krcom.co.kr/news/articleView.html?idxno=237037
+URL:https://www.krcom.co.kr/news/articleView.html?idxno=237037
+END:VEVENT
+BEGIN:VEVENT
+UID:22557f7c93@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261023T193000
+DTEND;TZID=Asia/Seoul:20261023T210000
+SUMMARY:보라토크 — 일라이자 리드
+LOCATION:서울 광화문 교보빌딩 23층 대산홀
+DESCRIPTION:교보문고 무료 강연 시리즈 보라토크 회차. 주제는 공지 확인.\n연사: 일라이자 리드\n교보문고 문화공간 페이지에서 신청\nhttps://store.kyobobook.co.kr/culture/bora-show
+URL:https://store.kyobobook.co.kr/culture/bora-show
+END:VEVENT
+BEGIN:VEVENT
+UID:a6ee9046d8@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:2인2색 지역작가 책담회 — 김정태 수필가
+LOCATION:청주 청주시립도서관
+DESCRIPTION:제5회 신동문문학상을 받은 수필가가 수필 쓰기와 작품 세계를 이야기한다.\n연사: 김정태\n청주시 도서관 누리집 공지사항\, 현장 참여 가능\nhttps://www.gdtimes.kr/1223292
+URL:https://www.gdtimes.kr/1223292
+END:VEVENT
+BEGIN:VEVENT
+UID:e08773b5f7@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261024T100000
+DTEND;TZID=Asia/Seoul:20261024T120000
+SUMMARY:제14회 충북교육도서관 북 페스티벌 개막
+LOCATION:청주 충북교육도서관 일원
+DESCRIPTION:36개 행사 70회 프로그램의 이틀 축제. 야외도서관·북마켓·전시가 함께 열린다.\n교육도서관 누리집 사전 신청(10.1~)\, 일부 추첨\nhttps://www.cctimes.kr/news/articleView.html?idxno=929895
+URL:https://www.cctimes.kr/news/articleView.html?idxno=929895
+END:VEVENT
+BEGIN:VEVENT
+UID:14313635a0@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:북토크 — 은희경 『시간의 감촉』
+LOCATION:청주 충북교육도서관
+DESCRIPTION:은희경 작가가 신작 『시간의 감촉』과 소설 쓰기를 이야기하는 북토크.\n연사: 은희경\n『시간의 감촉』\n교육도서관 누리집 사전 신청 후 추첨\nhttp://www.enewstoday.co.kr/news/articleView.html?idxno=2475327
+URL:http://www.enewstoday.co.kr/news/articleView.html?idxno=2475327
+END:VEVENT
+BEGIN:VEVENT
+UID:e73f5644ca@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:마스터피스 토크 — 신달자 시인의 삶과 문학
+LOCATION:서울 연희문학창작촌 (서대문구)
+DESCRIPTION:시인 서윤후의 진행으로 신달자 시인의 삶과 시 세계를 조명한다.\n연사: 서윤후\, 신달자\n서울문화재단 누리집·연희문학창작촌 인스타그램(@artspace_yeonhui)에서 안내\nhttps://www.newscj.com/news/articleView.html?idxno=3438999
+URL:https://www.newscj.com/news/articleView.html?idxno=3438999
+END:VEVENT
+BEGIN:VEVENT
+UID:6a7257d5b2@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:강연 — 고명환 『독서의 기술』
+LOCATION:청주 충북교육도서관
+DESCRIPTION:읽는 습관과 독서법에 관한 강연.\n연사: 고명환\n『독서의 기술』\n교육도서관 누리집 사전 신청 후 추첨\nhttp://www.enewstoday.co.kr/news/articleView.html?idxno=2475327
+URL:http://www.enewstoday.co.kr/news/articleView.html?idxno=2475327
+END:VEVENT
+BEGIN:VEVENT
+UID:8afc445d90@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261031T143000
+DTEND;TZID=Asia/Seoul:20261031T163000
+SUMMARY:책읽는청주 20주년 — 문유석 『나로 살 결심』
+LOCATION:청주 청주시립도서관
+DESCRIPTION:판사 출신 작가 문유석이 에세이 『나로 살 결심』을 두고 시민과 만난다.\n연사: 문유석\n『나로 살 결심』\n10.14(수) 10:00부터 청주시립도서관 누리집 선착순 (청주시민 대상)\nhttps://www.krcom.co.kr/news/articleView.html?idxno=240112
+URL:https://www.krcom.co.kr/news/articleView.html?idxno=240112
+END:VEVENT
+BEGIN:VEVENT
+UID:8ac6f1937b@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:편집자의 세 번 읽기 (1회) — 김준섭 편집자
+LOCATION:서울 서울문화예술교육센터 용산
+DESCRIPTION:한겨레출판 편집자와 웹진 ‘비유’ 수록작을 편집자의 눈으로 세 번 읽는다. 원고를 보는 시선을 배우는 자리.\n연사: 김준섭\n서울문화재단 누리집·연희문학창작촌 인스타그램(@artspace_yeonhui)에서 안내 (서울시민예술학교 협력\, 3회 연속)\nhttps://www.newscj.com/news/articleView.html?idxno=3438999
+URL:https://www.newscj.com/news/articleView.html?idxno=3438999
+END:VEVENT
+BEGIN:VEVENT
+UID:8b24ee87c1@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:퇴근길 스몰토크 — 도종환 시인
+LOCATION:청주 청주 문화지구 일원
+DESCRIPTION:‘가을에 시작(詩作)하세요’ 시리즈 마지막 무대. 시인의 강연과 공연.\n연사: 도종환\nhttp://www.cctimes.kr/news/articleView.html?idxno=929890
+URL:http://www.cctimes.kr/news/articleView.html?idxno=929890
+END:VEVENT
+BEGIN:VEVENT
+UID:9c71792718@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;TZID=Asia/Seoul:20261105T160000
+DTEND;TZID=Asia/Seoul:20261105T180000
+SUMMARY:학부대학 명사 특강 — 정세랑
+LOCATION:서울 서울대학교 220동 203호
+DESCRIPTION:정세랑 작가의 읽기와 쓰기에 관한 특강. 재학생 대상 안내라 외부인 참여 가능 여부 확인 필요.\n연사: 정세랑\nhttps://cls.snu.ac.kr/notice/?mod=document&uid=80366
+URL:https://cls.snu.ac.kr/notice/?mod=document&uid=80366
+END:VEVENT
+BEGIN:VEVENT
+UID:7bf5ef648c@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:편집자의 세 번 읽기 (2회) — 김준섭 편집자
+LOCATION:서울 서울문화예술교육센터 용산
+DESCRIPTION:한겨레출판 편집자와 웹진 ‘비유’ 수록작을 편집자의 눈으로 세 번 읽는다. 원고를 보는 시선을 배우는 자리.\n연사: 김준섭\n서울문화재단 누리집·연희문학창작촌 인스타그램(@artspace_yeonhui)에서 안내 (서울시민예술학교 협력\, 3회 연속)\nhttps://www.newscj.com/news/articleView.html?idxno=3438999
+URL:https://www.newscj.com/news/articleView.html?idxno=3438999
+END:VEVENT
+BEGIN:VEVENT
+UID:074f553bfb@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:편집자의 세 번 읽기 (3회) — 김준섭 편집자
+LOCATION:서울 서울문화예술교육센터 용산
+DESCRIPTION:한겨레출판 편집자와 웹진 ‘비유’ 수록작을 편집자의 눈으로 세 번 읽는다. 원고를 보는 시선을 배우는 자리.\n연사: 김준섭\n서울문화재단 누리집·연희문학창작촌 인스타그램(@artspace_yeonhui)에서 안내 (서울시민예술학교 협력\, 3회 연속)\nhttps://www.newscj.com/news/articleView.html?idxno=3438999
+URL:https://www.newscj.com/news/articleView.html?idxno=3438999
+END:VEVENT
+BEGIN:VEVENT
+UID:d8aef4b925@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:서로의 독자가 되는 법 — 정지아 × 김기창
+LOCATION:서울 서울문화예술교육센터 용산
+DESCRIPTION:구례와 마산을 작품 배경으로 삼아온 두 소설가가 지역과 장소\, 기억과 삶을 문학으로 쓰는 방법을 이야기한다.\n연사: 정지아\, 김기창\, 이지은\n서울문화재단 누리집·연희문학창작촌 인스타그램(@artspace_yeonhui)에서 안내\nhttps://www.newscj.com/news/articleView.html?idxno=3438999
+URL:https://www.newscj.com/news/articleView.html?idxno=3438999
+END:VEVENT
+BEGIN:VEVENT
+UID:a41e46bcda@booktalk-calendar
+DTSTAMP:20261009T130519Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:서로의 독자가 되는 법 — 강화길 × 임솔아\, 여성 서사
+LOCATION:서울 서울문화예술교육센터 용산
+DESCRIPTION:두 소설가와 평론가가 여성 서사의 확장 가능성을 함께 이야기한다.\n연사: 강화길\, 임솔아\, 오은교\n서울문화재단 누리집·연희문학창작촌 인스타그램(@artspace_yeonhui)에서 안내\nhttps://www.newscj.com/news/articleView.html?idxno=3438999
+URL:https://www.newscj.com/news/articleView.html?idxno=3438999
+END:VEVENT
+END:VCALENDAR

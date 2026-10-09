@@ -1,0 +1,140 @@
+# 북토크 캘린더 수집기 설정
+# 수집기는 매일 아래 '미션'을 하나씩 웹에서 검색하고, 찾은 행사를 site/data/events.json 에 합칩니다.
+# 미션을 추가·삭제하면 다음 실행부터 바로 반영됩니다.
+
+[general]
+model = "claude-opus-5-5"
+# 오늘부터 며칠 뒤까지의 행사를 찾을지
+horizon_days = 60
+# 지난 행사를 달력에 며칠 동안 남겨둘지
+keep_past_days = 45
+# 미션 하나당 최대 웹 검색 / 페이지 열람 횟수 (비용과 직결)
+max_searches_per_mission = 6
+max_fetches_per_mission = 4
+research_effort = "medium"
+extract_effort = "low"
+
+[profile]
+# 추천 점수를 매길 때 Claude에게 전달하는 관심사 설명
+description = """
+문예창작을 연구하는 성인 독자. 글쓰기(창작·작법·에세이 쓰기), 한국문학과 세계문학(소설·시·에세이·비평),
+철학, 인문학 강연과 북토크에 관심이 많다. 작가가 자신의 창작 과정을 이야기하는 자리,
+평론가·편집자와 함께 작품을 깊게 읽는 자리, 철학자의 강의를 특히 선호한다.
+무료·유료는 상관없다. 어린이·청소년 대상 행사, 자기계발·재테크·육아 강연은 관심 없다.
+"""
+
+# ── 검색 미션 ────────────────────────────────────────────────
+# city: 서울 / 청주 / 둘 다
+# queries: 검색 아이디어 (Claude가 이걸 출발점으로 더 찾아봅니다)
+# urls: 직접 열어볼 일정 페이지 (있으면 정확도가 올라갑니다)
+
+[[missions]]
+name = "서울 서점 북토크"
+city = "서울"
+queries = [
+  "서울 북토크 {month}",
+  "작가와의 만남 서울 서점 {month}",
+  "교보문고 보라토크 {month}",
+  "교보문고 명강의 Big10 {month}",
+  "예스24 작가 북토크 {month}",
+  "알라딘 작가와의 만남 {month}",
+]
+urls = [
+  "https://store.kyobobook.co.kr/culture/bora-show",
+  "https://store.kyobobook.co.kr/culture/lecture-top-ten",
+  "https://www.aladin.co.kr/events/wevent_author.aspx",
+]
+
+[[missions]]
+name = "서울 독립서점·출판사 북토크"
+city = "서울"
+queries = [
+  "독립서점 북토크 서울 {month} 소설가",
+  "시인 북토크 서울 {month}",
+  "신간 출간 기념 북토크 {month}",
+  "문학동네 OR 창비 OR 민음사 OR 문학과지성사 북토크 {month}",
+]
+urls = []
+
+[[missions]]
+name = "서울 도서관 강연"
+city = "서울"
+queries = [
+  "서울도서관 작가와의 만남 {month}",
+  "서울시교육청 도서관 인문학 강연 {month}",
+  "구립도서관 작가 초청 강연 서울 {month}",
+  "국립중앙도서관 월간 인문학을 만나다 {month}",
+  "길 위의 인문학 서울 {month}",
+]
+urls = [
+  "https://lib.seoul.go.kr/",
+  "https://everlearning.sen.go.kr",
+]
+
+[[missions]]
+name = "서울 문학관·문학재단"
+city = "서울"
+queries = [
+  "서울문화재단 연희문학창작촌 {month}",
+  "문학으로 모이는 방법들 {year}",
+  "김수영문학관 {month} 프로그램",
+  "윤동주문학관 {month} 행사",
+  "한국문학번역원 OR 대산문화재단 OR 토지문화재단 강연 {month}",
+  "서울 낭독회 {month}",
+]
+urls = [
+  "https://www.seoulbookbogo.kr/front/index.php?g_page=community&m_page=community03",
+]
+
+[[missions]]
+name = "서울 철학·인문 강좌"
+city = "서울"
+queries = [
+  "철학 강연 서울 {month}",
+  "인문학 특강 서울 {month}",
+  "철학아카데미 강좌 {month}",
+  "예술의전당 인문아카데미 {month}",
+  "서울시민대학 인문학 {month}",
+]
+urls = []
+
+[[missions]]
+name = "청주 도서관·문화기관"
+city = "청주"
+queries = [
+  "청주시립도서관 작가 강연 {month}",
+  "청주 북토크 {month}",
+  "충북교육도서관 강연 {month}",
+  "청주 인문학 강연 {month}",
+  "청주문화원 OR 청주문화재단 인문학 {month}",
+  "국립청주박물관 인문학 강좌 {month}",
+]
+urls = [
+  "https://library.cheongju.go.kr/lib/front/",
+]
+
+[[missions]]
+name = "청주·충북 문학"
+city = "청주"
+queries = [
+  "충북 작가 북토크 {month}",
+  "청주 시인 강연 {month}",
+  "신동문 OR 오장환 OR 정지용 문학 행사 {month}",
+  "청주 독립서점 북토크 {month}",
+]
+urls = []
+
+[[missions]]
+name = "도서전·독서대전·북페스티벌"
+city = "둘 다"
+queries = [
+  "서울국제도서전 {year} 강연 북토크",
+  "대한민국 독서대전 {year} 프로그램",
+  "서울와우북페스티벌 {year}",
+  "서울야외도서관 북토크 {month}",
+  "북페스티벌 서울 {month} 작가",
+  "청주 독서축제 {month}",
+  "충북 북페스티벌 {month}",
+  "문학주간 {year}",
+]
+urls = []
