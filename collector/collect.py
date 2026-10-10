@@ -92,7 +92,8 @@ def research(client, cfg: dict, mission: dict, today: date) -> str:
     until = today + timedelta(days=g["horizon_days"])
     months = sorted({f"{d.year}년 {d.month}월" for d in (today, today + timedelta(days=30), until)})
     queries = [
-        q.replace("{month}", months[0]).replace("{year}", str(today.year)) for q in mission["queries"]
+        q.replace("{month}", months[0]).replace("{nextmonth}", months[min(1, len(months) - 1)])
+        .replace("{year}", str(today.year)) for q in mission["queries"]
     ]
     urls = "\n".join(f"- {u}" for u in mission.get("urls", [])) or "- (없음)"
 

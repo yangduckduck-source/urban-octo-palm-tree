@@ -25,7 +25,8 @@ description = """
 
 # ── 검색 미션 ────────────────────────────────────────────────
 # city: 서울 / 청주 / 둘 다
-# queries: 검색 아이디어 (Claude가 이걸 출발점으로 더 찾아봅니다)
+# queries: 검색 아이디어 ({month}=이번 달, {nextmonth}=다음 달, {year}=올해)
+#   행사는 '○○ 작가, 독자와 만난다', '강연 연다', '오는 24일' 같은 기사 문장으로 잘 잡힙니다.
 # urls: 직접 열어볼 일정 페이지 (있으면 정확도가 올라갑니다)
 
 [[missions]]
@@ -38,6 +39,9 @@ queries = [
   "교보문고 명강의 Big10 {month}",
   "예스24 작가 북토크 {month}",
   "알라딘 작가와의 만남 {month}",
+  "작가 독자와 만난다 북토크 서울 {month}",
+  "출간 기념 북토크 연다 서점",
+  "교보문고 {nextmonth} 강연 라인업",
 ]
 urls = [
   "https://store.kyobobook.co.kr/culture/bora-show",
@@ -53,6 +57,9 @@ queries = [
   "시인 북토크 서울 {month}",
   "신간 출간 기념 북토크 {month}",
   "문학동네 OR 창비 OR 민음사 OR 문학과지성사 북토크 {month}",
+  "소설가 북토크 개최 오는",
+  "시집 출간 기념 낭독회 서울",
+  "책방 작가와의 대화 {nextmonth}",
 ]
 urls = []
 
@@ -65,6 +72,9 @@ queries = [
   "구립도서관 작가 초청 강연 서울 {month}",
   "국립중앙도서관 월간 인문학을 만나다 {month}",
   "길 위의 인문학 서울 {month}",
+  "도서관 작가 초청 강연 연다 서울구",
+  "구립도서관 인문학 강좌 수강생 모집 {month}",
+  "서울시교육청 도서관 {nextmonth} 프로그램",
 ]
 urls = [
   "https://lib.seoul.go.kr/",
@@ -81,6 +91,9 @@ queries = [
   "윤동주문학관 {month} 행사",
   "한국문학번역원 OR 대산문화재단 OR 토지문화재단 강연 {month}",
   "서울 낭독회 {month}",
+  "서울책보고 북토크 {month}",
+  "문학관 상주작가 프로그램 서울 {year}",
+  "문학 대담 연희문학창작촌 OR 서울문화예술교육센터",
 ]
 urls = [
   "https://www.seoulbookbogo.kr/front/index.php?g_page=community&m_page=community03",
@@ -95,6 +108,9 @@ queries = [
   "철학아카데미 강좌 {month}",
   "예술의전당 인문아카데미 {month}",
   "서울시민대학 인문학 {month}",
+  "인문학 강연 개최 서울 오는",
+  "철학자 강연 북토크 {month}",
+  "인문학 콘서트 구청 {month}",
 ]
 urls = []
 
@@ -108,6 +124,9 @@ queries = [
   "청주 인문학 강연 {month}",
   "청주문화원 OR 청주문화재단 인문학 {month}",
   "국립청주박물관 인문학 강좌 {month}",
+  "청주시립도서관 강연 개최",
+  "청주 작가와의 만남 도서관 오는",
+  "충북 도서관 인문학 강연 {nextmonth}",
 ]
 urls = [
   "https://library.cheongju.go.kr/lib/front/",
@@ -121,6 +140,8 @@ queries = [
   "청주 시인 강연 {month}",
   "신동문 OR 오장환 OR 정지용 문학 행사 {month}",
   "청주 독립서점 북토크 {month}",
+  "충북작가회의 OR 충북시인협회 행사 {month}",
+  "청주 시 낭송회 {month}",
 ]
 urls = []
 
@@ -136,5 +157,7 @@ queries = [
   "청주 독서축제 {month}",
   "충북 북페스티벌 {month}",
   "문학주간 {year}",
+  "북페스티벌 작가 강연 오는 {month}",
+  "책 축제 북토크 서울 {nextmonth}",
 ]
 urls = []
