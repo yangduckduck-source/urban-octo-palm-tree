@@ -1,14 +1,19 @@
 {
  "meta": {
-  "updated_at": "2026-10-09T22:36+09:00",
+  "updated_at": "2026-10-10T18:17+09:00",
   "runs": [
    {
-    "mission": "서울 문학관·문학재단",
+    "mission": "서울 서점 북토크",
     "found": 3,
     "kept": 3
+   },
+   {
+    "mission": "서울 독립서점·출판사 북토크",
+    "found": 2,
+    "kept": 2
    }
   ],
-  "count": 28
+  "count": 33
  },
  "events": [
   {
@@ -70,6 +75,37 @@
    "last_seen": "2026-10-09",
    "id": "d0d162394c",
    "score": 49
+  },
+  {
+   "source": "서울 서점 북토크",
+   "title": "정보라 북토크 『한밤의 시간표』",
+   "date": "2026-10-15",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "북살롱 오티움 (종로구)",
+   "speakers": [
+    "정보라"
+   ],
+   "book": "한밤의 시간표",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 작가와의 만남 페이지에서 10월 13일까지 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "귀신 들린 물건을 보관하는 연구소를 배경으로 한 연작소설집 『한밤의 시간표』를 두고 정보라 작가가 괴담과 SF의 경계를 이야기하는 자리.",
+   "confidence": "보도",
+   "relevance": 0.8,
+   "speaker_weight": 0.75,
+   "first_seen": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "id": "68a3240941",
+   "score": 70
   },
   {
    "title": "2인2색 지역작가 책담회 — 장문석",
@@ -197,6 +233,35 @@
    "score": 48
   },
   {
+   "source": "서울 독립서점·출판사 북토크",
+   "title": "움직이는 서울형책방 ‘책의 기분’ — 장르소설 프로그램",
+   "date": "2026-10-17",
+   "start": "16:00",
+   "end": "17:00",
+   "city": "서울",
+   "venue": "광화문라운지 (서울야외도서관 광화문책마당)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "누구나",
+   "festival": "서울야외도서관",
+   "price": "무료",
+   "price_note": "",
+   "registration": "서울도서관 누리집 사전 신청 또는 현장 참여",
+   "url": "https://lib.seoul.go.kr/",
+   "summary": "서울형책방이 광화문라운지에서 꾸리는 ‘책의 기분’ 15회차 중 장르소설을 주제로 한 프로그램.",
+   "confidence": "추정",
+   "relevance": 0.6,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "id": "2d467ab01d",
+   "score": 57
+  },
+  {
    "title": "연희시음회 Vol.2 — 서윤빈 × 오산하 ‘포스트 아포칼립스’",
    "date": "2026-10-17",
    "start": "",
@@ -257,6 +322,36 @@
    "last_seen": "2026-10-09",
    "id": "16b215bda0",
    "score": 56
+  },
+  {
+   "source": "서울 독립서점·출판사 북토크",
+   "title": "움직이는 서울형책방 ‘책의 기분’ — 시 수선 콜라주 워크숍",
+   "date": "2026-10-18",
+   "start": "15:00",
+   "end": "16:00",
+   "city": "서울",
+   "venue": "광화문라운지 (서울야외도서관 광화문책마당)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "글쓰기",
+    "문학"
+   ],
+   "format": "워크숍",
+   "audience": "누구나",
+   "festival": "서울야외도서관",
+   "price": "무료",
+   "price_note": "",
+   "registration": "서울도서관 누리집 사전 신청",
+   "url": "https://lib.seoul.go.kr/",
+   "summary": "기존 시의 구절을 오리고 이어 붙여 새 시를 짓는 콜라주 방식의 시 쓰기 워크숍.",
+   "confidence": "보도",
+   "relevance": 0.7,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "id": "ac122fdb0a",
+   "score": 74
   },
   {
    "title": "마스터피스 토크 — 현기영 다시 읽기",
@@ -386,6 +481,37 @@
    "last_seen": "2026-10-09",
    "id": "e5b2445fc6",
    "score": 80
+  },
+  {
+   "source": "서울 서점 북토크",
+   "title": "송길영 북토크 『시대예보: 수고인류의 시간』",
+   "date": "2026-10-22",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "송길영"
+   ],
+   "book": "시대예보: 수고인류의 시간",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 작가와의 만남 페이지에서 10월 18일까지 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "마인드 마이너 송길영이 신간 『시대예보: 수고인류의 시간』으로 변화하는 노동과 삶의 방식을 읽어 내는 북토크.",
+   "confidence": "보도",
+   "relevance": 0.45,
+   "speaker_weight": 0.6,
+   "first_seen": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "id": "cd1be275c0",
+   "score": 50
   },
   {
    "title": "통섭의 광장 — 김상균 ‘두 번째 지능과 함께 진화하는 인류’",
@@ -605,6 +731,38 @@
    "last_seen": "2026-10-09",
    "id": "6a7257d5b2",
    "score": 48
+  },
+  {
+   "source": "서울 서점 북토크",
+   "title": "김지윤 × 집착서점(이강) 북토크 『호신술 클럽』",
+   "date": "2026-10-27",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "김지윤",
+    "이강"
+   ],
+   "book": "호신술 클럽",
+   "categories": [
+    "문학"
+   ],
+   "format": "대담",
+   "audience": "누구나",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 작가와의 만남 페이지에서 10월 23일까지 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "『호신술 클럽』의 김지윤 작가와 집착서점 이강 대표가 나누는 북토크.",
+   "confidence": "보도",
+   "relevance": 0.55,
+   "speaker_weight": 0.45,
+   "first_seen": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "id": "f2f08ec3e9",
+   "score": 60
   },
   {
    "source": "서울 문학관·문학재단",
