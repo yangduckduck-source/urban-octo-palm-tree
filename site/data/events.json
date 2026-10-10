@@ -1,18 +1,7 @@
 {
  "meta": {
-  "updated_at": "2026-10-10T18:17+09:00",
-  "runs": [
-   {
-    "mission": "서울 서점 북토크",
-    "found": 3,
-    "kept": 3
-   },
-   {
-    "mission": "서울 독립서점·출판사 북토크",
-    "found": 2,
-    "kept": 2
-   }
-  ],
+  "updated_at": "2026-10-11T05:43+09:00",
+  "runs": [],
   "count": 33
  },
  "events": [
