@@ -1,34 +1,14 @@
 {
  "meta": {
-  "updated_at": "2026-10-17T05:46+09:00",
+  "updated_at": "2026-10-17T15:01+09:00",
   "runs": [
    {
-    "mission": "서울 서점 북토크",
-    "found": 3,
-    "kept": 3
-   },
-   {
-    "mission": "청주·충북 문학",
-    "found": 1,
-    "kept": 1
-   },
-   {
-    "mission": "초기 조사 (2026-10-09)",
-    "found": 8,
-    "kept": 8
-   },
-   {
-    "mission": "서울 독립서점·출판사 북토크",
-    "found": 2,
-    "kept": 2
-   },
-   {
-    "mission": "서울 문학관·문학재단",
-    "found": 1,
-    "kept": 1
+    "mission": "예스24·알라딘 작가와의 만남",
+    "found": 5,
+    "kept": 5
    }
   ],
-  "count": 39
+  "count": 44
  },
  "events": [
   {
@@ -409,6 +389,72 @@
    "score": 56
   },
   {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 천선란 『이끼숲』 북토크 with 한소범 기자",
+   "date": "2026-10-18",
+   "start": "13:00",
+   "city": "서울",
+   "venue": "서울영화센터 7층 (을지로3가)",
+   "speakers": [
+    "천선란",
+    "한소범"
+   ],
+   "book": "이끼숲",
+   "categories": [
+    "문학",
+    "글쓰기"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "price": "미확인",
+   "registration": "예스24 클래스24 선착순 모집",
+   "url": "https://www.yes24.com/Product/Search?query=%EB%B6%81%ED%86%A0%ED%81%AC",
+   "summary": "SF 소설가 천선란이 『이끼숲』의 세계와 쓰는 과정을 기자 한소범과 이야기한다.",
+   "confidence": "보도",
+   "relevance": 0.88,
+   "speaker_weight": 0.85,
+   "end": "",
+   "festival": "",
+   "price_note": "",
+   "first_seen": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "id": "bcf4ce5fda",
+   "score": 79
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 김초엽 『태양 아래 올리브』 북토크 with 서윤빈",
+   "date": "2026-10-18",
+   "start": "15:00",
+   "city": "서울",
+   "venue": "서울영화센터 7층 (을지로3가)",
+   "speakers": [
+    "김초엽",
+    "서윤빈"
+   ],
+   "book": "태양 아래 올리브",
+   "categories": [
+    "문학",
+    "글쓰기"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "price": "유료",
+   "price_note": "5,000원",
+   "registration": "예스24 클래스24에서 신청",
+   "url": "https://www.yes24.com/Product/Search?query=%EB%B6%81%ED%86%A0%ED%81%AC",
+   "summary": "김초엽 작가가 신작을 두고 소설가 서윤빈과 대담한다. 작가 둘이 나누는 창작 이야기.",
+   "confidence": "보도",
+   "relevance": 0.9,
+   "speaker_weight": 0.9,
+   "end": "",
+   "festival": "",
+   "first_seen": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "id": "8f3aa1cc64",
+   "score": 82
+  },
+  {
    "source": "서울 독립서점·출판사 북토크",
    "title": "움직이는 서울형책방 ‘책의 기분’ — 시 수선 콜라주 워크숍",
    "date": "2026-10-18",
@@ -597,6 +643,39 @@
    "last_seen": "2026-10-10",
    "id": "cd1be275c0",
    "score": 50
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "김연수 × 한소범 북토크 『눈 내리는 삼일포』 출간 기념",
+   "date": "2026-10-22",
+   "start": "19:30",
+   "city": "서울",
+   "venue": "알라딘 주최 (장소는 이벤트 페이지 확인)",
+   "speakers": [
+    "김연수",
+    "한소범"
+   ],
+   "book": "눈 내리는 삼일포",
+   "categories": [
+    "문학",
+    "글쓰기"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "price": "미확인",
+   "registration": "알라딘 작가와의 만남 응모 (10.12~10.19)",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "아홉 편의 단편을 묶은 새 소설집을 두고 김연수 작가가 단편을 쓰는 일에 대해 이야기한다.",
+   "confidence": "확정",
+   "relevance": 0.95,
+   "speaker_weight": 0.95,
+   "end": "",
+   "festival": "",
+   "price_note": "",
+   "first_seen": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "id": "97effeb406",
+   "score": 83
   },
   {
    "title": "통섭의 광장 — 김상균 ‘두 번째 지능과 함께 진화하는 인류’",
@@ -881,6 +960,38 @@
    "score": 60
   },
   {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "김선우 × 이제야 북토크 『엄마가 떠나자 엄마가 많아졌다』",
+   "date": "2026-10-28",
+   "start": "19:30",
+   "city": "서울",
+   "venue": "알라딘 주최 (장소는 이벤트 페이지 확인)",
+   "speakers": [
+    "김선우",
+    "이제야"
+   ],
+   "book": "엄마가 떠나자 엄마가 많아졌다",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "price": "미확인",
+   "registration": "알라딘 작가와의 만남 응모 (10.12~)",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "시인 김선우와 이제야가 상실과 돌봄을 쓰는 글에 대해 이야기한다.",
+   "confidence": "확정",
+   "relevance": 0.85,
+   "speaker_weight": 0.75,
+   "end": "",
+   "festival": "",
+   "price_note": "",
+   "first_seen": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "id": "55324e19e9",
+   "score": 76
+  },
+  {
    "source": "서울 문학관·문학재단",
    "title": "성해나 북토크 『우리가 열 번을 나고 죽을 때』",
    "date": "2026-10-28",
@@ -911,6 +1022,37 @@
    "last_seen": "2026-10-09",
    "id": "06ae9ee6c4",
    "score": 80
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "소복이 북토크 『엄마가 도망갔다』",
+   "date": "2026-10-29",
+   "start": "19:00",
+   "city": "서울",
+   "venue": "알라딘 주최 (장소는 이벤트 페이지 확인)",
+   "speakers": [
+    "소복이"
+   ],
+   "book": "엄마가 도망갔다",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "price": "미확인",
+   "registration": "알라딘 작가와의 만남 응모 (10.12~10.28)",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "만화가 소복이가 자전적 이야기를 그림과 글로 옮기는 과정을 들려준다.",
+   "confidence": "확정",
+   "relevance": 0.65,
+   "speaker_weight": 0.55,
+   "end": "",
+   "festival": "",
+   "price_note": "",
+   "first_seen": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "id": "b58ab01e09",
+   "score": 67
   },
   {
    "title": "책읽는청주 20주년 — 문유석 『나로 살 결심』",

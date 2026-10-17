@@ -9,7 +9,7 @@ site/                 웹앱 (GitHub Pages로 배포)
   data/events.json    일정 데이터
   calendar.ics        Apple 캘린더·구글 캘린더 구독용
 collector/
-  RUNBOOK.md          매일 아침 루틴이 따르는 수집 절차
+  RUNBOOK.md          하루 두 번 루틴이 따르는 수집 절차
   config.toml         검색 미션·관심사 설명
   collect.py          정리 → 중복 병합 → 점수 → 저장
   scoring.py          추천 점수 규칙
@@ -20,7 +20,7 @@ collector/
 
 별도 API 비용 없이 Claude 구독 안에서 돌아갑니다.
 
-1. 매일 05:40(KST) Claude Code 루틴 **"북토크 캘린더 갱신"**이 새 세션을 열고 `collector/RUNBOOK.md`를 따릅니다.
+1. 매일 08:49·16:49(KST) Claude Code 루틴 **"북토크 캘린더 갱신"**이 새 세션을 열고 `collector/RUNBOOK.md`를 따릅니다.
 2. 루틴은 `config.toml`의 미션(서울 서점, 서울 독립서점·출판사, 서울 도서관, 서울 문학관·문학재단, 서울 철학·인문 강좌,
    청주 도서관·문화기관, 청주·충북 문학, 도서전·독서대전·북페스티벌)마다 웹을 검색하고, 찾은 행사를 `inbox.json`에 적습니다.
 3. `collect.py --ingest`가 서울·청주 밖의 행사와 지난 행사를 거르고, 같은 날 비슷한 제목이나 같은 연사를 가진 항목을 하나로 합치고,

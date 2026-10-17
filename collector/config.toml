@@ -20,11 +20,11 @@ description = """
 문예창작을 연구하는 성인 독자. 글쓰기(창작·작법·에세이 쓰기), 한국문학과 세계문학(소설·시·에세이·비평),
 철학, 인문학 강연과 북토크에 관심이 많다. 작가가 자신의 창작 과정을 이야기하는 자리,
 평론가·편집자와 함께 작품을 깊게 읽는 자리, 철학자의 강의를 특히 선호한다.
-무료·유료는 상관없다. 어린이·청소년 대상 행사, 자기계발·재테크·육아 강연은 관심 없다.
+무료·유료, 오프라인·온라인(줌·유튜브 라이브) 모두 좋다. 예스24·알라딘의 작가와의 만남을 자주 챙겨 본다. 어린이·청소년 대상 행사, 자기계발·재테크·육아 강연은 관심 없다.
 """
 
 # ── 검색 미션 ────────────────────────────────────────────────
-# city: 서울 / 청주 / 둘 다
+# city: 서울 / 청주 / 둘 다 / 온라인 포함
 # queries: 검색 아이디어 ({month}=이번 달, {nextmonth}=다음 달, {year}=올해)
 #   행사는 '○○ 작가, 독자와 만난다', '강연 연다', '오는 24일' 같은 기사 문장으로 잘 잡힙니다.
 # urls: 직접 열어볼 일정 페이지 (있으면 정확도가 올라갑니다)
@@ -48,6 +48,43 @@ urls = [
   "https://store.kyobobook.co.kr/culture/lecture-top-ten",
   "https://www.aladin.co.kr/events/wevent_author.aspx",
 ]
+
+[[missions]]
+name = "예스24·알라딘 작가와의 만남"
+city = "온라인 포함"
+queries = [
+  "알라딘 작가와의 만남 {month}",
+  "알라딘 북토크 신청기간 {month}",
+  "알라딘 북토크 {nextmonth}",
+  "알라딘빌딩 강연장 북토크",
+  "예스24 클래스24 북토크 {month}",
+  "예스24 작가와 책담화",
+  "예스24 YES 캘린더 작가 {month}",
+  "예스24 북토크 응모 {nextmonth}",
+  "채널예스 작가 북토크",
+  "소설가 북토크 알라딘 OR 예스24 출간 기념",
+  "시인 북토크 알라딘 OR 예스24",
+]
+urls = [
+  "https://www.aladin.co.kr/events/wevent_author.aspx",
+  "https://www.aladin.co.kr/m/mEventmain.aspx?eType=author",
+  "https://event.yes24.com/",
+  "https://m.yes24.com/yescalendar",
+]
+
+[[missions]]
+name = "온라인 북토크·강연"
+city = "온라인"
+queries = [
+  "온라인 북토크 줌 {month}",
+  "유튜브 라이브 북토크 작가 {month}",
+  "온라인 작가와의 만남 {month} 신청",
+  "줌 인문학 강연 {month}",
+  "온라인 철학 강의 {month} 신청",
+  "출판사 라이브 북토크 문학동네 OR 창비 OR 민음사 {month}",
+  "도서관 온라인 작가 강연 줌 {month}",
+]
+urls = []
 
 [[missions]]
 name = "서울 독립서점·출판사 북토크"
