@@ -283,7 +283,7 @@
       const u = data.meta && data.meta.updated_at;
       if (u) {
         const d = new Date(u);
-        $("#updated").textContent = `서울 · 청주 문학 · 글쓰기 · 철학 · 인문 강연 · ${d.getMonth() + 1}월 ${d.getDate()}일 업데이트`;
+        $("#updated").textContent = `서울 · 청주 · 온라인 문학 · 글쓰기 · 철학 · 인문 강연 · ${d.getMonth() + 1}월 ${d.getDate()}일 업데이트`;
       }
       render();
     })

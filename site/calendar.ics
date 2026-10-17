@@ -6,7 +6,7 @@ X-WR-CALNAME:북토크 캘린더
 X-WR-TIMEZONE:Asia/Seoul
 BEGIN:VEVENT
 UID:2d6c3527c3@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:김수영과 여름밤 — 옥상 시 낭독·필사
@@ -16,7 +16,7 @@ URL:https://munjang.or.kr/facilities/detail.es?mid=a70705000000&id=1244
 END:VEVENT
 BEGIN:VEVENT
 UID:d0d162394c@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261014T193000
 DTEND;TZID=Asia/Seoul:20261014T210000
 SUMMARY:명강의 Big10 — 이정모
@@ -26,7 +26,7 @@ URL:https://store.kyobobook.co.kr/culture/lecture-top-ten
 END:VEVENT
 BEGIN:VEVENT
 UID:68a3240941@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261015T193000
 DTEND;TZID=Asia/Seoul:20261015T213000
 SUMMARY:정보라 북토크 『한밤의 시간표』
@@ -36,7 +36,7 @@ URL:https://www.aladin.co.kr/events/wevent_author.aspx
 END:VEVENT
 BEGIN:VEVENT
 UID:5e1f58913e@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261016T100000
 DTEND;TZID=Asia/Seoul:20261016T213000
 SUMMARY:2026 서울와우북페스티벌 개막 (10/16~18)
@@ -46,7 +46,7 @@ URL:https://www.mcst.go.kr/site/s_culture/festival/festivalView.jsp?pSeq=11800
 END:VEVENT
 BEGIN:VEVENT
 UID:372cf0c207@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261016T150000
 DTEND;TZID=Asia/Seoul:20261016T170000
 SUMMARY:2인2색 지역작가 책담회 — 장문석
@@ -56,7 +56,7 @@ URL:https://www.gdtimes.kr/1223292
 END:VEVENT
 BEGIN:VEVENT
 UID:887d39489c@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261016T193000
 DTEND;TZID=Asia/Seoul:20261016T213000
 SUMMARY:작가힙톡 — 지웅배(우주먼지)
@@ -66,7 +66,7 @@ URL:https://lib.seoul.go.kr/
 END:VEVENT
 BEGIN:VEVENT
 UID:2946d6dfa6@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261017T140000
 DTEND;TZID=Asia/Seoul:20261017T153000
 SUMMARY:보라토크 — 이정우 ‘사람이란 무엇인가’
@@ -76,7 +76,7 @@ URL:https://store.kyobobook.co.kr/culture/bora-show/859
 END:VEVENT
 BEGIN:VEVENT
 UID:bb5906b71b@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261017T140000
 DTEND;TZID=Asia/Seoul:20261017T160000
 SUMMARY:김혜정 북토크 『오백 년째 열다섯 0』
@@ -86,7 +86,7 @@ URL:https://aladin.co.kr/events/wevent_author.aspx
 END:VEVENT
 BEGIN:VEVENT
 UID:ab5955f04a@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261017T150000
 DTEND;TZID=Asia/Seoul:20261017T170000
 SUMMARY:노원 야외도서관 ‘낭만보장’ — 김상근 북콘서트 ‘AI 시대\, 사람을 읽다’
@@ -96,7 +96,7 @@ URL:https://go.seoul.co.kr/news/newsView.php?id=20261007500125
 END:VEVENT
 BEGIN:VEVENT
 UID:2d467ab01d@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261017T160000
 DTEND;TZID=Asia/Seoul:20261017T170000
 SUMMARY:움직이는 서울형책방 ‘올오어낫싱’ — 장르소설 프로그램
@@ -106,7 +106,7 @@ URL:https://lib.seoul.go.kr/lecture/applyList
 END:VEVENT
 BEGIN:VEVENT
 UID:0dd45428d0@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:연희시음회 Vol.2 — 서윤빈 × 오산하 ‘포스트 아포칼립스’
@@ -116,7 +116,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:16b215bda0@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:현대로 보는 문학 — 상주작가와 독자 대담 (1회)
@@ -125,8 +125,28 @@ DESCRIPTION:최신 한국문학을 함께 읽고 문학관 상주작가와 자�
 URL:https://munjang.or.kr/facilities/detail.es?mid=a70705000000&id=1244
 END:VEVENT
 BEGIN:VEVENT
+UID:bcf4ce5fda@booktalk-calendar
+DTSTAMP:20261017T060114Z
+DTSTART;TZID=Asia/Seoul:20261018T130000
+DTEND;TZID=Asia/Seoul:20261018T150000
+SUMMARY:[클래스24] 천선란 『이끼숲』 북토크 with 한소범 기자
+LOCATION:서울 서울영화센터 7층 (을지로3가)
+DESCRIPTION:SF 소설가 천선란이 『이끼숲』의 세계와 쓰는 과정을 기자 한소범과 이야기한다.\n연사: 천선란\, 한소범\n『이끼숲』\n예스24 클래스24 선착순 모집\nhttps://www.yes24.com/Product/Search?query=%EB%B6%81%ED%86%A0%ED%81%AC
+URL:https://www.yes24.com/Product/Search?query=%EB%B6%81%ED%86%A0%ED%81%AC
+END:VEVENT
+BEGIN:VEVENT
+UID:8f3aa1cc64@booktalk-calendar
+DTSTAMP:20261017T060114Z
+DTSTART;TZID=Asia/Seoul:20261018T150000
+DTEND;TZID=Asia/Seoul:20261018T170000
+SUMMARY:[클래스24] 김초엽 『태양 아래 올리브』 북토크 with 서윤빈
+LOCATION:서울 서울영화센터 7층 (을지로3가)
+DESCRIPTION:김초엽 작가가 신작을 두고 소설가 서윤빈과 대담한다. 작가 둘이 나누는 창작 이야기.\n연사: 김초엽\, 서윤빈\n『태양 아래 올리브』\n예스24 클래스24에서 신청\nhttps://www.yes24.com/Product/Search?query=%EB%B6%81%ED%86%A0%ED%81%AC
+URL:https://www.yes24.com/Product/Search?query=%EB%B6%81%ED%86%A0%ED%81%AC
+END:VEVENT
+BEGIN:VEVENT
 UID:ac122fdb0a@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261018T150000
 DTEND;TZID=Asia/Seoul:20261018T160000
 SUMMARY:움직이는 서울형책방 ‘책의 기분’ — 시 수선 콜라주 워크숍
@@ -136,7 +156,7 @@ URL:https://lib.seoul.go.kr/lecture/applyList
 END:VEVENT
 BEGIN:VEVENT
 UID:f9e58d47bb@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:마스터피스 토크 — 현기영 다시 읽기
@@ -146,7 +166,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:3d1887f384@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:구병모 북토크 『파쇄』
@@ -156,7 +176,7 @@ URL:https://view.asiae.co.kr/article/2026090815170306871
 END:VEVENT
 BEGIN:VEVENT
 UID:1cea19e873@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261021T190000
 DTEND;TZID=Asia/Seoul:20261021T210000
 SUMMARY:퇴근길 스몰토크 ‘가을에 시작(詩作)하세요’ — 강원석 ‘어떻게 사세요’
@@ -166,7 +186,7 @@ URL:http://www.cctimes.kr/news/articleView.html?idxno=929890
 END:VEVENT
 BEGIN:VEVENT
 UID:e5b2445fc6@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:문학동네시인선 15주년 북토크 — 임유영 · 이기리 · 신이인
@@ -176,7 +196,7 @@ URL:https://www.kyosu.net/news/articleView.html?idxno=209922
 END:VEVENT
 BEGIN:VEVENT
 UID:cd1be275c0@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261022T190000
 DTEND;TZID=Asia/Seoul:20261022T210000
 SUMMARY:송길영 북토크 『시대예보: 수고인류의 시간』
@@ -185,8 +205,18 @@ DESCRIPTION:마인드 마이너 송길영이 신간 『시대예보: 수고인�
 URL:https://www.aladin.co.kr/events/wevent_author.aspx
 END:VEVENT
 BEGIN:VEVENT
+UID:97effeb406@booktalk-calendar
+DTSTAMP:20261017T060114Z
+DTSTART;TZID=Asia/Seoul:20261022T193000
+DTEND;TZID=Asia/Seoul:20261022T213000
+SUMMARY:김연수 × 한소범 북토크 『눈 내리는 삼일포』 출간 기념
+LOCATION:서울 알라딘 주최 (장소는 이벤트 페이지 확인)
+DESCRIPTION:아홉 편의 단편을 묶은 새 소설집을 두고 김연수 작가가 단편을 쓰는 일에 대해 이야기한다.\n연사: 김연수\, 한소범\n『눈 내리는 삼일포』\n알라딘 작가와의 만남 응모 (10.12~10.19)\nhttps://www.aladin.co.kr/events/wevent_author.aspx
+URL:https://www.aladin.co.kr/events/wevent_author.aspx
+END:VEVENT
+BEGIN:VEVENT
 UID:2d7e731cfb@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261022T193000
 DTEND;TZID=Asia/Seoul:20261022T213000
 SUMMARY:통섭의 광장 — 김상균 ‘두 번째 지능과 함께 진화하는 인류’
@@ -196,7 +226,7 @@ URL:https://www.krcom.co.kr/news/articleView.html?idxno=237037
 END:VEVENT
 BEGIN:VEVENT
 UID:a6ee9046d8@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261023T140000
 DTEND;TZID=Asia/Seoul:20261023T160000
 SUMMARY:2인2색 지역작가 책담회 — 김정태 수필가
@@ -206,7 +236,7 @@ URL:https://www.gdtimes.kr/1223292
 END:VEVENT
 BEGIN:VEVENT
 UID:22557f7c93@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261023T193000
 DTEND;TZID=Asia/Seoul:20261023T210000
 SUMMARY:보라토크 — 일라이자 리드
@@ -216,7 +246,7 @@ URL:https://store.kyobobook.co.kr/culture/bora-show
 END:VEVENT
 BEGIN:VEVENT
 UID:e08773b5f7@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261024T100000
 DTEND;TZID=Asia/Seoul:20261024T120000
 SUMMARY:제14회 충북교육도서관 북 페스티벌 개막
@@ -226,7 +256,7 @@ URL:https://www.cctimes.kr/news/articleView.html?idxno=929895
 END:VEVENT
 BEGIN:VEVENT
 UID:64cbac25fa@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261024T130000
 DTEND;TZID=Asia/Seoul:20261024T150000
 SUMMARY:강효미 북토크 『우리 반 오랑우탄』
@@ -236,7 +266,7 @@ URL:https://aladin.co.kr/events/wevent_author.aspx
 END:VEVENT
 BEGIN:VEVENT
 UID:14313635a0@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:북토크 — 은희경 『시간의 감촉』
@@ -246,7 +276,7 @@ URL:http://www.enewstoday.co.kr/news/articleView.html?idxno=2475327
 END:VEVENT
 BEGIN:VEVENT
 UID:e73f5644ca@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:마스터피스 토크 — 신달자 시인의 삶과 문학
@@ -256,7 +286,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:6a7257d5b2@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:강연 — 고명환 『독서의 기술』
@@ -266,7 +296,7 @@ URL:http://www.enewstoday.co.kr/news/articleView.html?idxno=2475327
 END:VEVENT
 BEGIN:VEVENT
 UID:f2f08ec3e9@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261027T190000
 DTEND;TZID=Asia/Seoul:20261027T210000
 SUMMARY:김지윤 × 집착서점(이강) 북토크 『호신술 클럽』
@@ -275,8 +305,18 @@ DESCRIPTION:『호신술 클럽』의 김지윤 작가와 집착서점 이강 �
 URL:https://www.aladin.co.kr/events/wevent_author.aspx
 END:VEVENT
 BEGIN:VEVENT
+UID:55324e19e9@booktalk-calendar
+DTSTAMP:20261017T060114Z
+DTSTART;TZID=Asia/Seoul:20261028T193000
+DTEND;TZID=Asia/Seoul:20261028T213000
+SUMMARY:김선우 × 이제야 북토크 『엄마가 떠나자 엄마가 많아졌다』
+LOCATION:서울 알라딘 주최 (장소는 이벤트 페이지 확인)
+DESCRIPTION:시인 김선우와 이제야가 상실과 돌봄을 쓰는 글에 대해 이야기한다.\n연사: 김선우\, 이제야\n『엄마가 떠나자 엄마가 많아졌다』\n알라딘 작가와의 만남 응모 (10.12~)\nhttps://www.aladin.co.kr/events/wevent_author.aspx
+URL:https://www.aladin.co.kr/events/wevent_author.aspx
+END:VEVENT
+BEGIN:VEVENT
 UID:06ae9ee6c4@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:성해나 북토크 『우리가 열 번을 나고 죽을 때』
@@ -285,8 +325,18 @@ DESCRIPTION:성해나 작가가 『우리가 열 번을 나고 죽을 때』를 
 URL:https://view.asiae.co.kr/article/2026090815170306871
 END:VEVENT
 BEGIN:VEVENT
+UID:b58ab01e09@booktalk-calendar
+DTSTAMP:20261017T060114Z
+DTSTART;TZID=Asia/Seoul:20261029T190000
+DTEND;TZID=Asia/Seoul:20261029T210000
+SUMMARY:소복이 북토크 『엄마가 도망갔다』
+LOCATION:서울 알라딘 주최 (장소는 이벤트 페이지 확인)
+DESCRIPTION:만화가 소복이가 자전적 이야기를 그림과 글로 옮기는 과정을 들려준다.\n연사: 소복이\n『엄마가 도망갔다』\n알라딘 작가와의 만남 응모 (10.12~10.28)\nhttps://www.aladin.co.kr/events/wevent_author.aspx
+URL:https://www.aladin.co.kr/events/wevent_author.aspx
+END:VEVENT
+BEGIN:VEVENT
 UID:8afc445d90@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261031T143000
 DTEND;TZID=Asia/Seoul:20261031T163000
 SUMMARY:책읽는청주 20주년 — 문유석 『나로 살 결심』
@@ -296,7 +346,7 @@ URL:https://www.krcom.co.kr/news/articleView.html?idxno=240112
 END:VEVENT
 BEGIN:VEVENT
 UID:871d92867a@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261102T140000
 DTEND;TZID=Asia/Seoul:20261102T160000
 SUMMARY:제2회 유네스코 세계 시 낭송대회 본선
@@ -306,7 +356,7 @@ URL:https://www.theteams.kr/activities/page/338012/lc
 END:VEVENT
 BEGIN:VEVENT
 UID:8ac6f1937b@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:편집자의 세 번 읽기 (1회) — 김준섭 편집자
@@ -316,7 +366,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:8b24ee87c1@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:퇴근길 스몰토크 — 도종환 시인
@@ -326,7 +376,7 @@ URL:http://www.cctimes.kr/news/articleView.html?idxno=929890
 END:VEVENT
 BEGIN:VEVENT
 UID:9c71792718@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261105T160000
 DTEND;TZID=Asia/Seoul:20261105T180000
 SUMMARY:학부대학 명사 특강 — 정세랑
@@ -336,7 +386,7 @@ URL:https://cls.snu.ac.kr/notice/?mod=document&uid=80366
 END:VEVENT
 BEGIN:VEVENT
 UID:7545745739@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;TZID=Asia/Seoul:20261105T193000
 DTEND;TZID=Asia/Seoul:20261105T213000
 SUMMARY:김윤경 북토크 『가르친다는 건 곧 사랑한다는 것』
@@ -346,7 +396,7 @@ URL:https://aladin.co.kr/events/wevent_author.aspx
 END:VEVENT
 BEGIN:VEVENT
 UID:7bf5ef648c@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:편집자의 세 번 읽기 (2회) — 김준섭 편집자
@@ -356,7 +406,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:074f553bfb@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:편집자의 세 번 읽기 (3회) — 김준섭 편집자
@@ -366,7 +416,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:d8aef4b925@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:서로의 독자가 되는 법 — 정지아 × 김기창
@@ -376,7 +426,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:a41e46bcda@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:서로의 독자가 되는 법 — 강화길 × 임솔아\, 여성 서사
@@ -386,7 +436,7 @@ URL:https://www.newscj.com/news/articleView.html?idxno=3438999
 END:VEVENT
 BEGIN:VEVENT
 UID:f1481b4cbb@booktalk-calendar
-DTSTAMP:20261016T204605Z
+DTSTAMP:20261017T060114Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:문학으로 모이는 방법들 2026 라운드테이블 — ‘한국문학\, 위기를 대하는 태도’
