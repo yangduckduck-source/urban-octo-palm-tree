@@ -1,14 +1,29 @@
 {
  "meta": {
-  "updated_at": "2026-10-17T15:01+09:00",
+  "updated_at": "2026-10-18T08:53+09:00",
   "runs": [
    {
     "mission": "예스24·알라딘 작가와의 만남",
-    "found": 5,
-    "kept": 5
+    "found": 3,
+    "kept": 3
+   },
+   {
+    "mission": "서울 독립서점·출판사 북토크",
+    "found": 3,
+    "kept": 3
+   },
+   {
+    "mission": "서울 서점 북토크",
+    "found": 3,
+    "kept": 3
+   },
+   {
+    "mission": "서울 문학관·문학재단",
+    "found": 2,
+    "kept": 2
    }
   ],
-  "count": 44
+  "count": 48
  },
  "events": [
   {
@@ -544,7 +559,7 @@
    "end": "",
    "price_note": "",
    "first_seen": "2026-10-09",
-   "last_seen": "2026-10-09",
+   "last_seen": "2026-10-18",
    "id": "3d1887f384",
    "score": 80
   },
@@ -609,12 +624,12 @@
    "book": "",
    "price_note": "",
    "first_seen": "2026-10-09",
-   "last_seen": "2026-10-09",
+   "last_seen": "2026-10-18",
    "id": "e5b2445fc6",
    "score": 80
   },
   {
-   "source": "서울 서점 북토크",
+   "source": "예스24·알라딘 작가와의 만남",
    "title": "송길영 북토크 『시대예보: 수고인류의 시간』",
    "date": "2026-10-22",
    "start": "19:00",
@@ -633,16 +648,16 @@
    "festival": "",
    "price": "미확인",
    "price_note": "",
-   "registration": "알라딘 작가와의 만남 페이지에서 10월 18일까지 신청",
-   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
-   "summary": "마인드 마이너 송길영이 신간 『시대예보: 수고인류의 시간』으로 변화하는 노동과 삶의 방식을 읽어 내는 북토크.",
-   "confidence": "보도",
-   "relevance": 0.45,
-   "speaker_weight": 0.6,
+   "registration": "알라딘 작가와의 만남 페이지에서 신청 (9/29~10/18)",
+   "url": "https://aladin.co.kr/events/wevent_author.aspx",
+   "summary": "송길영 작가가 신간 『시대예보: 수고인류의 시간』을 소개하는 알라딘 북토크.",
+   "confidence": "확정",
+   "relevance": 0.5,
+   "speaker_weight": 0.75,
    "first_seen": "2026-10-10",
-   "last_seen": "2026-10-10",
+   "last_seen": "2026-10-18",
    "id": "cd1be275c0",
-   "score": 50
+   "score": 56
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
@@ -709,6 +724,37 @@
    "score": 49
   },
   {
+   "source": "서울 문학관·문학재단",
+   "title": "힙독클럽 작가와의 만남 9회 — 변지영 작가",
+   "date": "2026-10-22",
+   "start": "20:00",
+   "end": "21:00",
+   "city": "온라인",
+   "venue": "줌",
+   "speakers": [
+    "변지영"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "누구나",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "10/8~10/21 모집, 300명",
+   "url": "https://maily.so/hipdokclub/posts/w6ovpm4pok5",
+   "summary": "서울책보고와 연계한 독서모임 힙독클럽의 온라인 작가와의 만남. 임상·상담심리학 박사인 변지영 작가가 나온다.",
+   "confidence": "보도",
+   "relevance": 0.5,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "id": "aa7a0e3a27",
+   "score": 50
+  },
+  {
    "title": "2인2색 지역작가 책담회 — 김정태 수필가",
    "date": "2026-10-23",
    "start": "14:00",
@@ -739,6 +785,38 @@
    "last_seen": "2026-10-17",
    "id": "a6ee9046d8",
    "score": 75
+  },
+  {
+   "source": "서울 문학관·문학재단",
+   "title": "2026 서울문학기행 문학강연 — 은희경 『또 못 버린 물건들』과 나의 인생 아카이브",
+   "date": "2026-10-23",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "청담동복합문화센터 (강남구립청담도서관)",
+   "speakers": [
+    "은희경"
+   ],
+   "book": "또 못 버린 물건들",
+   "categories": [
+    "문학",
+    "글쓰기"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "2026 서울문학기행",
+   "price": "무료",
+   "price_note": "",
+   "registration": "강남구립도서관 누리집에서 신청 (10/9~10/22)",
+   "url": "https://mediahub.seoul.go.kr/archives/2018550",
+   "summary": "서울시 ‘2026 서울문학기행’ 문학강연. 은희경 작가가 『또 못 버린 물건들』을 바탕으로, 물건과 기억을 모아 하나뿐인 자신을 만드는 ‘인생 아카이브’를 이야기한다.",
+   "confidence": "확정",
+   "relevance": 0.85,
+   "speaker_weight": 0.9,
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "id": "0bb982ddaa",
+   "score": 82
   },
   {
    "title": "보라토크 — 일라이자 리드",
@@ -824,13 +902,13 @@
    "registration": "알라딘 작가와의 만남 페이지에서 신청 (10/2~10/23)",
    "url": "https://aladin.co.kr/events/wevent_author.aspx",
    "summary": "동화작가 강효미가 『우리 반 오랑우탄』을 들고 어린이 독자와 만나는 북토크.",
-   "confidence": "보도",
+   "confidence": "확정",
    "relevance": 0.25,
    "speaker_weight": 0.5,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-17",
+   "last_seen": "2026-10-18",
    "id": "64cbac25fa",
-   "score": 14
+   "score": 18
   },
   {
    "title": "북토크 — 은희경 『시간의 감촉』",
@@ -928,7 +1006,7 @@
    "score": 48
   },
   {
-   "source": "서울 서점 북토크",
+   "source": "예스24·알라딘 작가와의 만남",
    "title": "김지윤 × 집착서점(이강) 북토크 『호신술 클럽』",
    "date": "2026-10-27",
    "start": "19:00",
@@ -943,21 +1021,55 @@
    "categories": [
     "문학"
    ],
-   "format": "대담",
-   "audience": "누구나",
+   "format": "북토크",
+   "audience": "성인",
    "festival": "",
    "price": "미확인",
    "price_note": "",
-   "registration": "알라딘 작가와의 만남 페이지에서 10월 23일까지 신청",
-   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
-   "summary": "『호신술 클럽』의 김지윤 작가와 집착서점 이강 대표가 나누는 북토크.",
-   "confidence": "보도",
-   "relevance": 0.55,
-   "speaker_weight": 0.45,
+   "registration": "알라딘 작가와의 만남 페이지에서 신청 (~10/23)",
+   "url": "https://aladin.co.kr/events/wevent_author.aspx",
+   "summary": "김지윤 작가와 집착서점 이강이 『호신술 클럽』을 두고 이야기하는 알라딘 북토크.",
+   "confidence": "확정",
+   "relevance": 0.75,
+   "speaker_weight": 0.5,
    "first_seen": "2026-10-10",
-   "last_seen": "2026-10-10",
+   "last_seen": "2026-10-18",
    "id": "f2f08ec3e9",
-   "score": 60
+   "score": 68
+  },
+  {
+   "source": "서울 서점 북토크",
+   "title": "교보문고 2027 트렌드 프리뷰 — 전미영 · 김덕진 · 김광석 · 송길영",
+   "date": "2026-10-28",
+   "start": "13:20",
+   "end": "18:00",
+   "city": "서울",
+   "venue": "건설회관 (강남구)",
+   "speakers": [
+    "전미영",
+    "김덕진",
+    "김광석",
+    "송길영"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교보문고 누리집에서 신청, 600명",
+   "url": "https://www.fnnews.com/news/202610060920255153",
+   "summary": "교보문고가 여는 2027 트렌드 전망 강연. 주제는 ‘2027 시장은 어디로 움직이는가’이고, 송길영은 ‘사라지는 전문성, 진화하는 인간’을 이야기한다.",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.7,
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "id": "96af42614a",
+   "score": 46
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
@@ -1019,7 +1131,7 @@
    "end": "",
    "price_note": "",
    "first_seen": "2026-10-09",
-   "last_seen": "2026-10-09",
+   "last_seen": "2026-10-18",
    "id": "06ae9ee6c4",
    "score": 80
   },
@@ -1053,6 +1165,37 @@
    "last_seen": "2026-10-17",
    "id": "b58ab01e09",
    "score": 67
+  },
+  {
+   "source": "서울 서점 북토크",
+   "title": "보라키즈 — 김경일 편",
+   "date": "2026-10-31",
+   "start": "14:00",
+   "end": "15:30",
+   "city": "서울",
+   "venue": "광화문 교보빌딩 23층 대산홀",
+   "speakers": [
+    "김경일"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "가족",
+   "festival": "",
+   "price": "유료",
+   "price_note": "",
+   "registration": "교보문고 문화공간 페이지",
+   "url": "https://store.kyobobook.co.kr/culture/bora-show",
+   "summary": "교보문고의 어린이·가족 강연 시리즈 보라키즈, 인지심리학자 김경일 편. 교보 강연 목록을 요약한 검색 결과에만 나와 추정으로 적는다.",
+   "confidence": "추정",
+   "relevance": 0.25,
+   "speaker_weight": 0.6,
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "id": "98b853dde5",
+   "score": 24
   },
   {
    "title": "책읽는청주 20주년 — 문유석 『나로 살 결심』",
@@ -1211,7 +1354,7 @@
    "score": 64
   },
   {
-   "source": "서울 서점 북토크",
+   "source": "예스24·알라딘 작가와의 만남",
    "title": "김윤경 북토크 『가르친다는 건 곧 사랑한다는 것』",
    "date": "2026-11-05",
    "start": "19:30",
@@ -1232,14 +1375,14 @@
    "price_note": "",
    "registration": "알라딘 작가와의 만남 페이지에서 신청 (10/1~11/1)",
    "url": "https://aladin.co.kr/events/wevent_author.aspx",
-   "summary": "가르치는 일과 사랑을 다룬 에세이를 쓴 김윤경 작가의 북토크.",
-   "confidence": "보도",
+   "summary": "가르치는 일과 사랑을 다룬 에세이의 김윤경 작가 북토크.",
+   "confidence": "확정",
    "relevance": 0.45,
    "speaker_weight": 0.5,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-17",
+   "last_seen": "2026-10-18",
    "id": "7545745739",
-   "score": 51
+   "score": 54
   },
   {
    "title": "편집자의 세 번 읽기 (2회) — 김준섭 편집자",
