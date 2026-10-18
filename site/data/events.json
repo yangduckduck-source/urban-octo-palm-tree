@@ -1,24 +1,19 @@
 {
  "meta": {
-  "updated_at": "2026-10-18T18:13+09:00",
+  "updated_at": "2026-10-19T08:52+09:00",
   "runs": [
+   {
+    "mission": "예스24·알라딘 작가와의 만남",
+    "found": 1,
+    "kept": 1
+   },
    {
     "mission": "서울 서점 북토크",
     "found": 2,
     "kept": 2
-   },
-   {
-    "mission": "서울 철학·인문 강좌",
-    "found": 3,
-    "kept": 3
-   },
-   {
-    "mission": "서울 문학관·문학재단",
-    "found": 1,
-    "kept": 1
    }
   ],
-  "count": 53
+  "count": 54
  },
  "events": [
   {
@@ -1415,8 +1410,10 @@
    "end": "",
    "city": "서울",
    "venue": "금천구립독산도서관",
-   "speakers": [],
-   "book": "",
+   "speakers": [
+    "최도영"
+   ],
+   "book": "레기, 내 동생",
    "categories": [
     "문학"
    ],
@@ -1434,9 +1431,40 @@
    "url": "https://www.newswire.co.kr/newsRead.php?no=1044676",
    "summary": "금천구립독산도서관이 초등학생 독자를 위해 아동문학 작가 4명을 초청하는 ‘가을밤 작가 힙톡’ 시리즈의 11월 회차.",
    "first_seen": "2026-10-18",
-   "last_seen": "2026-10-18",
+   "last_seen": "2026-10-19",
    "id": "a6ca74478c",
    "score": 12
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『나를 사랑하는 데에도 연습이 필요해』 임가은 저자 북토크",
+   "date": "2026-11-10",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "예스24 강서NC점",
+   "speakers": [
+    "임가은"
+   ],
+   "book": "나를 사랑하는 데에도 연습이 필요해",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "누구나",
+   "festival": "",
+   "price": "무료",
+   "price_note": "클래스24 목록에 0원으로 표시",
+   "registration": "예스24 클래스24에서 신청",
+   "url": "https://www.yes24.com/Product/Class",
+   "summary": "『거실 육아』를 쓴 임가은 작가가 신간 『나를 사랑하는 데에도 연습이 필요해』(그림 백주현)를 들고 여는 클래스24 북토크.",
+   "confidence": "추정",
+   "relevance": 0.35,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19",
+   "id": "07ee1698ef",
+   "score": 35
   },
   {
    "title": "편집자의 세 번 읽기 (2회) — 김준섭 편집자",
@@ -1537,8 +1565,10 @@
    "end": "",
    "city": "서울",
    "venue": "금천구립독산도서관",
-   "speakers": [],
-   "book": "",
+   "speakers": [
+    "최지혜"
+   ],
+   "book": "도서관 고양이 두 번째 이야기",
    "categories": [
     "문학"
    ],
@@ -1556,7 +1586,7 @@
    "url": "https://www.specialtimes.co.kr/news/articleView.html?idxno=474158",
    "summary": "금천구립독산도서관의 초등학생 대상 아동문학 작가 북토크 ‘가을밤 작가 힙톡’ 마지막 회차.",
    "first_seen": "2026-10-18",
-   "last_seen": "2026-10-18",
+   "last_seen": "2026-10-19",
    "id": "a5d1877c27",
    "score": 12
   },
