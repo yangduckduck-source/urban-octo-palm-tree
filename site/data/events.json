@@ -1,29 +1,24 @@
 {
  "meta": {
-  "updated_at": "2026-10-18T08:53+09:00",
+  "updated_at": "2026-10-18T18:13+09:00",
   "runs": [
    {
-    "mission": "예스24·알라딘 작가와의 만남",
-    "found": 3,
-    "kept": 3
-   },
-   {
-    "mission": "서울 독립서점·출판사 북토크",
-    "found": 3,
-    "kept": 3
-   },
-   {
     "mission": "서울 서점 북토크",
+    "found": 2,
+    "kept": 2
+   },
+   {
+    "mission": "서울 철학·인문 강좌",
     "found": 3,
     "kept": 3
    },
    {
     "mission": "서울 문학관·문학재단",
-    "found": 2,
-    "kept": 2
+    "found": 1,
+    "kept": 1
    }
   ],
-  "count": 48
+  "count": 53
  },
  "events": [
   {
@@ -564,6 +559,35 @@
    "score": 80
   },
   {
+   "source": "서울 철학·인문 강좌",
+   "start": "10:30",
+   "end": "12:30",
+   "city": "서울",
+   "venue": "강서아트리움 (강서구 가로공원로 195)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강좌",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "강서문화원 문의",
+   "url": "https://www.heraldk.com/article/2026021214020220252",
+   "confidence": "추정",
+   "relevance": 0.4,
+   "speaker_weight": 0.3,
+   "title": "2026 강서 문화 아카데미 — 10월 강좌",
+   "date": "2026-10-21",
+   "summary": "강서문화원이 3~12월 매월 셋째 주 수요일에 여는 인문학 강좌의 10월 회차. 날짜는 운영 규칙으로 추정한 것이고, 주제와 강사는 아직 알려지지 않았다.",
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "id": "905c0f75d7",
+   "score": 36
+  },
+  {
    "title": "퇴근길 스몰토크 ‘가을에 시작(詩作)하세요’ — 강원석 ‘어떻게 사세요’",
    "date": "2026-10-21",
    "start": "19:00",
@@ -732,7 +756,8 @@
    "city": "온라인",
    "venue": "줌",
    "speakers": [
-    "변지영"
+    "변지영",
+    "허희"
    ],
    "book": "",
    "categories": [
@@ -743,16 +768,16 @@
    "festival": "",
    "price": "미확인",
    "price_note": "",
-   "registration": "10/8~10/21 모집, 300명",
+   "registration": "힙독클럽 뉴스레터 신청 링크 (10/8 10:00~10/21 17:00), 300명",
    "url": "https://maily.so/hipdokclub/posts/w6ovpm4pok5",
-   "summary": "서울책보고와 연계한 독서모임 힙독클럽의 온라인 작가와의 만남. 임상·상담심리학 박사인 변지영 작가가 나온다.",
-   "confidence": "보도",
+   "summary": "힙독클럽의 온라인 작가와의 만남. 변지영 작가가 '[본캐 vs 부캐] 우리는 왜 다른 모습의 나를 만들게 될까'를 주제로 이야기하고, 허희 문학평론가가 진행한다.",
+   "confidence": "확정",
    "relevance": 0.5,
    "speaker_weight": 0.5,
    "first_seen": "2026-10-18",
    "last_seen": "2026-10-18",
    "id": "aa7a0e3a27",
-   "score": 50
+   "score": 55
   },
   {
    "title": "2인2색 지역작가 책담회 — 김정태 수필가",
@@ -1385,6 +1410,35 @@
    "score": 54
   },
   {
+   "source": "서울 서점 북토크",
+   "start": "17:30",
+   "end": "",
+   "city": "서울",
+   "venue": "금천구립독산도서관",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "어린이",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "주제도서 증정",
+   "registration": "금천구립도서관 누리집 프로그램 신청(독산)에서 회차별 선착순, 25명",
+   "confidence": "보도",
+   "relevance": 0.25,
+   "speaker_weight": 0.3,
+   "title": "독산도서관 ‘가을밤 작가 힙톡’ — 아동문학 작가 북토크 (11월 6일)",
+   "date": "2026-11-06",
+   "url": "https://www.newswire.co.kr/newsRead.php?no=1044676",
+   "summary": "금천구립독산도서관이 초등학생 독자를 위해 아동문학 작가 4명을 초청하는 ‘가을밤 작가 힙톡’ 시리즈의 11월 회차.",
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "id": "a6ca74478c",
+   "score": 12
+  },
+  {
    "title": "편집자의 세 번 읽기 (2회) — 김준섭 편집자",
    "date": "2026-11-11",
    "start": "",
@@ -1417,6 +1471,35 @@
    "score": 80
   },
   {
+   "source": "서울 철학·인문 강좌",
+   "start": "10:30",
+   "end": "12:30",
+   "city": "서울",
+   "venue": "강서아트리움 (강서구 가로공원로 195)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강좌",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "강서문화원 문의",
+   "url": "https://www.heraldk.com/article/2026021214020220252",
+   "confidence": "추정",
+   "relevance": 0.4,
+   "speaker_weight": 0.3,
+   "title": "2026 강서 문화 아카데미 — 11월 강좌",
+   "date": "2026-11-18",
+   "summary": "강서문화원이 3~12월 매월 셋째 주 수요일에 여는 인문학 강좌의 11월 회차. 날짜는 운영 규칙으로 추정한 것이고, 주제와 강사는 아직 알려지지 않았다.",
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "id": "f5e4d08aec",
+   "score": 36
+  },
+  {
    "title": "편집자의 세 번 읽기 (3회) — 김준섭 편집자",
    "date": "2026-11-18",
    "start": "",
@@ -1447,6 +1530,35 @@
    "last_seen": "2026-10-09",
    "id": "074f553bfb",
    "score": 80
+  },
+  {
+   "source": "서울 서점 북토크",
+   "start": "17:30",
+   "end": "",
+   "city": "서울",
+   "venue": "금천구립독산도서관",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "어린이",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "주제도서 증정",
+   "registration": "금천구립도서관 누리집 프로그램 신청(독산)에서 회차별 선착순, 25명",
+   "confidence": "보도",
+   "relevance": 0.25,
+   "speaker_weight": 0.3,
+   "title": "독산도서관 ‘가을밤 작가 힙톡’ — 아동문학 작가 북토크 (11월 20일)",
+   "date": "2026-11-20",
+   "url": "https://www.specialtimes.co.kr/news/articleView.html?idxno=474158",
+   "summary": "금천구립독산도서관의 초등학생 대상 아동문학 작가 북토크 ‘가을밤 작가 힙톡’ 마지막 회차.",
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "id": "a5d1877c27",
+   "score": 12
   },
   {
    "title": "서로의 독자가 되는 법 — 정지아 × 김기창",
@@ -1547,6 +1659,35 @@
    "last_seen": "2026-10-17",
    "id": "f1481b4cbb",
    "score": 75
+  },
+  {
+   "source": "서울 철학·인문 강좌",
+   "start": "10:30",
+   "end": "12:30",
+   "city": "서울",
+   "venue": "강서아트리움 (강서구 가로공원로 195)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강좌",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "강서문화원 문의",
+   "url": "https://www.heraldk.com/article/2026021214020220252",
+   "confidence": "추정",
+   "relevance": 0.4,
+   "speaker_weight": 0.3,
+   "title": "2026 강서 문화 아카데미 — 12월 강좌",
+   "date": "2026-12-16",
+   "summary": "강서문화원이 3~12월 매월 셋째 주 수요일에 여는 인문학 강좌의 12월 회차. 날짜는 운영 규칙으로 추정한 것이고, 주제와 강사는 아직 알려지지 않았다.",
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "id": "3cd4adbbbe",
+   "score": 36
   }
  ]
 }
