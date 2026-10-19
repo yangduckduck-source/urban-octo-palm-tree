@@ -1,19 +1,14 @@
 {
  "meta": {
-  "updated_at": "2026-10-19T08:52+09:00",
+  "updated_at": "2026-10-19T18:12+09:00",
   "runs": [
    {
     "mission": "예스24·알라딘 작가와의 만남",
-    "found": 1,
-    "kept": 1
-   },
-   {
-    "mission": "서울 서점 북토크",
     "found": 2,
     "kept": 2
    }
   ],
-  "count": 54
+  "count": 55
  },
  "events": [
   {
@@ -1437,6 +1432,37 @@
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『실전 시황 트레이딩』 이진호 북토크",
+   "date": "2026-11-07",
+   "start": "14:00",
+   "end": "",
+   "city": "서울",
+   "venue": "포스코타워 역삼 3층 이벤트홀",
+   "speakers": [
+    "이진호"
+   ],
+   "book": "실전 시황 트레이딩",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "유료",
+   "price_note": "10,000원",
+   "registration": "예스24 클래스24에서 신청 (10/13~11/5)",
+   "url": "https://www.yes24.com/Product/Class",
+   "summary": "주식 트레이딩서 『실전 시황 트레이딩』의 이진호(디앤서) 저자가 여는 클래스24 북토크. 투자·재테크 주제.",
+   "confidence": "확정",
+   "relevance": 0.1,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19",
+   "id": "e397af0ce5",
+   "score": 41
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
    "title": "[클래스24] 『나를 사랑하는 데에도 연습이 필요해』 임가은 저자 북토크",
    "date": "2026-11-10",
    "start": "",
@@ -1454,17 +1480,17 @@
    "audience": "누구나",
    "festival": "",
    "price": "무료",
-   "price_note": "클래스24 목록에 0원으로 표시",
-   "registration": "예스24 클래스24에서 신청",
+   "price_note": "참가비 0원 (도서+티켓 세트 23,500원 별도), 행사 3일 전 안내 문자",
+   "registration": "예스24 클래스24에서 신청 (모집 중)",
    "url": "https://www.yes24.com/Product/Class",
    "summary": "『거실 육아』를 쓴 임가은 작가가 신간 『나를 사랑하는 데에도 연습이 필요해』(그림 백주현)를 들고 여는 클래스24 북토크.",
-   "confidence": "추정",
+   "confidence": "확정",
    "relevance": 0.35,
    "speaker_weight": 0.4,
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19",
    "id": "07ee1698ef",
-   "score": 35
+   "score": 46
   },
   {
    "title": "편집자의 세 번 읽기 (2회) — 김준섭 편집자",
