@@ -1,14 +1,19 @@
 {
  "meta": {
-  "updated_at": "2026-10-19T18:12+09:00",
+  "updated_at": "2026-10-20T08:52+09:00",
   "runs": [
    {
     "mission": "예스24·알라딘 작가와의 만남",
     "found": 2,
     "kept": 2
+   },
+   {
+    "mission": "서울 도서관 강연",
+    "found": 2,
+    "kept": 2
    }
   ],
-  "count": 55
+  "count": 59
  },
  "events": [
   {
@@ -1151,6 +1156,35 @@
    "score": 80
   },
   {
+   "source": "서울 도서관 강연",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "제기동감초마을현진건기념도서관 (동대문구)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강좌",
+   "audience": "성인",
+   "festival": "",
+   "price": "무료",
+   "price_note": "",
+   "registration": "하반기 수강 신청은 8/6~8/25에 마감 (동대문구 통합예약)",
+   "url": "https://www.ddm.go.kr/reserve/selectLctreList.do?key=3249",
+   "confidence": "추정",
+   "relevance": 0.4,
+   "speaker_weight": 0.2,
+   "title": "영화로운 인문산책 (2026 하반기) — 10월 강좌",
+   "date": "2026-10-28",
+   "summary": "현진건기념도서관이 8~12월 매월 마지막 수요일에 여는 영화와 인문학 강좌의 10월 회차. 날짜는 운영 규칙으로 추정했다.",
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20",
+   "id": "54bbdfe5d4",
+   "score": 33
+  },
+  {
    "source": "예스24·알라딘 작가와의 만남",
    "title": "소복이 북토크 『엄마가 도망갔다』",
    "date": "2026-10-29",
@@ -1463,6 +1497,37 @@
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 이정모 작가 북토크",
+   "date": "2026-11-07",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "포스코타워 역삼 3층 이벤트홀",
+   "speakers": [
+    "이정모"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "누구나",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "예스24 클래스24 (모집 마감 표시)",
+   "url": "https://www.yes24.com/Product/Class",
+   "summary": "과학 커뮤니케이터 이정모 전 관장의 클래스24 북토크. 클래스24 목록 스니펫에만 나와 추정으로 적는다.",
+   "confidence": "추정",
+   "relevance": 0.3,
+   "speaker_weight": 0.6,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20",
+   "id": "6873b1c7f2",
+   "score": 37
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
    "title": "[클래스24] 『나를 사랑하는 데에도 연습이 필요해』 임가은 저자 북토크",
    "date": "2026-11-10",
    "start": "",
@@ -1523,6 +1588,37 @@
    "last_seen": "2026-10-09",
    "id": "7bf5ef648c",
    "score": 80
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『쏘쿨의 구축명품 아파트 내집마련』 쏘쿨 저자 온라인 북토크 4회차",
+   "date": "2026-11-12",
+   "start": "",
+   "end": "",
+   "city": "온라인",
+   "venue": "유튜브 라이브",
+   "speakers": [
+    "쏘쿨"
+   ],
+   "book": "쏘쿨의 구축명품 아파트 내집마련",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "예스24 클래스24에서 신청 (10/19~11/10, 모집 예정)",
+   "url": "https://www.yes24.com/Product/Class",
+   "summary": "부동산 내집마련서 저자 쏘쿨이 유튜브 라이브로 여는 클래스24 온라인 북토크 4회차. 재테크 주제.",
+   "confidence": "추정",
+   "relevance": 0.1,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20",
+   "id": "864de5cf08",
+   "score": 28
   },
   {
    "source": "서울 철학·인문 강좌",
@@ -1615,6 +1711,35 @@
    "last_seen": "2026-10-19",
    "id": "a5d1877c27",
    "score": 12
+  },
+  {
+   "source": "서울 도서관 강연",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "제기동감초마을현진건기념도서관 (동대문구)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강좌",
+   "audience": "성인",
+   "festival": "",
+   "price": "무료",
+   "price_note": "",
+   "registration": "하반기 수강 신청은 8/6~8/25에 마감 (동대문구 통합예약)",
+   "url": "https://www.ddm.go.kr/reserve/selectLctreList.do?key=3249",
+   "confidence": "추정",
+   "relevance": 0.4,
+   "speaker_weight": 0.2,
+   "title": "영화로운 인문산책 (2026 하반기) — 11월 강좌",
+   "date": "2026-11-25",
+   "summary": "현진건기념도서관이 8~12월 매월 마지막 수요일에 여는 영화와 인문학 강좌의 11월 회차. 날짜는 운영 규칙으로 추정했다.",
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20",
+   "id": "2a383f416d",
+   "score": 33
   },
   {
    "title": "서로의 독자가 되는 법 — 정지아 × 김기창",
