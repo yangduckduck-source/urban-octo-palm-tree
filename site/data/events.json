@@ -1,18 +1,7 @@
 {
  "meta": {
-  "updated_at": "2026-10-20T08:52+09:00",
-  "runs": [
-   {
-    "mission": "예스24·알라딘 작가와의 만남",
-    "found": 2,
-    "kept": 2
-   },
-   {
-    "mission": "서울 도서관 강연",
-    "found": 2,
-    "kept": 2
-   }
-  ],
+  "updated_at": "2026-10-20T18:13+09:00",
+  "runs": [],
   "count": 59
  },
  "events": [
