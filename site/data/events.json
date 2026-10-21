@@ -1,14 +1,19 @@
 {
  "meta": {
-  "updated_at": "2026-10-21T18:13+09:00",
+  "updated_at": "2026-10-22T08:51+09:00",
   "runs": [
    {
     "mission": "예스24·알라딘 작가와의 만남",
     "found": 1,
     "kept": 1
+   },
+   {
+    "mission": "서울 서점 북토크",
+    "found": 1,
+    "kept": 1
    }
   ],
-  "count": 60
+  "count": 62
  },
  "events": [
   {
@@ -1303,6 +1308,38 @@
    "score": 54
   },
   {
+   "source": "서울 서점 북토크",
+   "title": "2026 세계작가와의 대화 — 데이먼 갤것 × 박혜진 ‘마음과 마음을 잇는 마법: 책의 목소리’",
+   "date": "2026-11-03",
+   "start": "19:00",
+   "end": "21:00",
+   "city": "서울",
+   "venue": "광화문 교보빌딩 23층 대산홀",
+   "speakers": [
+    "데이먼 갤것",
+    "박혜진"
+   ],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "대담",
+   "audience": "누구나",
+   "festival": "",
+   "price": "무료",
+   "price_note": "120명, 1인 2매, 한·영 동시통역",
+   "registration": "교보문고·대산문화재단 누리집에서 선착순 사전 신청 (보도상 10/26 마감)",
+   "url": "https://store.kyobobook.co.kr/culture/classic-list",
+   "summary": "대산문화재단과 교보문고가 부커상 수상 작가인 남아공 소설가 데이먼 갤것을 초청한다. 해외문학 편집자 박혜진과 ‘책의 목소리’를 주제로 대담한다.",
+   "confidence": "확정",
+   "relevance": 0.9,
+   "speaker_weight": 0.95,
+   "first_seen": "2026-10-22",
+   "last_seen": "2026-10-22",
+   "id": "e1c20291d2",
+   "score": 82
+  },
+  {
    "title": "편집자의 세 번 읽기 (1회) — 김준섭 편집자",
    "date": "2026-11-04",
    "start": "",
@@ -1645,6 +1682,37 @@
    "last_seen": "2026-10-20",
    "id": "864de5cf08",
    "score": 28
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『매일 쓰는 문장이 나를 만든다』 한석준 저자 북토크",
+   "date": "2026-11-17",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "제이드409 (지하2층) — 소재지 미확인",
+   "speakers": [
+    "한석준"
+   ],
+   "book": "매일 쓰는 문장이 나를 만든다",
+   "categories": [
+    "글쓰기"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "유료",
+   "price_note": "클래스24 표기 5,000원",
+   "registration": "예스24 클래스24에서 신청 (10/20~11/15)",
+   "url": "https://www.yes24.com/Product/Class",
+   "summary": "아나운서 출신 한석준이 신간 『매일 쓰는 문장이 나를 만든다』(인플루엔셜)를 들고 매일 쓰는 습관과 문장 다듬기를 이야기하는 클래스24 북토크. 장소의 도시는 확인되지 않아 서울로 추정했다.",
+   "confidence": "추정",
+   "relevance": 0.8,
+   "speaker_weight": 0.6,
+   "first_seen": "2026-10-22",
+   "last_seen": "2026-10-22",
+   "id": "99216f5572",
+   "score": 64
   },
   {
    "source": "서울 철학·인문 강좌",
