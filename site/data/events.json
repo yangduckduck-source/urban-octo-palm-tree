@@ -1,8 +1,14 @@
 {
  "meta": {
-  "updated_at": "2026-10-21T08:51+09:00",
-  "runs": [],
-  "count": 59
+  "updated_at": "2026-10-21T18:13+09:00",
+  "runs": [
+   {
+    "mission": "예스24·알라딘 작가와의 만남",
+    "found": 1,
+    "kept": 1
+   }
+  ],
+  "count": 60
  },
  "events": [
   {
@@ -1452,6 +1458,37 @@
    "last_seen": "2026-10-19",
    "id": "a6ca74478c",
    "score": 12
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『뜨개질하는 할머니가 되고 싶어』 김재경 저자 북토크",
+   "date": "2026-11-06",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "바늘이야기 연희점 4층",
+   "speakers": [
+    "김재경"
+   ],
+   "book": "뜨개질하는 할머니가 되고 싶어",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "예스24 클래스24에서 신청 (10/20~11/4, 모집 중)",
+   "url": "https://www.yes24.com/Product/Class",
+   "summary": "에세이 『뜨개질하는 할머니가 되고 싶어』(몽스북)의 김재경 저자가 뜨개 공방 바늘이야기 연희점에서 독자를 만나는 클래스24 북토크.",
+   "confidence": "확정",
+   "relevance": 0.4,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "id": "f1a5e06b08",
+   "score": 49
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
