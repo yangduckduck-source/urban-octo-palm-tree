@@ -1,8 +1,19 @@
 {
  "meta": {
-  "updated_at": "2026-10-23T08:52+09:00",
-  "runs": [],
-  "count": 62
+  "updated_at": "2026-10-23T18:15+09:00",
+  "runs": [
+   {
+    "mission": "예스24·알라딘 작가와의 만남",
+    "found": 1,
+    "kept": 1
+   },
+   {
+    "mission": "서울 철학·인문 강좌",
+    "found": 1,
+    "kept": 1
+   }
+  ],
+  "count": 64
  },
  "events": [
   {
@@ -1518,6 +1529,37 @@
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『토깽이 아줌마의 계절이 드는 집』 김정은 저자 줌 강연",
+   "date": "2026-11-06",
+   "start": "",
+   "end": "",
+   "city": "온라인",
+   "venue": "줌",
+   "speakers": [
+    "김정은"
+   ],
+   "book": "토깽이 아줌마의 계절이 드는 집",
+   "categories": [
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "예스24 클래스24에서 신청 (모집 중)",
+   "url": "https://www.yes24.com/Product/Class",
+   "summary": "‘토깽이 아줌마’ 김정은 저자가 열두 달 제철 집밥과 살림을 담은 신간을 소개하는 클래스24 줌 강연. 요리·살림 주제.",
+   "confidence": "확정",
+   "relevance": 0.15,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "id": "df6678fa8a",
+   "score": 38
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
    "title": "[클래스24] 『실전 시황 트레이딩』 이진호 북토크",
    "date": "2026-11-07",
    "start": "14:00",
@@ -1546,6 +1588,38 @@
    "last_seen": "2026-10-19",
    "id": "e397af0ce5",
    "score": 41
+  },
+  {
+   "source": "서울 철학·인문 강좌",
+   "title": "예술의전당 인문아카데미 공연 연계 과정 — 테네시 윌리엄스의 <유리동물원> : 우리들의 자화상",
+   "date": "2026-11-07",
+   "start": "15:00",
+   "end": "17:00",
+   "city": "서울",
+   "venue": "예술의전당 오페라하우스 4층 컨퍼런스홀",
+   "speakers": [
+    "강태경"
+   ],
+   "book": "유리동물원 (테네시 윌리엄스)",
+   "categories": [
+    "문학",
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "유료",
+   "price_note": "수강료 30,000원, 수강생은 연극 <유리동물원> 티켓 35% 할인",
+   "registration": "예술의전당 아카데미 누리집에서 접수 (~11/7), 문의 02-580-1614",
+   "url": "https://www.sac.or.kr/site/main/board/academy_stats/318796",
+   "summary": "이화여대 영어영문학부 강태경 교수가 테네시 윌리엄스의 희곡 『유리동물원』을 깊이 읽는 공연 연계 강의. 토월정통연극 <유리동물원>을 보기 전에 작품을 미리 읽어 두는 자리다.",
+   "confidence": "확정",
+   "relevance": 0.75,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "id": "b902ab30dc",
+   "score": 68
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
