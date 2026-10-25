@@ -1,7 +1,18 @@
 {
  "meta": {
-  "updated_at": "2026-10-24T08:51+09:00",
-  "runs": [],
+  "updated_at": "2026-10-26T08:51+09:00",
+  "runs": [
+   {
+    "mission": "예스24·알라딘 작가와의 만남",
+    "found": 1,
+    "kept": 1
+   },
+   {
+    "mission": "서울 서점 북토크",
+    "found": 1,
+    "kept": 1
+   }
+  ],
   "count": 64
  },
  "events": [
@@ -1224,16 +1235,16 @@
    "festival": "",
    "price": "유료",
    "price_note": "",
-   "registration": "교보문고 문화공간 페이지",
+   "registration": "교보문고 보라강연 페이지에서 신청",
    "url": "https://store.kyobobook.co.kr/culture/bora-show",
-   "summary": "교보문고의 어린이·가족 강연 시리즈 보라키즈, 인지심리학자 김경일 편. 교보 강연 목록을 요약한 검색 결과에만 나와 추정으로 적는다.",
-   "confidence": "추정",
+   "summary": "교보문고의 초등 고학년·가족 대상 강연 시리즈 보라키즈. 인지심리학자 김경일이 강연한다.",
+   "confidence": "확정",
    "relevance": 0.25,
    "speaker_weight": 0.6,
    "first_seen": "2026-10-18",
-   "last_seen": "2026-10-18",
+   "last_seen": "2026-10-26",
    "id": "98b853dde5",
-   "score": 24
+   "score": 35
   },
   {
    "title": "책읽는청주 20주년 — 문유석 『나로 살 결심』",
@@ -1552,11 +1563,12 @@
    "title": "[클래스24] 『실전 시황 트레이딩』 이진호 북토크",
    "date": "2026-11-07",
    "start": "14:00",
-   "end": "",
+   "end": "16:00",
    "city": "서울",
    "venue": "포스코타워 역삼 3층 이벤트홀",
    "speakers": [
-    "이진호"
+    "이진호",
+    "수급만쥬왕"
    ],
    "book": "실전 시황 트레이딩",
    "categories": [
@@ -1574,7 +1586,7 @@
    "relevance": 0.1,
    "speaker_weight": 0.3,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19",
+   "last_seen": "2026-10-26",
    "id": "e397af0ce5",
    "score": 41
   },
