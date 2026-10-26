@@ -1,19 +1,14 @@
 {
  "meta": {
-  "updated_at": "2026-10-26T08:51+09:00",
+  "updated_at": "2026-10-26T18:15+09:00",
   "runs": [
    {
     "mission": "예스24·알라딘 작가와의 만남",
-    "found": 1,
-    "kept": 1
-   },
-   {
-    "mission": "서울 서점 북토크",
-    "found": 1,
-    "kept": 1
+    "found": 2,
+    "kept": 2
    }
   ],
-  "count": 64
+  "count": 66
  },
  "events": [
   {
@@ -1216,6 +1211,37 @@
    "score": 67
   },
   {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『콕 찔려도, 탱탱한 마음』 김해선 선생님 북토크",
+   "date": "2026-10-31",
+   "start": "13:00",
+   "end": "14:00",
+   "city": "서울",
+   "venue": "예스24 강서NC점",
+   "speakers": [
+    "김해선"
+   ],
+   "book": "콕 찔려도, 탱탱한 마음",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "어린이",
+   "festival": "",
+   "price": "무료",
+   "price_note": "사전 응모 후 추첨 20팀 (어린이 1명당 보호자 1명)",
+   "registration": "예스24 이벤트 페이지에서 응모 (9/23~10/29)",
+   "url": "https://event.yes24.com/class?eventNo=276764",
+   "summary": "초등교사이자 그림책 작가인 김해선이 그림책 『콕 찔려도, 탱탱한 마음』을 들고 아이들과 마음 지키기를 이야기하는 북토크.",
+   "confidence": "확정",
+   "relevance": 0.15,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "id": "c7c8623cfc",
+   "score": 12
+  },
+  {
    "source": "서울 서점 북토크",
    "title": "보라키즈 — 김경일 편",
    "date": "2026-10-31",
@@ -1838,6 +1864,37 @@
    "last_seen": "2026-10-09",
    "id": "074f553bfb",
    "score": 80
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『재무덕후 이재용의 숫자로 기업 읽기』 이재용 저자 북토크",
+   "date": "2026-11-18",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "제이드409 지하2층 (강남구 테헤란로 409, 선릉역)",
+   "speakers": [
+    "이재용"
+   ],
+   "book": "재무덕후 이재용의 숫자로 기업 읽기",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "예스24 클래스24에서 신청 (10/26~11/16)",
+   "url": "https://www.yes24.com/Product/Class",
+   "summary": "회계사 출신 ‘재무덕후’ 이재용이 재무제표로 기업을 읽는 법을 이야기하는 클래스24 북토크. 재무·투자 주제.",
+   "confidence": "추정",
+   "relevance": 0.1,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "id": "5a10bc3a8e",
+   "score": 30
   },
   {
    "source": "서울 서점 북토크",
