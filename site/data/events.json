@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updated_at": "2026-10-28T08:52+09:00",
+  "updated_at": "2026-10-29T08:52+09:00",
   "runs": [
    {
     "mission": "예스24·알라딘 작가와의 만남",
@@ -9,11 +9,16 @@
    },
    {
     "mission": "서울 철학·인문 강좌",
+    "found": 2,
+    "kept": 2
+   },
+   {
+    "mission": "서울 도서관 강연",
     "found": 6,
     "kept": 6
    }
   ],
-  "count": 73
+  "count": 82
  },
  "events": [
   {
@@ -1216,6 +1221,37 @@
    "score": 67
   },
   {
+   "source": "서울 도서관 강연",
+   "title": "황보름 작가와의 만남 『윗집 부부』 (작가 힙톡)",
+   "date": "2026-10-30",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "은평구립 내를 건너서 숲으로 도서관 1층",
+   "speakers": [
+    "황보름"
+   ],
+   "book": "윗집 부부",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "도서관 누리집 선착순 신청 (주민 70명)",
+   "url": "https://www.jungbunews.com/news/articleView.html?idxno=2775723",
+   "summary": "『어서 오세요, 휴남동 서점입니다』의 황보름 작가가 신작 『윗집 부부』를 쓰게 된 계기와 인물이 태어난 과정을 들려준다. 서울형 ‘작가 힙톡’ 사업.",
+   "confidence": "보도",
+   "relevance": 0.8,
+   "speaker_weight": 0.7,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "28e74bfd20",
+   "score": 69
+  },
+  {
    "source": "예스24·알라딘 작가와의 만남",
    "title": "[클래스24] 『콕 찔려도, 탱탱한 마음』 김해선 선생님 북토크",
    "date": "2026-10-31",
@@ -1778,6 +1814,36 @@
    "score": 37
   },
   {
+   "source": "서울 도서관 강연",
+   "title": "종로도서관 개관기념일 특강 「당신의 계절을 시로 쓰다」 (1강)",
+   "date": "2026-11-10",
+   "start": "14:00",
+   "end": "16:00",
+   "city": "서울",
+   "venue": "서울특별시교육청 종로도서관",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "글쓰기",
+    "문학"
+   ],
+   "format": "워크숍",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "도서관 누리집 신청, 성인·지역주민 30명 (3회 연속 과정)",
+   "url": "http://enews.sen.go.kr/news/view.do?bbsSn=192371&step1=6&step2=1",
+   "summary": "일상의 한 장면을 짧은 시로 옮겨 보고 함께 합평하는 시 창작 특강 1강.",
+   "confidence": "확정",
+   "relevance": 0.88,
+   "speaker_weight": 0.2,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "ae3400f524",
+   "score": 76
+  },
+  {
    "source": "예스24·알라딘 작가와의 만남",
    "title": "[클래스24] 『나를 사랑하는 데에도 연습이 필요해』 임가은 저자 북토크",
    "date": "2026-11-10",
@@ -1807,6 +1873,38 @@
    "last_seen": "2026-10-19",
    "id": "07ee1698ef",
    "score": 46
+  },
+  {
+   "source": "서울 도서관 강연",
+   "title": "성동구립도서관 문화가 있는 날 김헌 작가와의 만남 — 『오뒷세이아』가 오늘 우리에게 묻다",
+   "date": "2026-11-11",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "소월아트홀 (성동구)",
+   "speakers": [
+    "김헌"
+   ],
+   "book": "오뒷세이아",
+   "categories": [
+    "인문",
+    "문학"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "보도마다 시작 시각이 19시·20시로 엇갈림",
+   "registration": "성동구 구립도서관 안내 참고",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2484860",
+   "summary": "서양고전학자 김헌이 『오뒷세이아』를 오늘의 자리에서 다시 읽는 인문학 강연.",
+   "confidence": "보도",
+   "relevance": 0.75,
+   "speaker_weight": 0.7,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "100bb37ee2",
+   "score": 68
   },
   {
    "title": "편집자의 세 번 읽기 (2회) — 김준섭 편집자",
@@ -1933,6 +2031,36 @@
    "last_seen": "2026-10-28",
    "id": "7367adcfd5",
    "score": 65
+  },
+  {
+   "source": "서울 도서관 강연",
+   "title": "종로도서관 개관기념일 특강 「당신의 계절을 시로 쓰다」 (2강)",
+   "date": "2026-11-17",
+   "start": "14:00",
+   "end": "16:00",
+   "city": "서울",
+   "venue": "서울특별시교육청 종로도서관",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "글쓰기",
+    "문학"
+   ],
+   "format": "워크숍",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "도서관 누리집 신청, 성인·지역주민 30명 (3회 연속 과정)",
+   "url": "http://enews.sen.go.kr/news/view.do?bbsSn=192371&step1=6&step2=1",
+   "summary": "사랑의 기억을 시로 불러내 보고 함께 합평하는 시 창작 특강 2강.",
+   "confidence": "확정",
+   "relevance": 0.88,
+   "speaker_weight": 0.2,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "eb75e54c4c",
+   "score": 76
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
@@ -2090,6 +2218,38 @@
    "score": 75
   },
   {
+   "source": "서울 도서관 강연",
+   "title": "김금희 작가 북 콘서트 — 각자의 트랙에서 『첫 여름, 완주』",
+   "date": "2026-11-19",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "성수아트홀 (성동구)",
+   "speakers": [
+    "김금희",
+    "허희"
+   ],
+   "book": "첫 여름, 완주",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "싱어송라이터 우예린 공연",
+   "registration": "11/3 10:00부터 선착순 350명",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3734757",
+   "summary": "김금희 작가와 허희 문학평론가가 『첫 여름, 완주』를 두고 마주 앉는 북 콘서트. 우예린의 어쿠스틱 공연으로 문을 연다.",
+   "confidence": "보도",
+   "relevance": 0.88,
+   "speaker_weight": 0.85,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "b5fd0aa4fc",
+   "score": 75
+  },
+  {
    "source": "서울 서점 북토크",
    "start": "17:30",
    "end": "",
@@ -2119,6 +2279,68 @@
    "last_seen": "2026-10-19",
    "id": "a5d1877c27",
    "score": 12
+  },
+  {
+   "source": "서울 도서관 강연",
+   "title": "종로도서관 개관기념일 특강 「당신의 계절을 시로 쓰다」 (3강)",
+   "date": "2026-11-24",
+   "start": "14:00",
+   "end": "16:00",
+   "city": "서울",
+   "venue": "서울특별시교육청 종로도서관",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "글쓰기",
+    "문학"
+   ],
+   "format": "워크숍",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "도서관 누리집 신청, 성인·지역주민 30명 (3회 연속 과정)",
+   "url": "http://enews.sen.go.kr/news/view.do?bbsSn=192371&step1=6&step2=1",
+   "summary": "지나온 시간을 돌아보며 한 편의 시를 완성하고 합평하는 시 창작 특강 마지막 강.",
+   "confidence": "확정",
+   "relevance": 0.88,
+   "speaker_weight": 0.2,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "8905430ade",
+   "score": 76
+  },
+  {
+   "source": "서울 철학·인문 강좌",
+   "title": "서울대 철학사상연구소 강연 시리즈 (3회) — 오민환",
+   "date": "2026-11-24",
+   "start": "16:00",
+   "end": "18:00",
+   "city": "서울",
+   "venue": "서울대학교 철학사상연구소 (관악캠퍼스 6동 403호)",
+   "speakers": [
+    "오민환"
+   ],
+   "book": "",
+   "categories": [
+    "철학",
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "서울대 철학사상연구소 공지 참고",
+   "url": "https://www.snu.ac.kr/snunow/events?bbsidx=177470&md=v",
+   "summary": "서울대 데이터사이언스학과 오민환 교수가 강화학습을 실마리로 기계가 배운다는 것의 의미를 짚는 강연. 6회 시리즈의 셋째 회.",
+   "confidence": "확정",
+   "relevance": 0.6,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "fd4f31abfc",
+   "score": 61
   },
   {
    "source": "서울 도서관 강연",
@@ -2250,6 +2472,37 @@
    "score": 86
   },
   {
+   "source": "서울 철학·인문 강좌",
+   "title": "서울대 철학사상연구소 강연 시리즈 (4회) — Nikolaj Jang Lee Linding Pedersen",
+   "date": "2026-11-30",
+   "start": "16:00",
+   "end": "18:00",
+   "city": "서울",
+   "venue": "서울대학교 철학사상연구소 (관악캠퍼스 6동 403호)",
+   "speakers": [
+    "Nikolaj Jang Lee Linding Pedersen"
+   ],
+   "book": "",
+   "categories": [
+    "철학"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "서울대 철학사상연구소 공지 참고",
+   "url": "https://www.snu.ac.kr/snunow/events?bbsidx=177470&md=v",
+   "summary": "연세대 UIC 석학교수인 철학자 Nikolaj Jang Lee Linding Pedersen이 연사로 나서는 6회 시리즈의 넷째 회. 강연 제목은 공개되지 않았다.",
+   "confidence": "확정",
+   "relevance": 0.75,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "cb91457d33",
+   "score": 64
+  },
+  {
    "source": "서울 문학관·문학재단",
    "title": "문학으로 모이는 방법들 2026 라운드테이블 — ‘한국문학, 위기를 대하는 태도’",
    "date": "2026-11-30",
@@ -2280,6 +2533,38 @@
    "last_seen": "2026-10-17",
    "id": "f1481b4cbb",
    "score": 75
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "오디오매거진 <월간 강유원> 오프라인 강연",
+   "date": "2026-12-07",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "서교동 팟빵홀 (마포구)",
+   "speakers": [
+    "강유원"
+   ],
+   "book": "",
+   "categories": [
+    "철학",
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 작가와의 만남 페이지에서 신청 (9/22~10/14, 마감)",
+   "url": "https://aladin.co.kr/events/wevent_author.aspx",
+   "summary": "철학자 강유원이 오디오매거진 <월간 강유원>을 무대 밖으로 꺼내 독자를 직접 만나는 오프라인 강연.",
+   "confidence": "확정",
+   "relevance": 0.75,
+   "speaker_weight": 0.7,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "3b12efc941",
+   "score": 70
   },
   {
    "source": "서울 철학·인문 강좌",
