@@ -1,19 +1,14 @@
 {
  "meta": {
-  "updated_at": "2026-10-29T18:13+09:00",
+  "updated_at": "2026-10-30T08:52+09:00",
   "runs": [
-   {
-    "mission": "예스24·알라딘 작가와의 만남",
-    "found": 3,
-    "kept": 3
-   },
    {
     "mission": "서울 문학관·문학재단",
     "found": 2,
     "kept": 2
    }
   ],
-  "count": 87
+  "count": 88
  },
  "events": [
   {
@@ -1410,26 +1405,32 @@
    "end": "14:10",
    "city": "서울",
    "venue": "지하철 2호선 객실 특설무대 → 서울갤러리 (시청역)",
-   "speakers": [],
+   "speakers": [
+    "나태주",
+    "도종환",
+    "신달자",
+    "박준",
+    "박정자"
+   ],
    "book": "",
    "categories": [
     "문학"
    ],
    "format": "낭독회",
    "audience": "누구나",
-   "festival": "",
+   "festival": "시의 날",
    "price": "무료",
    "price_note": "",
    "registration": "별도 신청 정보 없음 (문의: 문학의 집·서울)",
    "url": "https://news.seoul.go.kr/gov/archives/581721",
    "summary": "시인들이 달리는 2호선 객실 특설무대에서 자작시를 낭송하고, 시청역 서울갤러리에서 마지막 버스킹으로 이어지는 시 축제.",
    "confidence": "확정",
-   "relevance": 0.75,
-   "speaker_weight": 0.4,
+   "relevance": 0.8,
+   "speaker_weight": 0.85,
    "first_seen": "2026-10-29",
-   "last_seen": "2026-10-29",
+   "last_seen": "2026-10-30",
    "id": "f4678a8f4d",
-   "score": 66
+   "score": 78
   },
   {
    "source": "청주·충북 문학",
@@ -1710,6 +1711,37 @@
    "last_seen": "2026-10-19",
    "id": "a6ca74478c",
    "score": 12
+  },
+  {
+   "source": "서울 문학관·문학재단",
+   "title": "서울도서관 문학낭독회 — 정여울 「헤르만 헤세와 함께하는 낭독의 밤」",
+   "date": "2026-11-06",
+   "start": "19:00",
+   "end": "20:30",
+   "city": "서울",
+   "venue": "서울도서관 생각마루",
+   "speakers": [
+    "정여울"
+   ],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "낭독회",
+   "audience": "성인",
+   "festival": "서울 문화의 밤 ‘스탬프로 야금야금’ 도심 문화투어",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "낭독회는 서울도서관 누리집에서 신청 (스탬프 투어는 10/21~11/3 서울시 공공서비스예약, 50명)",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3441611",
+   "summary": "정여울 작가와 헤르만 헤세의 문장을 소리 내어 읽고 그 속의 방황과 성장을 이야기하는 밤. 11/6 시범 운영하는 도심 야간 문화투어의 마지막 코스다.",
+   "confidence": "보도",
+   "relevance": 0.82,
+   "speaker_weight": 0.7,
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-10-30",
+   "id": "30c080ff4c",
+   "score": 75
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
