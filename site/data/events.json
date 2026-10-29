@@ -1,24 +1,19 @@
 {
  "meta": {
-  "updated_at": "2026-10-29T08:52+09:00",
+  "updated_at": "2026-10-29T18:13+09:00",
   "runs": [
    {
     "mission": "예스24·알라딘 작가와의 만남",
-    "found": 1,
-    "kept": 1
+    "found": 3,
+    "kept": 3
    },
    {
-    "mission": "서울 철학·인문 강좌",
+    "mission": "서울 문학관·문학재단",
     "found": 2,
     "kept": 2
-   },
-   {
-    "mission": "서울 도서관 강연",
-    "found": 6,
-    "kept": 6
    }
   ],
-  "count": 82
+  "count": 87
  },
  "events": [
   {
@@ -1221,6 +1216,37 @@
    "score": 67
   },
   {
+   "source": "서울 문학관·문학재단",
+   "title": "서울도서관 문학낭독회 — 정여울 「헤르만 헤세와 함께하는 낭독의 밤」",
+   "date": "2026-10-30",
+   "start": "19:00",
+   "end": "20:30",
+   "city": "서울",
+   "venue": "서울도서관 생각마루",
+   "speakers": [
+    "정여울"
+   ],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "낭독회",
+   "audience": "성인",
+   "festival": "서울 문화의 밤 ‘문화로 야금야금’",
+   "price": "미확인",
+   "price_note": "한 보도는 11/6 시작 스탬프 투어의 마지막 순서로 소개해 날짜 확인 필요",
+   "registration": "서울도서관 누리집 선착순 50명 (10/21부터)",
+   "url": "https://lib.seoul.go.kr/",
+   "summary": "정여울 작가와 헤르만 헤세의 문장을 소리 내어 읽고, 이어지는 강연에서 그 문장 속 방황과 성장의 이야기를 나누는 밤.",
+   "confidence": "보도",
+   "relevance": 0.82,
+   "speaker_weight": 0.7,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "92cd7de67b",
+   "score": 75
+  },
+  {
    "source": "서울 도서관 강연",
    "title": "황보름 작가와의 만남 『윗집 부부』 (작가 힙톡)",
    "date": "2026-10-30",
@@ -1375,6 +1401,35 @@
    "last_seen": "2026-10-09",
    "id": "8afc445d90",
    "score": 61
+  },
+  {
+   "source": "서울 문학관·문학재단",
+   "title": "시 읽는 서울지하철 — 2호선 객실 시 낭송 & 시청역 파이널 버스킹",
+   "date": "2026-11-01",
+   "start": "12:00",
+   "end": "14:10",
+   "city": "서울",
+   "venue": "지하철 2호선 객실 특설무대 → 서울갤러리 (시청역)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "낭독회",
+   "audience": "누구나",
+   "festival": "",
+   "price": "무료",
+   "price_note": "",
+   "registration": "별도 신청 정보 없음 (문의: 문학의 집·서울)",
+   "url": "https://news.seoul.go.kr/gov/archives/581721",
+   "summary": "시인들이 달리는 2호선 객실 특설무대에서 자작시를 낭송하고, 시청역 서울갤러리에서 마지막 버스킹으로 이어지는 시 축제.",
+   "confidence": "확정",
+   "relevance": 0.75,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "f4678a8f4d",
+   "score": 66
   },
   {
    "source": "청주·충북 문학",
@@ -2156,6 +2211,37 @@
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『역할은 주어지지 않는다』 윤기열 저자 북토크",
+   "date": "2026-11-18",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "예스24 구의점",
+   "speakers": [
+    "윤기열"
+   ],
+   "book": "역할은 주어지지 않는다",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "예스24 클래스24 (모집 예정)",
+   "url": "https://www.yes24.com/product/author/543343",
+   "summary": "토스 첫 PR 담당자 출신 윤기열이 커리어 에세이로 일과 역할을 이야기하는 클래스24 북토크.",
+   "confidence": "추정",
+   "relevance": 0.25,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "a628c611be",
+   "score": 34
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
    "title": "[클래스24] 『재무덕후 이재용의 숫자로 기업 읽기』 이재용 저자 북토크",
    "date": "2026-11-18",
    "start": "",
@@ -2250,6 +2336,37 @@
    "score": 75
   },
   {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『엄지 중독』 이시훈 저자 강연회",
+   "date": "2026-11-19",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "청년문화공간 JU 니콜라오홀",
+   "speakers": [
+    "이시훈"
+   ],
+   "book": "엄지 중독",
+   "categories": [
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "예스24 클래스24 (모집 중)",
+   "url": "https://www.yes24.com/product/author/383684",
+   "summary": "미디어 리터러시 교육자 이시훈이 아이들의 스마트폰 과의존을 이야기하는 학부모 대상 강연회.",
+   "confidence": "추정",
+   "relevance": 0.2,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "9f71b3b23e",
+   "score": 29
+  },
+  {
    "source": "서울 서점 북토크",
    "start": "17:30",
    "end": "",
@@ -2279,6 +2396,37 @@
    "last_seen": "2026-10-19",
    "id": "a5d1877c27",
    "score": 12
+  },
+  {
+   "source": "예스24·알라딘 작가와의 만남",
+   "title": "[클래스24] 『재무덕후 이재용의 숫자로 기업 읽기』 이재용 저자 북토크 (창비서교빌딩)",
+   "date": "2026-11-21",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "창비서교빌딩 지하1층 클럽 창작과비평홀",
+   "speakers": [
+    "이재용"
+   ],
+   "book": "재무덕후 이재용의 숫자로 기업 읽기",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "예스24 클래스24 (모집 중)",
+   "url": "https://www.yes24.com/Product/Class",
+   "summary": "‘재무덕후’ 이재용의 재무제표 읽기 북토크 두 번째 일정. 재무·투자 주제.",
+   "confidence": "추정",
+   "relevance": 0.1,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "id": "32e020ff99",
+   "score": 30
   },
   {
    "source": "서울 도서관 강연",
