@@ -1,14 +1,19 @@
 {
  "meta": {
-  "updated_at": "2026-10-30T08:52+09:00",
+  "updated_at": "2026-11-02T08:52+09:00",
   "runs": [
    {
-    "mission": "서울 문학관·문학재단",
+    "mission": "서울 도서관 강연",
     "found": 2,
     "kept": 2
+   },
+   {
+    "mission": "서울 문학관·문학재단",
+    "found": 1,
+    "kept": 1
    }
   ],
-  "count": 88
+  "count": 90
  },
  "events": [
   {
@@ -1739,9 +1744,41 @@
    "relevance": 0.82,
    "speaker_weight": 0.7,
    "first_seen": "2026-10-30",
-   "last_seen": "2026-10-30",
+   "last_seen": "2026-11-02",
    "id": "30c080ff4c",
    "score": 75
+  },
+  {
+   "source": "서울 도서관 강연",
+   "title": "김소영 작가 초청 강연 — 어린이, 미래에서 온 사람",
+   "date": "2026-11-06",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "은평구립 내를 건너서 숲으로 도서관 1층",
+   "speakers": [
+    "김소영"
+   ],
+   "book": "어린이라는 세계",
+   "categories": [
+    "인문",
+    "문학"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "은평구민 선착순 70명, 홍보물 QR코드 또는 도서관 누리집 신청",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3736022",
+   "summary": "『어린이라는 세계』와 『어떤 어른』의 저자 김소영이 어린이를 바라보는 여러 관점과, 변하는 사회 속에서 어른이 맡을 역할을 이야기한다.",
+   "confidence": "보도",
+   "relevance": 0.65,
+   "speaker_weight": 0.75,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "id": "d458628236",
+   "score": 67
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
@@ -2616,6 +2653,38 @@
    "last_seen": "2026-10-17",
    "id": "d8aef4b925",
    "score": 83
+  },
+  {
+   "source": "서울 도서관 강연",
+   "title": "김혼비 작가 북토크: 순간을 문장으로 남기는 법",
+   "date": "2026-11-27",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "강동구립 강동중앙도서관",
+   "speakers": [
+    "김혼비"
+   ],
+   "book": "",
+   "categories": [
+    "글쓰기",
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "강동중앙도서관 누리집 (접수예정)",
+   "url": "https://www.gdlibrary.or.kr/ja/main",
+   "summary": "『아무튼, 술』, 『다정소감』의 에세이스트 김혼비가 일상의 순간을 문장으로 남기는 법을 이야기한다.",
+   "confidence": "추정",
+   "relevance": 0.88,
+   "speaker_weight": 0.75,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "id": "32a91e9d08",
+   "score": 70
   },
   {
    "title": "서로의 독자가 되는 법 — 강화길 × 임솔아, 여성 서사",
