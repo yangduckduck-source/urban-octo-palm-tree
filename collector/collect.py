@@ -7,6 +7,7 @@
   4. scoring.py 규칙으로 추천 점수를 매기고 events.json 과 calendar.ics 를 쓴다.
 
 사용법
+  python collector/collect.py --brief                         # 루틴용 오늘의 조사 계획 (이미 아는 행사·오늘 할 미션)
   python collector/collect.py --ingest collector/inbox.json  # 루틴이 찾은 행사 병합 (API 불필요)
   python collector/collect.py               # API로 직접 수집 (ANTHROPIC_API_KEY 필요, 선택)
   python collector/collect.py --mission 청주  # 이름에 '청주'가 들어간 미션만
@@ -31,6 +32,10 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG = Path(__file__).resolve().parent / "config.toml"
 DATA = ROOT / "site" / "data" / "events.json"
 ICS = ROOT / "site" / "calendar.ics"
+CACHE = Path(__file__).resolve().parent / "cache"
+STATE = CACHE / "state.json"      # 미션별 마지막 조사일·검색어 순번, 막힌 URL, 재확인한 행사 (커밋)
+KNOWN = CACHE / "known.tsv"       # 이미 달력에 있는 앞으로의 행사 목록 — 루틴은 이것만 읽고 events.json은 열지 않는다 (커밋)
+PLAN = CACHE / "plan.json"        # --brief 가 정한 오늘의 계획, --ingest 가 소비 (커밋 안 함)
 KST = timezone(timedelta(hours=9))
 
 CITIES = ("서울", "청주", "온라인")  # 온라인: 줌·유튜브 라이브 등 어디서나 참여 가능한 행사
@@ -316,6 +321,15 @@ def write_ics(events: list[dict]) -> None:
     ICS.write_text("\r\n".join(lines) + "\r\n", encoding="utf-8")
 
 
+def write_known(events: list[dict]) -> None:
+    today = datetime.now(KST).date().isoformat()
+    rows = ["date\ttitle\tvenue\tconfidence\tid"]
+    rows += [f"{e['date']}\t{e['title']}\t{e.get('venue') or e['city']}\t{e['confidence']}\t{e['id']}"
+             for e in events if e["date"] >= today]
+    CACHE.mkdir(parents=True, exist_ok=True)
+    KNOWN.write_text("\n".join(rows) + "\n", encoding="utf-8")
+
+
 def save(events: list[dict], meta: dict) -> None:
     for e in events:
         e["score"] = score_event(e)
@@ -323,6 +337,101 @@ def save(events: list[dict], meta: dict) -> None:
     DATA.parent.mkdir(parents=True, exist_ok=True)
     DATA.write_text(json.dumps({"meta": meta, "events": events}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     write_ics(events)
+    write_known(events)
+
+
+# ── 루틴 사용량 절약: 오늘의 계획과 상태 ───────────────────────
+
+def load_state() -> dict:
+    st = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {}
+    st.setdefault("missions", {})
+    st.setdefault("blocked_urls", [])
+    st.setdefault("verified", {})
+    return st
+
+
+def save_state(st: dict) -> None:
+    CACHE.mkdir(parents=True, exist_ok=True)
+    STATE.write_text(json.dumps(st, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def rotate(items: list, start: int, n: int) -> list:
+    if not items or n <= 0:
+        return []
+    start %= len(items)
+    return (items[start:] + items[:start])[:min(n, len(items))]
+
+
+def brief(cfg: dict, today: date, existing: list[dict]) -> int:
+    """오늘 루틴이 할 일만 짧게 출력한다. 루틴은 config·events.json 대신 이 출력만 읽는다."""
+    g, st = cfg["general"], load_state()
+    until = today + timedelta(days=g["horizon_days"])
+    nxt = (today.replace(day=1) + timedelta(days=32)).replace(day=1)
+    month, nextmonth = f"{today.year}년 {today.month}월", f"{nxt.year}년 {nxt.month}월"
+    fill = lambda q: q.replace("{month}", month).replace("{nextmonth}", nextmonth).replace("{year}", str(today.year))
+    qn, un = g.get("queries_per_run", 3), g.get("urls_per_run", 1)
+    blocked = set(st["blocked_urls"])
+
+    plan, out = {"date": today.isoformat(), "missions": [], "verify": []}, []
+    out.append(f"# 오늘 {today.isoformat()}({'월화수목금토일'[today.weekday()]}) · 찾을 범위 {today.isoformat()} ~ {until.isoformat()}")
+    out.append("")
+    out.append("## 오늘 조사할 미션 (나머지 미션은 쉬는 날)")
+    for m in cfg["missions"]:
+        ms = st["missions"].get(m["name"], {})
+        last = ms.get("last_run")
+        if last and (today - date.fromisoformat(last)).days < m.get("every", 1):
+            continue
+        cur = ms.get("cursor", 0)
+        qs = [fill(q) for q in rotate(m["queries"], cur, qn)]
+        us = rotate([u for u in m.get("urls", []) if u not in blocked], cur, un)
+        plan["missions"].append(m["name"])
+        out.append(f"### {m['name']} ({m['city']})")
+        out += [f"- 검색: {q}" for q in qs]
+        out += [f"- 열람: {u}" for u in us]
+    if not plan["missions"]:
+        out.append("(없음 — 오늘은 재확인만 한다)")
+
+    week = (today + timedelta(days=7)).isoformat()
+    cand = [e for e in existing if today.isoformat() <= e["date"] <= week
+            and e.get("confidence") in ("보도", "추정") and e["id"] not in st["verified"]]
+    cand.sort(key=lambda e: -e.get("score", 0))
+    plan["verify"] = [e["id"] for e in cand[: g.get("verify_per_run", 3)]]
+    out.append("")
+    out.append("## 재확인할 행사 (공식 공지 1회 검색, 확인되면 같은 제목·날짜로 inbox에 confidence=확정)")
+    out += [f"- {e['date']} {e['title']} @ {e.get('venue') or e['city']}" for e in cand[: len(plan["verify"])]] or ["(없음)"]
+
+    upcoming = [e for e in existing if e["date"] >= today.isoformat()]
+    out.append("")
+    out.append(f"## 이미 아는 행사 {len(upcoming)}건 — 검색 결과에 보여도 상세 검색하지 말고 inbox에도 적지 않는다(위 재확인 대상만 예외)")
+    out += [f"- {e['date'][5:]} {e['title']}" for e in upcoming]
+
+    CACHE.mkdir(parents=True, exist_ok=True)
+    PLAN.write_text(json.dumps(plan, ensure_ascii=False) + "\n", encoding="utf-8")
+    print("\n".join(out))
+    return 0
+
+
+def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str]) -> list[str]:
+    """--brief 로 정한 계획을 실행 완료로 기록한다. 반환: 기록된 미션 이름."""
+    st = load_state()
+    done = []
+    if PLAN.exists():
+        plan = json.loads(PLAN.read_text(encoding="utf-8"))
+        if plan.get("date") == today.isoformat():
+            qn = cfg["general"].get("queries_per_run", 3)
+            for name in plan.get("missions", []):
+                ms = st["missions"].setdefault(name, {})
+                ms["last_run"] = today.isoformat()
+                ms["cursor"] = ms.get("cursor", 0) + qn
+                done.append(name)
+            for i in plan.get("verify", []):
+                st["verified"][i] = today.isoformat()
+        PLAN.unlink()
+    st["blocked_urls"] = sorted(set(st["blocked_urls"]) | {u for u in blocked if u})
+    ids = {e["id"] for e in events}
+    st["verified"] = {k: v for k, v in st["verified"].items() if k in ids}
+    save_state(st)
+    return done
 
 
 def load() -> tuple[list[dict], dict]:
@@ -333,8 +442,10 @@ def load() -> tuple[list[dict], dict]:
 
 
 def ingest(path: Path, cfg: dict, today: date, existing: list[dict]) -> int:
-    raw = json.loads(path.read_text(encoding="utf-8"))
+    raw = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    blocked = raw.get("blocked_urls", []) if isinstance(raw, dict) else []
     raw = raw.get("events", []) if isinstance(raw, dict) else raw
+    before = {e["id"] for e in existing}
     horizon = cfg["general"]["horizon_days"]
     kept, log = [], {}
     for ev in raw:
@@ -346,12 +457,16 @@ def ingest(path: Path, cfg: dict, today: date, existing: list[dict]) -> int:
             stat["kept"] += 1
             kept.append(c)
     events = merge_all(existing, kept, today, cfg["general"]["keep_past_days"])
+    added = [e for e in events if e["id"] not in before]
     save(events, {
         "updated_at": datetime.now(KST).isoformat(timespec="minutes"),
         "runs": list(log.values()),
         "count": len(events),
+        "added": len(added),
     })
-    print(f"후보 {len(raw)}건 → 채택 {len(kept)}건, 달력 전체 {len(events)}건")
+    done = finish_plan(cfg, today, events, blocked)
+    print(f"후보 {len(raw)}건 → 채택 {len(kept)}건 (새 행사 {len(added)}건), 달력 전체 {len(events)}건")
+    print(f"조사 완료로 기록한 미션: {', '.join(done) or '(없음)'}")
     for r in log.values():
         print(f"  [{r['mission']}] {r['found']} → {r['kept']}")
     return 0
@@ -362,6 +477,7 @@ def main() -> int:
     ap.add_argument("--mission", help="이름에 이 글자가 들어간 미션만 실행")
     ap.add_argument("--rescore", action="store_true", help="검색 없이 점수와 ics만 다시 계산")
     ap.add_argument("--ingest", metavar="JSON", help="루틴이 조사해 적은 행사 목록 파일을 병합")
+    ap.add_argument("--brief", action="store_true", help="루틴용 오늘의 조사 계획을 출력")
     args = ap.parse_args()
 
     cfg = tomllib.loads(CONFIG.read_text(encoding="utf-8"))
@@ -372,6 +488,9 @@ def main() -> int:
         save(existing, meta)
         print(f"{len(existing)}건 점수 재계산 완료")
         return 0
+
+    if args.brief:
+        return brief(cfg, today, existing)
 
     if args.ingest:
         return ingest(Path(args.ingest), cfg, today, existing)

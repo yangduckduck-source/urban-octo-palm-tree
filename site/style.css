@@ -254,3 +254,9 @@ h3 { font-size: 15px; font-weight: 600; margin: 0 0 8px; color: var(--text-2); }
 .actions .secondary { background: var(--surface-2); color: var(--link); }
 
 .foot { max-width: 1120px; margin: 0 auto; padding: 8px 16px 40px; color: var(--text-3); font-size: 12px; text-align: center; }
+
+/* 이번 주에 새로 추가된 행사 */
+.fresh .n.new {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent);
+  border: 1px solid currentColor; border-radius: 6px; padding: 2px 0; align-self: center;
+}

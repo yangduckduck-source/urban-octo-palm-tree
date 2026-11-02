@@ -127,6 +127,24 @@
       : `<p class="empty">이번 주에는 조건에 맞는 행사가 없어요.</p>`;
   }
 
+  // 이번 주(월요일부터) 수집기가 처음 발견한 행사. first_seen 은 처음 찾은 날로 고정된다.
+  const weekStart = (d) => addDays(d, -((parse(d).getDay() + 6) % 7)); // 이번 주 월요일
+
+  function renderFresh(list) {
+    const start = weekStart(TODAY);
+    const fresh = list
+      .filter((e) => e.first_seen && e.first_seen >= start && e.date >= TODAY)
+      .sort((a, b) => (b.first_seen || "").localeCompare(a.first_seen || "") || a.date.localeCompare(b.date));
+    $("#newTitle").innerHTML = `이번 주 새로 추가된 행사<small>${md(start)}~ · ${fresh.length}건</small>`;
+    $("#fresh").innerHTML = fresh.length
+      ? fresh.slice(0, 10).map((e) => `<li><button data-id="${esc(e.id)}">
+          <span class="n new">NEW</span>
+          <span><div class="t">${esc(e.title)}</div><div class="s">${esc(e.city)} · ${esc(e.venue || "")} · ${esc(md(e.first_seen))} 추가</div></span>
+          <span class="d"><b>${parse(e.date).getMonth() + 1}/${parse(e.date).getDate()}</b>${WD[parse(e.date).getDay()]} ${esc(e.start || "")}</span>
+        </button></li>`).join("") + (fresh.length > 10 ? `<p class="hint">외 ${fresh.length - 10}건은 달력에서 볼 수 있어요.</p>` : "")
+      : `<p class="empty">이번 주에 새로 찾은 행사는 아직 없어요.</p>`;
+  }
+
   function renderCalendar(list) {
     const [y, m] = state.month.split("-").map(Number);
     $("#monthLabel").innerHTML = `${y}년 <span>${m}월</span>`;
@@ -166,6 +184,7 @@
     const list = visible();
     renderToday(list);
     renderWeek(list);
+    renderFresh(list);
     renderCalendar(list);
   }
 
