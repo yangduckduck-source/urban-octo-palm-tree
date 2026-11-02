@@ -362,6 +362,11 @@ def rotate(items: list, start: int, n: int) -> list:
     return (items[start:] + items[:start])[:min(n, len(items))]
 
 
+def slot_of(now: datetime) -> int:
+    """실행 회차 번호. 하루 두 번(오전·저녁) 돌므로 날짜×2 + (오후면 1)."""
+    return now.date().toordinal() * 2 + (1 if now.hour >= 13 else 0)
+
+
 def brief(cfg: dict, today: date, existing: list[dict]) -> int:
     """오늘 루틴이 할 일만 짧게 출력한다. 루틴은 config·events.json 대신 이 출력만 읽는다."""
     g, st = cfg["general"], load_state()
@@ -372,14 +377,16 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
     qn, un = g.get("queries_per_run", 3), g.get("urls_per_run", 1)
     blocked = set(st["blocked_urls"])
 
-    plan, out = {"date": today.isoformat(), "missions": [], "verify": []}, []
-    out.append(f"# 오늘 {today.isoformat()}({'월화수목금토일'[today.weekday()]}) · 찾을 범위 {today.isoformat()} ~ {until.isoformat()}")
+    slot = slot_of(datetime.now(KST))
+    plan, out = {"date": today.isoformat(), "slot": slot, "missions": [], "verify": []}, []
+    out.append(f"# 오늘 {today.isoformat()}({'월화수목금토일'[today.weekday()]}) {'저녁' if slot % 2 else '오전'} 회차"
+               f" · 찾을 범위 {today.isoformat()} ~ {until.isoformat()}")
     out.append("")
-    out.append("## 오늘 조사할 미션 (나머지 미션은 쉬는 날)")
+    out.append("## 이번 회차에 조사할 미션 (나머지 미션은 쉬는 회차)")
     for m in cfg["missions"]:
         ms = st["missions"].get(m["name"], {})
-        last = ms.get("last_run")
-        if last and (today - date.fromisoformat(last)).days < m.get("every", 1):
+        last = ms.get("last_slot")
+        if last is not None and slot - last < m.get("every", 1):
             continue
         cur = ms.get("cursor", 0)
         qs = [fill(q) for q in rotate(m["queries"], cur, qn)]
@@ -422,6 +429,7 @@ def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str]) 
             for name in plan.get("missions", []):
                 ms = st["missions"].setdefault(name, {})
                 ms["last_run"] = today.isoformat()
+                ms["last_slot"] = plan.get("slot", slot_of(datetime.now(KST)))
                 ms["cursor"] = ms.get("cursor", 0) + qn
                 done.append(name)
             for i in plan.get("verify", []):

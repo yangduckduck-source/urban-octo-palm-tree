@@ -1,6 +1,6 @@
 name: 북토크 캘린더 배포
 
-# 일정 수집은 Claude Code 루틴이 collector/RUNBOOK.md 절차로 매일 오후 5시 무렵 main에 push한다.
+# 일정 수집은 Claude Code 루틴이 collector/RUNBOOK.md 절차로 매일 오전·저녁 main에 push한다.
 # 여기서는 그 결과를 GitHub Pages로 배포만 한다 (API 키 불필요).
 on:
   push:
