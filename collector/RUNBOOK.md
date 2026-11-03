@@ -17,18 +17,17 @@
 
 ## 0. 준비
 
-**가장 먼저, 다른 어떤 작업보다 앞서** `mcp__claude-code-remote__add_repo` 도구(이미 로드되어 있다 — ToolSearch로 찾지 말고 바로 호출한다. ToolSearch의 "No matching deferred tools"는 '이미 로드됨'이라는 뜻이다)를 `owner="yangduckduck-source"`, `repo="urban-octo-palm-tree"`,
-`access="push"`로 **반드시** 호출한다. 저장소가 이미 보이거나 그냥 `git clone`이 되더라도 생략하지 않는다.
-공개 저장소라 읽기는 아무나 되지만, push 자격 증명은 `add_repo`로 붙여야만 생긴다(빠뜨리면 마지막 push가 403으로 막혀 그날 조사가 전부 버려진다).
-`add_repo`가 거부되면 조사를 시작하지 말고 그 이유만 보고하고 끝낸다.
-
-그다음 `add_repo`가 안내한 명령으로 clone하고(이미 있으면 생략), 최신 상태를 받는다.
+저장소는 **루틴 설정(claude.ai 루틴 화면의 저장소 선택)** 으로 세션에 붙어 있다. 루틴 세션에서는 `add_repo`를 쓸 수 없다.
 
 ```bash
-cd urban-octo-palm-tree
+cd urban-octo-palm-tree   # 루틴이 붙여 둔 저장소 디렉터리
 git checkout main && git pull origin main
 rm -f collector/inbox.json
+git push --dry-run origin HEAD:refs/heads/_push_check   # push 권한 미리 확인 (실제로 만들지 않음)
 ```
+
+- 저장소 디렉터리가 없거나 `git push --dry-run`이 403 등으로 실패하면 **조사를 시작하지 말고** 그 오류 한 줄만 보고하고 끝낸다.
+  (조사를 다 하고 마지막 push에서 막히면 그날 사용량이 전부 버려진다.)
 
 ## 1. 오늘의 계획
 
@@ -142,7 +141,7 @@ git push origin main
 `inbox.json`과 `collector/cache/plan.json`은 커밋하지 않는다(.gitignore에 있음). 이 문서와 코드는 고치지 않는다.
 
 - push가 거절되면(non-fast-forward) `git pull --rebase origin main` 후 한 번만 다시 시도한다.
-- push가 403(`not in this session's authorized repository set`)이면 `add_repo`(access="push")를 호출한 뒤 한 번만 다시 push한다. 그래도 안 되면 그 사실을 보고한다.
+- push가 403이면 다시 시도하지 말고 그 사실을 보고한다.
 
 ## 6. 보고
 
