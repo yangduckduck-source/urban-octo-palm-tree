@@ -2,37 +2,58 @@
  "blocked_urls": [],
  "missions": {
   "도서전·독서대전·북페스티벌": {
-   "cursor": 0,
-   "last_slot": 1479843
+   "cursor": 3,
+   "last_run": "2026-11-03",
+   "last_slot": 1479846
   },
   "서울 도서관 강연": {
-   "cursor": 0,
-   "last_slot": 1479844
+   "cursor": 3,
+   "last_run": "2026-11-03",
+   "last_slot": 1479846
   },
   "서울 독립서점·출판사 북토크": {
-   "cursor": 0,
-   "last_slot": 1479844
+   "cursor": 3,
+   "last_run": "2026-11-03",
+   "last_slot": 1479846
   },
   "서울 문학관·문학재단": {
-   "cursor": 0,
-   "last_slot": 1479842
+   "cursor": 3,
+   "last_run": "2026-11-03",
+   "last_slot": 1479846
+  },
+  "서울 서점 북토크": {
+   "cursor": 3,
+   "last_run": "2026-11-03",
+   "last_slot": 1479846
   },
   "서울 철학·인문 강좌": {
-   "cursor": 0,
-   "last_slot": 1479843
+   "cursor": 3,
+   "last_run": "2026-11-03",
+   "last_slot": 1479846
+  },
+  "예스24·알라딘 작가와의 만남": {
+   "cursor": 3,
+   "last_run": "2026-11-03",
+   "last_slot": 1479846
   },
   "온라인 북토크·강연": {
-   "cursor": 0,
-   "last_slot": 1479843
+   "cursor": 3,
+   "last_run": "2026-11-03",
+   "last_slot": 1479846
   },
   "청주 도서관·문화기관": {
    "cursor": 0,
    "last_slot": 1479844
   },
   "청주·충북 문학": {
-   "cursor": 0,
-   "last_slot": 1479842
+   "cursor": 3,
+   "last_run": "2026-11-03",
+   "last_slot": 1479846
   }
  },
- "verified": {}
+ "verified": {
+  "30c080ff4c": "2026-11-03",
+  "8ac6f1937b": "2026-11-03",
+  "8b24ee87c1": "2026-11-03"
+ }
 }

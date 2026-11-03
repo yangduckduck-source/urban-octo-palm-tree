@@ -1,19 +1,9 @@
 {
  "meta": {
-  "updated_at": "2026-11-02T08:52+09:00",
-  "runs": [
-   {
-    "mission": "서울 도서관 강연",
-    "found": 2,
-    "kept": 2
-   },
-   {
-    "mission": "서울 문학관·문학재단",
-    "found": 1,
-    "kept": 1
-   }
-  ],
-  "count": 90
+  "updated_at": "2026-11-03T10:44+09:00",
+  "runs": [],
+  "count": 90,
+  "added": 0
  },
  "events": [
   {
