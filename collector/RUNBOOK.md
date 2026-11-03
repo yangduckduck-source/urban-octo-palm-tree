@@ -17,7 +17,7 @@
 
 ## 0. 준비
 
-**가장 먼저, 다른 어떤 작업보다 앞서** `add_repo` 도구를 `owner="yangduckduck-source"`, `repo="urban-octo-palm-tree"`,
+**가장 먼저, 다른 어떤 작업보다 앞서** `mcp__claude-code-remote__add_repo` 도구(이미 로드되어 있다 — ToolSearch로 찾지 말고 바로 호출한다. ToolSearch의 "No matching deferred tools"는 '이미 로드됨'이라는 뜻이다)를 `owner="yangduckduck-source"`, `repo="urban-octo-palm-tree"`,
 `access="push"`로 **반드시** 호출한다. 저장소가 이미 보이거나 그냥 `git clone`이 되더라도 생략하지 않는다.
 공개 저장소라 읽기는 아무나 되지만, push 자격 증명은 `add_repo`로 붙여야만 생긴다(빠뜨리면 마지막 push가 403으로 막혀 그날 조사가 전부 버려진다).
 `add_repo`가 거부되면 조사를 시작하지 말고 그 이유만 보고하고 끝낸다.
