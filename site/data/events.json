@@ -1,20 +1,15 @@
 {
  "meta": {
-  "updated_at": "2026-11-16T16:47+09:00",
+  "updated_at": "2026-11-16T18:13+09:00",
   "runs": [
    {
-    "mission": "서울 도서관 강연",
-    "found": 1,
-    "kept": 1
-   },
-   {
-    "mission": "온라인 북토크·강연",
+    "mission": "재확인",
     "found": 1,
     "kept": 1
    }
   ],
   "count": 92,
-  "added": 2
+  "added": 0
  },
  "events": [
   {
@@ -2468,7 +2463,7 @@
    "score": 12
   },
   {
-   "source": "서울 도서관 강연",
+   "source": "재확인",
    "title": "편혜영 작가 음악 북토크 — 『새들의 사회성』",
    "date": "2026-11-20",
    "start": "19:00",
@@ -2486,18 +2481,18 @@
    "format": "북토크",
    "audience": "성인",
    "festival": "",
-   "price": "무료",
+   "price": "미확인",
    "price_note": "",
-   "registration": "강남구립논현문화마루도서관 홈페이지 신청(성인 100명)",
+   "registration": "논현문화마루도서관 홈페이지 신청 (성인 100명)",
    "url": "https://www.gangnam.go.kr/office/longlearn/board/longlearn_11/2909/view.do",
-   "summary": "신작 소설을 중심으로 사람 사이의 관계와 연대를 싱어송라이터 강아솔과 음악을 곁들여 이야기하는 자리.",
-   "confidence": "보도",
+   "summary": "소설집 『새들의 사회성』을 중심으로 사람 사이의 관계와 연대를 이야기하는 음악 북토크. 싱어송라이터 강아솔 진행.",
+   "confidence": "확정",
    "relevance": 0.85,
    "speaker_weight": 0.7,
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "id": "443f522d1d",
-   "score": 70
+   "score": 74
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
