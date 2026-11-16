@@ -1,9 +1,20 @@
 {
  "meta": {
-  "updated_at": "2026-11-16T16:19+09:00",
-  "runs": [],
-  "count": 90,
-  "added": 0
+  "updated_at": "2026-11-16T16:47+09:00",
+  "runs": [
+   {
+    "mission": "서울 도서관 강연",
+    "found": 1,
+    "kept": 1
+   },
+   {
+    "mission": "온라인 북토크·강연",
+    "found": 1,
+    "kept": 1
+   }
+  ],
+  "count": 92,
+  "added": 2
  },
  "events": [
   {
@@ -2457,6 +2468,38 @@
    "score": 12
   },
   {
+   "source": "서울 도서관 강연",
+   "title": "편혜영 작가 음악 북토크 — 『새들의 사회성』",
+   "date": "2026-11-20",
+   "start": "19:00",
+   "end": "21:00",
+   "city": "서울",
+   "venue": "논현1동 복합문화센터 5층 대강당 (강남구 학동로20길 25)",
+   "speakers": [
+    "편혜영",
+    "강아솔"
+   ],
+   "book": "새들의 사회성",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "무료",
+   "price_note": "",
+   "registration": "강남구립논현문화마루도서관 홈페이지 신청(성인 100명)",
+   "url": "https://www.gangnam.go.kr/office/longlearn/board/longlearn_11/2909/view.do",
+   "summary": "신작 소설을 중심으로 사람 사이의 관계와 연대를 싱어송라이터 강아솔과 음악을 곁들여 이야기하는 자리.",
+   "confidence": "보도",
+   "relevance": 0.85,
+   "speaker_weight": 0.7,
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "id": "443f522d1d",
+   "score": 70
+  },
+  {
    "source": "예스24·알라딘 작가와의 만남",
    "title": "[클래스24] 『재무덕후 이재용의 숫자로 기업 읽기』 이재용 저자 북토크 (창비서교빌딩)",
    "date": "2026-11-21",
@@ -2486,6 +2529,38 @@
    "last_seen": "2026-10-29",
    "id": "32e020ff99",
    "score": 30
+  },
+  {
+   "source": "온라인 북토크·강연",
+   "title": "힙독클럽 고전 강연 — 신종호 『노인과 바다』",
+   "date": "2026-11-23",
+   "start": "20:00",
+   "end": "21:00",
+   "city": "온라인",
+   "venue": "줌 웨비나",
+   "speakers": [
+    "신종호"
+   ],
+   "book": "노인과 바다",
+   "categories": [
+    "문학",
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "누구나",
+   "festival": "",
+   "price": "무료",
+   "price_note": "",
+   "registration": "힙독클럽 프로그램 신청 페이지, 11/12~11/20 17시, 300명",
+   "url": "https://maily.so/hipdokclub/posts/w6ovxl87zk5",
+   "summary": "서울도서관 힙독클럽의 헤밍웨이 『노인과 바다』 강연.",
+   "confidence": "보도",
+   "relevance": 0.75,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "id": "f68f867c30",
+   "score": 66
   },
   {
    "source": "서울 도서관 강연",
