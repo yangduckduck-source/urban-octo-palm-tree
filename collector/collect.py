@@ -392,11 +392,17 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
         qs = [fill(q) for q in rotate(m["queries"], cur, qn)]
         us = rotate([u for u in m.get("urls", []) if u not in blocked], cur, un)
         plan["missions"].append(m["name"])
+        plan.setdefault("queries", {})[m["name"]] = qs
         out.append(f"### {m['name']} ({m['city']})")
         out += [f"- 검색: {q}" for q in qs]
         out += [f"- 열람: {u}" for u in us]
     if not plan["missions"]:
         out.append("(없음 — 오늘은 재확인만 한다)")
+    else:
+        total = sum(len(v) for v in plan.get("queries", {}).values())
+        out.append("")
+        out.append(f"→ 위 '검색:' {total}개를 **하나도 빠짐없이** 그대로 검색하고, 검색한 문장을 inbox의 \"searched\" 목록에 그대로 적는다.")
+        out.append("  다 검색하지 않은 미션은 조사 완료로 기록되지 않고 다음 회차에 다시 나온다.")
 
     week = (today + timedelta(days=7)).isoformat()
     cand = [e for e in existing if today.isoformat() <= e["date"] <= week
@@ -418,15 +424,23 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
     return 0
 
 
-def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str]) -> list[str]:
-    """--brief 로 정한 계획을 실행 완료로 기록한다. 반환: 기록된 미션 이름."""
+def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str],
+                searched: list[str] | None = None) -> tuple[list[str], list[str]]:
+    """--brief 로 정한 계획 중 검색어를 모두 실행한 미션만 완료로 기록한다.
+    반환: (완료 기록한 미션, 검색이 모자라 다음 회차로 미룬 미션)."""
     st = load_state()
-    done = []
+    done, short = [], []
+    did = {norm(q) for q in (searched or [])}
     if PLAN.exists():
         plan = json.loads(PLAN.read_text(encoding="utf-8"))
         if plan.get("date") == today.isoformat():
             qn = cfg["general"].get("queries_per_run", 3)
+            planned = plan.get("queries", {})
             for name in plan.get("missions", []):
+                need = planned.get(name, [])
+                if need and not all(norm(q) in did for q in need):
+                    short.append(f"{name} ({sum(norm(q) in did for q in need)}/{len(need)})")
+                    continue
                 ms = st["missions"].setdefault(name, {})
                 ms["last_run"] = today.isoformat()
                 ms["last_slot"] = plan.get("slot", slot_of(datetime.now(KST)))
@@ -439,7 +453,7 @@ def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str]) 
     ids = {e["id"] for e in events}
     st["verified"] = {k: v for k, v in st["verified"].items() if k in ids}
     save_state(st)
-    return done
+    return done, short
 
 
 def load() -> tuple[list[dict], dict]:
@@ -452,6 +466,7 @@ def load() -> tuple[list[dict], dict]:
 def ingest(path: Path, cfg: dict, today: date, existing: list[dict]) -> int:
     raw = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
     blocked = raw.get("blocked_urls", []) if isinstance(raw, dict) else []
+    searched = raw.get("searched", []) if isinstance(raw, dict) else []
     raw = raw.get("events", []) if isinstance(raw, dict) else raw
     before = {e["id"] for e in existing}
     horizon = cfg["general"]["horizon_days"]
@@ -472,9 +487,12 @@ def ingest(path: Path, cfg: dict, today: date, existing: list[dict]) -> int:
         "count": len(events),
         "added": len(added),
     })
-    done = finish_plan(cfg, today, events, blocked)
+    done, short = finish_plan(cfg, today, events, blocked, searched)
     print(f"후보 {len(raw)}건 → 채택 {len(kept)}건 (새 행사 {len(added)}건), 달력 전체 {len(events)}건")
+    print(f"검색 {len(searched)}회 기록됨")
     print(f"조사 완료로 기록한 미션: {', '.join(done) or '(없음)'}")
+    if short:
+        print(f"⚠ 검색을 다 하지 않아 다음 회차로 미룬 미션: {', '.join(short)}")
     for r in log.values():
         print(f"  [{r['mission']}] {r['found']} → {r['kept']}")
     return 0
