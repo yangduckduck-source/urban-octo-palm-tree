@@ -1,15 +1,15 @@
 {
  "meta": {
-  "updated_at": "2026-11-16T18:13+09:00",
+  "updated_at": "2026-11-17T08:50+09:00",
   "runs": [
    {
-    "mission": "재확인",
+    "mission": "서울 서점 북토크",
     "found": 1,
     "kept": 1
    }
   ],
-  "count": 92,
-  "added": 0
+  "count": 93,
+  "added": 1
  },
  "events": [
   {
@@ -2212,6 +2212,37 @@
    "last_seen": "2026-10-22",
    "id": "99216f5572",
    "score": 75
+  },
+  {
+   "source": "서울 서점 북토크",
+   "title": "보라토크 — 박혜란",
+   "date": "2026-11-17",
+   "start": "19:30",
+   "end": "21:00",
+   "city": "서울",
+   "venue": "광화문 교보빌딩 23층 대산홀",
+   "speakers": [
+    "박혜란"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "무료",
+   "price_note": "",
+   "registration": "교보문고 문화공간 페이지에서 신청",
+   "url": "https://store.kyobobook.co.kr/culture/bora-show/873",
+   "summary": "교보문고 보라토크 박혜란 편.",
+   "confidence": "보도",
+   "relevance": 0.5,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "id": "483bfb8120",
+   "score": 50
   },
   {
    "source": "서울 철학·인문 강좌",
