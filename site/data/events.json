@@ -1,30 +1,20 @@
 {
  "meta": {
-  "updated_at": "2026-11-17T18:04+09:00",
+  "updated_at": "2026-11-18T08:50+09:00",
   "runs": [
+   {
+    "mission": "도서전·독서대전·북페스티벌",
+    "found": 1,
+    "kept": 1
+   },
    {
     "mission": "재확인",
     "found": 1,
     "kept": 1
-   },
-   {
-    "mission": "서울 서점 북토크",
-    "found": 1,
-    "kept": 1
-   },
-   {
-    "mission": "서울 도서관 강연",
-    "found": 1,
-    "kept": 1
-   },
-   {
-    "mission": "온라인 북토크·강연",
-    "found": 1,
-    "kept": 1
    }
   ],
-  "count": 96,
-  "added": 3
+  "count": 97,
+  "added": 1
  },
  "events": [
   {
@@ -2447,7 +2437,7 @@
    "score": 75
   },
   {
-   "source": "온라인 북토크·강연",
+   "source": "재확인",
    "title": "교보문고 이지은 작가 랜선 팬사인회",
    "date": "2026-11-19",
    "start": "19:00",
@@ -2457,25 +2447,25 @@
    "speakers": [
     "이지은"
    ],
-   "book": "",
+   "book": "겨울 선물의 전설",
    "categories": [
     "문학"
    ],
-   "format": "북토크",
+   "format": "기타",
    "audience": "누구나",
    "festival": "",
-   "price": "미확인",
-   "price_note": "",
-   "registration": "교보문고 이벤트 페이지",
+   "price": "무료",
+   "price_note": "사인본 구매 시 별도",
+   "registration": "방송 채팅창 구매 링크",
    "url": "https://event.kyobobook.co.kr/detail/250206",
-   "summary": "사인 진행과 작가와의 대화로 약 1시간 진행.",
-   "confidence": "보도",
+   "summary": "사인 진행과 작가와의 대화로 구성된 약 1시간 랜선 팬사인회.",
+   "confidence": "확정",
    "relevance": 0.3,
    "speaker_weight": 0.4,
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-17",
+   "last_seen": "2026-11-18",
    "id": "d796ea0644",
-   "score": 54
+   "score": 49
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
@@ -3040,6 +3030,37 @@
    "last_seen": "2026-10-18",
    "id": "3cd4adbbbe",
    "score": 36
+  },
+  {
+   "source": "도서전·독서대전·북페스티벌",
+   "title": "서울책보고 겨울 프로그램 북토크 — 박소령 ‘실패를 통과하는 일’",
+   "date": "2026-12-23",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "서울책보고",
+   "speakers": [
+    "박소령"
+   ],
+   "book": "실패를 통과하는 일",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "형형색책 ‘기록.zip’",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "서울책보고 인스타그램 프로필 링크",
+   "url": "https://mediahub.seoul.go.kr/archives/2016583",
+   "summary": "서울책보고 겨울 프로그램 ‘기록.zip’ 연계, 박소령 작가가 실패의 경험을 주제로 독자와 만나는 북토크.",
+   "confidence": "보도",
+   "relevance": 0.5,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "id": "858f75231a",
+   "score": 51
   }
  ]
 }
