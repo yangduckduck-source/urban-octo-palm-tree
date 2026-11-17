@@ -1,15 +1,30 @@
 {
  "meta": {
-  "updated_at": "2026-11-17T08:50+09:00",
+  "updated_at": "2026-11-17T18:04+09:00",
   "runs": [
+   {
+    "mission": "재확인",
+    "found": 1,
+    "kept": 1
+   },
    {
     "mission": "서울 서점 북토크",
     "found": 1,
     "kept": 1
+   },
+   {
+    "mission": "서울 도서관 강연",
+    "found": 1,
+    "kept": 1
+   },
+   {
+    "mission": "온라인 북토크·강연",
+    "found": 1,
+    "kept": 1
    }
   ],
-  "count": 93,
-  "added": 1
+  "count": 96,
+  "added": 3
  },
  "events": [
   {
@@ -2214,7 +2229,7 @@
    "score": 75
   },
   {
-   "source": "서울 서점 북토크",
+   "source": "재확인",
    "title": "보라토크 — 박혜란",
    "date": "2026-11-17",
    "start": "19:30",
@@ -2228,21 +2243,21 @@
    "categories": [
     "인문"
    ],
-   "format": "북토크",
+   "format": "강연",
    "audience": "성인",
    "festival": "",
    "price": "무료",
    "price_note": "",
-   "registration": "교보문고 문화공간 페이지에서 신청",
+   "registration": "교보문고 문화공간 페이지",
    "url": "https://store.kyobobook.co.kr/culture/bora-show/873",
-   "summary": "교보문고 보라토크 박혜란 편.",
-   "confidence": "보도",
+   "summary": "여성학자 박혜란이 여성의 몸과 나이듦을 이야기하는 강연.",
+   "confidence": "확정",
    "relevance": 0.5,
    "speaker_weight": 0.5,
    "first_seen": "2026-11-17",
    "last_seen": "2026-11-17",
    "id": "483bfb8120",
-   "score": 50
+   "score": 51
   },
   {
    "source": "서울 철학·인문 강좌",
@@ -2430,6 +2445,37 @@
    "last_seen": "2026-10-29",
    "id": "b5fd0aa4fc",
    "score": 75
+  },
+  {
+   "source": "온라인 북토크·강연",
+   "title": "교보문고 이지은 작가 랜선 팬사인회",
+   "date": "2026-11-19",
+   "start": "19:00",
+   "end": "20:00",
+   "city": "온라인",
+   "venue": "교보문고 캐스팅·유튜브",
+   "speakers": [
+    "이지은"
+   ],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "누구나",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교보문고 이벤트 페이지",
+   "url": "https://event.kyobobook.co.kr/detail/250206",
+   "summary": "사인 진행과 작가와의 대화로 약 1시간 진행.",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "id": "d796ea0644",
+   "score": 54
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
@@ -2776,6 +2822,66 @@
    "last_seen": "2026-11-02",
    "id": "32a91e9d08",
    "score": 70
+  },
+  {
+   "source": "서울 도서관 강연",
+   "title": "강남구립논현도서관 작가의 서재 — 이반디 작가와의 만남",
+   "date": "2026-11-28",
+   "start": "10:30",
+   "end": "12:00",
+   "city": "서울",
+   "venue": "강남구립논현도서관 프로그램실",
+   "speakers": [
+    "이반디"
+   ],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "어린이",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "홈페이지·전화·방문",
+   "url": "https://www.gangnam.go.kr/office/longlearn/board/longlearn_11/2909/view.do",
+   "summary": "2019~2021년생 유아와 양육자 대상 그림책 작가와의 만남.",
+   "confidence": "보도",
+   "relevance": 0.1,
+   "speaker_weight": 0.3,
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "id": "b8be0c3ed2",
+   "score": 8
+  },
+  {
+   "source": "서울 서점 북토크",
+   "title": "『공예가의 생각』 출간 기념 북토크",
+   "date": "2026-11-28",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "",
+   "speakers": [],
+   "book": "공예가의 생각",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교보문고 이벤트 응모(11/12~11/27)",
+   "url": "https://event.kyobobook.co.kr/detail/250312",
+   "summary": "직접 디자인하고 만드는 공예가가 묻고 찾은 좋은 삶의 모습을 다루는 북토크.",
+   "confidence": "보도",
+   "relevance": 0.35,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "id": "e508abc626",
+   "score": 45
   },
   {
    "title": "서로의 독자가 되는 법 — 강화길 × 임솔아, 여성 서사",
