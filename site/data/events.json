@@ -1,20 +1,9 @@
 {
  "meta": {
-  "updated_at": "2026-11-18T08:50+09:00",
-  "runs": [
-   {
-    "mission": "도서전·독서대전·북페스티벌",
-    "found": 1,
-    "kept": 1
-   },
-   {
-    "mission": "재확인",
-    "found": 1,
-    "kept": 1
-   }
-  ],
+  "updated_at": "2026-11-18T18:04+09:00",
+  "runs": [],
   "count": 97,
-  "added": 1
+  "added": 0
  },
  "events": [
   {
