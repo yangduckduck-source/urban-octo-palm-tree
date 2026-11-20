@@ -1,7 +1,13 @@
 {
  "meta": {
-  "updated_at": "2026-11-20T18:04+09:00",
-  "runs": [],
+  "updated_at": "2026-11-21T08:51+09:00",
+  "runs": [
+   {
+    "mission": "재확인",
+    "found": 1,
+    "kept": 1
+   }
+  ],
   "count": 97,
   "added": 0
  },
@@ -2834,14 +2840,17 @@
    "score": 8
   },
   {
-   "source": "서울 서점 북토크",
+   "source": "재확인",
    "title": "『공예가의 생각』 출간 기념 북토크",
    "date": "2026-11-28",
    "start": "19:00",
-   "end": "",
+   "end": "20:00",
    "city": "서울",
-   "venue": "",
-   "speakers": [],
+   "venue": "교보문고 합정점 배움홀",
+   "speakers": [
+    "공예가 저자",
+    "김혜인 MD"
+   ],
    "book": "공예가의 생각",
    "categories": [
     "인문"
@@ -2849,18 +2858,18 @@
    "format": "북토크",
    "audience": "성인",
    "festival": "",
-   "price": "미확인",
-   "price_note": "",
-   "registration": "교보문고 이벤트 응모(11/12~11/27)",
+   "price": "유료",
+   "price_note": "북토크 티켓 3,000포인트 또는 추가 결제, 30명 한정",
+   "registration": "교보문고 이벤트 페이지에서 도서 구매 시 북토크 티켓 선택 (11/12~11/27)",
    "url": "https://event.kyobobook.co.kr/detail/250312",
-   "summary": "직접 디자인하고 만드는 공예가가 묻고 찾은 좋은 삶의 모습을 다루는 북토크.",
-   "confidence": "보도",
-   "relevance": 0.35,
+   "summary": "공예가의 시선과 작업 철학을 다룬 신간의 출간 기념 북토크.",
+   "confidence": "확정",
+   "relevance": 0.4,
    "speaker_weight": 0.4,
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-17",
+   "last_seen": "2026-11-21",
    "id": "e508abc626",
-   "score": 45
+   "score": 51
   },
   {
    "title": "서로의 독자가 되는 법 — 강화길 × 임솔아, 여성 서사",
