@@ -1,13 +1,7 @@
 {
  "meta": {
-  "updated_at": "2026-11-21T08:51+09:00",
-  "runs": [
-   {
-    "mission": "재확인",
-    "found": 1,
-    "kept": 1
-   }
-  ],
+  "updated_at": "2026-11-21T18:04+09:00",
+  "runs": [],
   "count": 97,
   "added": 0
  },
