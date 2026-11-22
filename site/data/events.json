@@ -1,9 +1,15 @@
 {
  "meta": {
-  "updated_at": "2026-11-22T08:50+09:00",
-  "runs": [],
-  "count": 97,
-  "added": 0
+  "updated_at": "2026-11-22T18:04+09:00",
+  "runs": [
+   {
+    "mission": "서울 철학·인문 강좌",
+    "found": 1,
+    "kept": 1
+   }
+  ],
+  "count": 98,
+  "added": 1
  },
  "events": [
   {
@@ -2961,6 +2967,36 @@
    "last_seen": "2026-10-17",
    "id": "f1481b4cbb",
    "score": 75
+  },
+  {
+   "source": "서울 철학·인문 강좌",
+   "title": "2026 연세노벨위크 문학 심포지엄",
+   "date": "2026-12-02",
+   "start": "",
+   "end": "",
+   "city": "서울",
+   "venue": "연세대학교",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "문학",
+    "인문"
+   ],
+   "format": "기타",
+   "audience": "누구나",
+   "festival": "연세노벨위크",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "event-us 신청 페이지",
+   "url": "https://event-us.kr/yonseinobelweek/event/139571",
+   "summary": "연세노벨위크 프로그램의 하나로 열리는 문학 심포지엄.",
+   "confidence": "추정",
+   "relevance": 0.65,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "id": "90982d4b4b",
+   "score": 51
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
