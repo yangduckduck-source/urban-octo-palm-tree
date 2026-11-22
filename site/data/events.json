@@ -1,15 +1,9 @@
 {
  "meta": {
-  "updated_at": "2026-11-22T18:04+09:00",
-  "runs": [
-   {
-    "mission": "서울 철학·인문 강좌",
-    "found": 1,
-    "kept": 1
-   }
-  ],
+  "updated_at": "2026-11-23T08:50+09:00",
+  "runs": [],
   "count": 98,
-  "added": 1
+  "added": 0
  },
  "events": [
   {
