@@ -1,4 +1,4 @@
-"""서울·청주 문학/인문/철학 북토크·강연 수집기.
+"""서울·청주·대전 문학/인문/철학 북토크·강연 수집기.
 
 실행 흐름
   1. config.toml 의 미션마다 Claude에게 웹 검색(web_search)·페이지 열람(web_fetch)을 시켜 조사 노트를 받는다.
@@ -38,7 +38,7 @@ KNOWN = CACHE / "known.tsv"       # 이미 달력에 있는 앞으로의 행사 
 PLAN = CACHE / "plan.json"        # --brief 가 정한 오늘의 계획, --ingest 가 소비 (커밋 안 함)
 KST = timezone(timedelta(hours=9))
 
-CITIES = ("서울", "청주", "온라인")  # 온라인: 줌·유튜브 라이브 등 어디서나 참여 가능한 행사
+CITIES = ("서울", "청주", "대전", "온라인")  # 온라인: 줌·유튜브 라이브 등 어디서나 참여 가능한 행사
 CATEGORIES = ["글쓰기", "문학", "철학", "인문"]
 FORMATS = ["북토크", "강연", "강좌", "대담", "낭독회", "워크숍", "축제", "기타"]
 AUDIENCES = ["성인", "누구나", "가족", "청소년", "어린이", "제한"]
@@ -57,7 +57,7 @@ EVENT_SCHEMA = {
                     "date": {"type": "string", "description": "YYYY-MM-DD. 모르면 빈 문자열"},
                     "start": {"type": "string", "description": "HH:MM 24시간제. 모르면 빈 문자열"},
                     "end": {"type": "string", "description": "HH:MM. 모르면 빈 문자열"},
-                    "city": {"type": "string", "enum": ["서울", "청주", "온라인", "기타"]},
+                    "city": {"type": "string", "enum": ["서울", "청주", "대전", "온라인", "기타"]},
                     "venue": {"type": "string"},
                     "speakers": {"type": "array", "items": {"type": "string"}},
                     "book": {"type": "string", "description": "관련 도서 제목. 없으면 빈 문자열"},
@@ -104,7 +104,7 @@ def research(client, cfg: dict, mission: dict, today: date) -> str:
     urls = "\n".join(f"- {u}" for u in mission.get("urls", [])) or "- (없음)"
 
     prompt = f"""오늘은 {today.isoformat()}({'월화수목금토일'[today.weekday()]}요일)입니다.
-{today.isoformat()} ~ {until.isoformat()} 사이에 {mission['city'] if mission['city'] != '둘 다' else '서울 또는 청주'}에서 열리는
+{today.isoformat()} ~ {until.isoformat()} 사이에 {mission['city'] if mission['city'] != '둘 다' else '서울·청주·대전'}에서 열리는
 문학·글쓰기·철학·인문학 분야의 북토크, 작가와의 만남, 강연, 강좌, 낭독회, 대담을 최대한 많이 찾아 주세요.
 줌·유튜브 라이브 같은 온라인 행사도 찾아 주세요(지역 무관, city는 '온라인').
 도서전·독서대전·북페스티벌 안에서 열리는 강연과 북토크도 각각 따로 찾아야 합니다. 무료·유료 모두 포함합니다.
@@ -119,7 +119,7 @@ def research(client, cfg: dict, mission: dict, today: date) -> str:
 {cfg['profile']['description'].strip()}
 
 규칙
-- 날짜가 지난 행사, 서울·청주 밖의 오프라인 행사는 버리세요. 온라인 행사는 포함합니다.
+- 날짜가 지난 행사, 서울·청주·대전 밖의 오프라인 행사는 버리세요. 온라인 행사는 포함합니다.
 - 기사가 작년 행사를 다루는지 반드시 연도를 확인하세요. 작년 일정을 올해로 옮겨 적으면 안 됩니다.
 - 시리즈 강연은 회차마다 날짜·연사를 따로 적으세요.
 - 날짜·시간·장소·연사·관련 도서·비용·신청 방법·출처 URL을 행사마다 적으세요. 모르는 항목은 '미확인'이라고 쓰세요.
