@@ -11,14 +11,14 @@
    "last_slot": 1479888
   },
   "서울 도서관 강연": {
-   "cursor": 30,
-   "last_run": "2026-11-23",
-   "last_slot": 1479887
+   "cursor": 33,
+   "last_run": "2026-11-24",
+   "last_slot": 1479889
   },
   "서울 독립서점·출판사 북토크": {
-   "cursor": 30,
-   "last_run": "2026-11-23",
-   "last_slot": 1479887
+   "cursor": 33,
+   "last_run": "2026-11-24",
+   "last_slot": 1479889
   },
   "서울 문학관·문학재단": {
    "cursor": 24,
@@ -26,24 +26,24 @@
    "last_slot": 1479888
   },
   "서울 서점 북토크": {
-   "cursor": 54,
+   "cursor": 57,
    "last_run": "2026-11-24",
-   "last_slot": 1479888
+   "last_slot": 1479889
   },
   "서울 철학·인문 강좌": {
-   "cursor": 30,
-   "last_run": "2026-11-23",
-   "last_slot": 1479887
+   "cursor": 33,
+   "last_run": "2026-11-24",
+   "last_slot": 1479889
   },
   "예스24·알라딘 작가와의 만남": {
-   "cursor": 54,
+   "cursor": 57,
    "last_run": "2026-11-24",
-   "last_slot": 1479888
+   "last_slot": 1479889
   },
   "온라인 북토크·강연": {
-   "cursor": 30,
-   "last_run": "2026-11-23",
-   "last_slot": 1479887
+   "cursor": 33,
+   "last_run": "2026-11-24",
+   "last_slot": 1479889
   },
   "청주 도서관·문화기관": {
    "cursor": 21,
