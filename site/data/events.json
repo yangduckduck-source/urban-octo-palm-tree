@@ -1,46 +1,17 @@
 {
  "meta": {
-  "updated_at": "2026-11-24T21:44+09:00",
+  "updated_at": "2026-11-25T08:51+09:00",
   "runs": [
    {
-    "mission": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
-    "found": 22,
-    "kept": 22
+    "mission": "재확인",
+    "found": 3,
+    "kept": 3
    }
   ],
-  "count": 120,
-  "added": 22
+  "count": 119,
+  "added": 0
  },
  "events": [
-  {
-   "title": "김수영과 여름밤 — 옥상 시 낭독·필사",
-   "date": "2026-10-10",
-   "start": "",
-   "end": "",
-   "city": "서울",
-   "venue": "김수영문학관 (도봉구)",
-   "speakers": [],
-   "book": "",
-   "categories": [
-    "문학"
-   ],
-   "format": "낭독회",
-   "audience": "성인",
-   "festival": "",
-   "price": "무료",
-   "price_note": "",
-   "registration": "김수영문학관 누리집 확인",
-   "url": "https://munjang.or.kr/facilities/detail.es?mid=a70705000000&id=1244",
-   "summary": "김수영문학관 옥상에서 김수영의 시를 함께 낭독하고 필사하는 하루 행사.",
-   "confidence": "보도",
-   "relevance": 0.78,
-   "speaker_weight": 0.4,
-   "source": "초기 조사 (2026-10-09)",
-   "first_seen": "2026-10-09",
-   "last_seen": "2026-10-09",
-   "id": "2d6c3527c3",
-   "score": 64
-  },
   {
    "title": "명강의 Big10 — 이정모",
    "date": "2026-10-14",
@@ -3059,37 +3030,37 @@
    "score": 64
   },
   {
-   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
-   "title": "알라딘 유수연 X 김혼비 북토크",
-   "date": "2026-11-30",
-   "start": "19:30",
-   "end": "",
-   "city": "서울",
-   "venue": "알라딘빌딩 1층 강연장",
    "speakers": [
     "유수연",
     "김혼비"
    ],
    "book": "",
    "categories": [
-    "문학",
-    "글쓰기"
+    "글쓰기",
+    "문학"
    ],
    "format": "북토크",
    "audience": "성인",
    "festival": "",
-   "price": "미확인",
+   "price": "무료",
    "price_note": "",
-   "registration": "알라딘 이벤트 페이지에서 신청",
-   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
-   "summary": "",
-   "confidence": "보도",
+   "summary": "알라딘 작가와의 만남 북토크.",
    "relevance": 0.75,
-   "speaker_weight": 0.55,
+   "speaker_weight": 0.6,
+   "source": "재확인",
+   "title": "알라딘 유수연 X 김혼비 북토크",
+   "date": "2026-11-30",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "registration": "알라딘 작가와의 만남 페이지에서 11월 29일까지 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "confidence": "확정",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "id": "0fd3104b83",
-   "score": 70
+   "score": 74
   },
   {
    "source": "서울 문학관·문학재단",
@@ -3124,13 +3095,36 @@
    "score": 75
   },
   {
-   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
-   "title": "알라딘 신진욱×토마스 그룸케 대담",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "문학",
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "연세노벨위크",
+   "price": "무료",
+   "price_note": "",
+   "summary": "「문학의 힘: 상상력은 삶을 어디로 밀고 가는가」를 주제로 한 심포지엄.",
+   "relevance": 0.8,
+   "speaker_weight": 0.7,
+   "source": "재확인",
+   "title": "2026 연세노벨위크 문학 심포지엄",
    "date": "2026-12-02",
-   "start": "19:00",
-   "end": "",
+   "start": "14:00",
+   "end": "17:50",
    "city": "서울",
-   "venue": "노무현 시민센터 다목적홀",
+   "venue": "연세대학교",
+   "registration": "event-us 행사 페이지에서 신청",
+   "url": "https://event-us.kr/yonseinobelweek/event/139571",
+   "confidence": "확정",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-25",
+   "id": "90982d4b4b",
+   "score": 76
+  },
+  {
    "speakers": [
     "신진욱",
     "토마스 그룸케"
@@ -3142,18 +3136,25 @@
    "format": "대담",
    "audience": "성인",
    "festival": "",
-   "price": "미확인",
+   "price": "무료",
    "price_note": "",
-   "registration": "알라딘 이벤트 페이지에서 신청",
+   "summary": "알라딘 주최 대담.",
+   "relevance": 0.5,
+   "speaker_weight": 0.6,
+   "source": "재확인",
+   "title": "알라딘 신진욱×토마스 그룸케 대담",
+   "date": "2026-12-02",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "노무현 시민센터 다목적홀",
+   "registration": "알라딘 작가와의 만남 페이지에서 11월 29일까지 신청",
    "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
-   "summary": "",
-   "confidence": "보도",
-   "relevance": 0.4,
-   "speaker_weight": 0.5,
+   "confidence": "확정",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "id": "b0df9c9dbe",
-   "score": 48
+   "score": 54
   },
   {
    "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
@@ -3185,36 +3186,6 @@
    "last_seen": "2026-11-24",
    "id": "3a4905d8c5",
    "score": 38
-  },
-  {
-   "source": "서울 철학·인문 강좌",
-   "title": "2026 연세노벨위크 문학 심포지엄",
-   "date": "2026-12-02",
-   "start": "",
-   "end": "",
-   "city": "서울",
-   "venue": "연세대학교",
-   "speakers": [],
-   "book": "",
-   "categories": [
-    "문학",
-    "인문"
-   ],
-   "format": "기타",
-   "audience": "누구나",
-   "festival": "연세노벨위크",
-   "price": "미확인",
-   "price_note": "",
-   "registration": "event-us 신청 페이지",
-   "url": "https://event-us.kr/yonseinobelweek/event/139571",
-   "summary": "연세노벨위크 프로그램의 하나로 열리는 문학 심포지엄.",
-   "confidence": "추정",
-   "relevance": 0.65,
-   "speaker_weight": 0.5,
-   "first_seen": "2026-11-22",
-   "last_seen": "2026-11-22",
-   "id": "90982d4b4b",
-   "score": 51
   },
   {
    "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
