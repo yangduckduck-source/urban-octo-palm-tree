@@ -1,9 +1,15 @@
 {
  "meta": {
-  "updated_at": "2026-11-24T18:04+09:00",
-  "runs": [],
-  "count": 98,
-  "added": 0
+  "updated_at": "2026-11-24T21:44+09:00",
+  "runs": [
+   {
+    "mission": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+    "found": 22,
+    "kept": 22
+   }
+  ],
+  "count": 120,
+  "added": 22
  },
  "events": [
   {
@@ -2676,6 +2682,37 @@
    "score": 61
   },
   {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "2026 명강의Big10 - 정재승",
+   "date": "2026-11-25",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "교보문고 문화공간(서울)",
+   "speakers": [
+    "정재승"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교보문고 문화공간 페이지에서 신청",
+   "url": "https://store.kyobobook.co.kr/culture/lecture-top-ten",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.35,
+   "speaker_weight": 0.65,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "57bc9b63e8",
+   "score": 47
+  },
+  {
    "source": "서울 도서관 강연",
    "start": "",
    "end": "",
@@ -2703,6 +2740,35 @@
    "last_seen": "2026-10-20",
    "id": "2a383f416d",
    "score": 33
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 북콘서트",
+   "date": "2026-11-26",
+   "start": "13:30",
+   "end": "",
+   "city": "서울",
+   "venue": "정동1928 아트센터(서울 중구)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "3ee03848e3",
+   "score": 44
   },
   {
    "source": "서울 철학·인문 강좌",
@@ -2735,6 +2801,68 @@
    "last_seen": "2026-10-28",
    "id": "706078e701",
    "score": 76
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 홍성욱 북토크",
+   "date": "2026-11-26",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "북살롱 오티움(서울 종로구)",
+   "speakers": [
+    "홍성욱"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.35,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "b58fb45053",
+   "score": 47
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "보라토크 - 에드윈 킴x이서원 편",
+   "date": "2026-11-27",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "교보문고 문화공간(서울)",
+   "speakers": [
+    "에드윈 킴"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교보문고 문화공간 페이지에서 신청",
+   "url": "https://store.kyobobook.co.kr/culture/bora-show",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.2,
+   "speaker_weight": 0.45,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "04d52a55bc",
+   "score": 43
   },
   {
    "title": "서로의 독자가 되는 법 — 정지아 × 김기창",
@@ -2931,6 +3059,39 @@
    "score": 64
   },
   {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 유수연 X 김혼비 북토크",
+   "date": "2026-11-30",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "유수연",
+    "김혼비"
+   ],
+   "book": "",
+   "categories": [
+    "문학",
+    "글쓰기"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.75,
+   "speaker_weight": 0.55,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "0fd3104b83",
+   "score": 70
+  },
+  {
    "source": "서울 문학관·문학재단",
    "title": "문학으로 모이는 방법들 2026 라운드테이블 — ‘한국문학, 위기를 대하는 태도’",
    "date": "2026-11-30",
@@ -2963,6 +3124,69 @@
    "score": 75
   },
   {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 신진욱×토마스 그룸케 대담",
+   "date": "2026-12-02",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "노무현 시민센터 다목적홀",
+   "speakers": [
+    "신진욱",
+    "토마스 그룸케"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "대담",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.4,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "b0df9c9dbe",
+   "score": 48
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "보라특강 김학렬(빠숑) 편",
+   "date": "2026-12-02",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "교보문고 문화공간(서울)",
+   "speakers": [
+    "김학렬"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교보문고 문화공간 페이지에서 신청",
+   "url": "https://store.kyobobook.co.kr/culture/bora-show",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.1,
+   "speaker_weight": 0.45,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "3a4905d8c5",
+   "score": 38
+  },
+  {
    "source": "서울 철학·인문 강좌",
    "title": "2026 연세노벨위크 문학 심포지엄",
    "date": "2026-12-02",
@@ -2991,6 +3215,37 @@
    "last_seen": "2026-11-22",
    "id": "90982d4b4b",
    "score": 51
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 김종영 북콘서트",
+   "date": "2026-12-04",
+   "start": "15:00",
+   "end": "",
+   "city": "서울",
+   "venue": "서울 강남구 테헤란로 514, 8층",
+   "speakers": [
+    "김종영"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "cf8fd30e80",
+   "score": 44
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
@@ -3025,6 +3280,321 @@
    "score": 70
   },
   {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 김난도 북토크",
+   "date": "2026-12-07",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "김난도"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.1,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "6c9f3ac264",
+   "score": 41
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 임옥희 X 정멜멜 북토크",
+   "date": "2026-12-08",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "임옥희",
+    "정멜멜"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.55,
+   "speaker_weight": 0.45,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "f80a505631",
+   "score": 50
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "보라토크 - 조승우 편",
+   "date": "2026-12-09",
+   "start": "19:40",
+   "end": "",
+   "city": "서울",
+   "venue": "교보문고 문화공간(서울)",
+   "speakers": [
+    "조승우"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교보문고 문화공간 페이지에서 신청",
+   "url": "https://store.kyobobook.co.kr/culture/bora-show",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.45,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "a18f76758d",
+   "score": 45
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 김현우 X 하승우 북토크",
+   "date": "2026-12-10",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "김현우",
+    "하승우"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.5,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "9ee3cb0038",
+   "score": 49
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "보라토크 - 공백 편",
+   "date": "2026-12-10",
+   "start": "19:40",
+   "end": "",
+   "city": "서울",
+   "venue": "교보문고 문화공간(서울)",
+   "speakers": [
+    "공백"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교보문고 문화공간 페이지에서 신청",
+   "url": "https://store.kyobobook.co.kr/culture/bora-show",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.45,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "88f1d2e73d",
+   "score": 45
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 민지형 X 수신지 X 박현진 북토크",
+   "date": "2026-12-11",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "민지형",
+    "수신지",
+    "박현진"
+   ],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.5,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "6ac653ff3a",
+   "score": 59
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 민지형 X 서윤빈 X 심완선 북토크",
+   "date": "2026-12-12",
+   "start": "14:00",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "민지형",
+    "서윤빈",
+    "심완선"
+   ],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.7,
+   "speaker_weight": 0.45,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "f4f15e0891",
+   "score": 64
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "보라토크 - 반휘은 편",
+   "date": "2026-12-14",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "교보문고 문화공간(서울)",
+   "speakers": [
+    "반휘은"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교보문고 문화공간 페이지에서 신청",
+   "url": "https://store.kyobobook.co.kr/culture/bora-show",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.45,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "fab858fa12",
+   "score": 45
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 1인 출판 대담회",
+   "date": "2026-12-15",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "카페핀드(서울 마포구)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "글쓰기",
+    "인문"
+   ],
+   "format": "대담",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.5,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "6842bba82e",
+   "score": 63
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 리니 북토크",
+   "date": "2026-12-15",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "리니"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "e87677cc9f",
+   "score": 44
+  },
+  {
    "source": "서울 철학·인문 강좌",
    "start": "10:30",
    "end": "12:30",
@@ -3052,6 +3622,129 @@
    "last_seen": "2026-10-18",
    "id": "3cd4adbbbe",
    "score": 36
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 김하종 신부님 북토크",
+   "date": "2026-12-16",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "명동대성당 꼬스트홀(서울 중구)",
+   "speakers": [
+    "김하종"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "64253ee5e8",
+   "score": 44
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 이은희 북토크",
+   "date": "2026-12-16",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "이은희"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "aa4f22fe61",
+   "score": 44
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 유희경 X 요조 북토크",
+   "date": "2026-12-19",
+   "start": "14:00",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "유희경",
+    "요조"
+   ],
+   "book": "",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.85,
+   "speaker_weight": 0.6,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "abd63f0e5a",
+   "score": 69
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 출간 기념 저자 강연",
+   "date": "2026-12-19",
+   "start": "14:00",
+   "end": "",
+   "city": "서울",
+   "venue": "망원역 일터문화공간(서울 마포구)",
+   "speakers": [],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent_author.aspx",
+   "summary": "",
+   "confidence": "보도",
+   "relevance": 0.3,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "id": "11fc769001",
+   "score": 42
   },
   {
    "source": "도서전·독서대전·북페스티벌",
