@@ -32,7 +32,7 @@ description = """
 """
 
 # ── 검색 미션 ────────────────────────────────────────────────
-# city: 서울 / 청주 / 둘 다 / 온라인 포함
+# city: 서울 / 청주 / 대전 / 서울·청주·대전 / 온라인 / 온라인 포함
 # every: 몇 회차마다 조사할지. 루틴은 하루 두 번(오전·저녁) 돈다: 1=매 회차, 2=하루 한 번, 3=하루 반마다.
 #   마지막 조사 회차는 collector/cache/state.json 에 남는다.
 # queries: 검색 아이디어 ({month}=이번 달, {nextmonth}=다음 달, {year}=올해)
@@ -139,6 +139,36 @@ urls = [
 ]
 
 [[missions]]
+name = "서울 대형 구립도서관 강연"
+every = 2
+city = "서울"
+queries = [
+  "마포중앙도서관 작가 강연 {month}",
+  "마포중앙도서관 북토크 {nextmonth}",
+  "은평구립도서관 OR 이진아기념도서관 작가와의 만남 {month}",
+  "노원중앙도서관 OR 송파도서관 인문학 강연 {month}",
+  "정독도서관 OR 남산도서관 OR 종로도서관 강연 {month}",
+  "강남구립도서관 OR 성동구립도서관 작가 초청 {month}",
+  "구립도서관 북토크 작가 오는 {month}",
+]
+urls = []
+
+[[missions]]
+name = "대전 도서관 강연"
+every = 2
+city = "대전"
+queries = [
+  "유성도서관 작가 강연 {month}",
+  "대전 유성구통합도서관 작가와의 만남 {month}",
+  "한밭도서관 인문학 강연 {month}",
+  "대전 도서관 북토크 {month}",
+  "노은도서관 OR 구암도서관 OR 진잠도서관 강연 {month}",
+  "대전 인문학 강연 {nextmonth}",
+  "대전 작가와의 만남 도서관 오는",
+]
+urls = []
+
+[[missions]]
 name = "서울 문학관·문학재단"
 every = 3
 city = "서울"
@@ -175,7 +205,7 @@ urls = []
 
 [[missions]]
 name = "청주 도서관·문화기관"
-every = 3
+every = 2
 city = "청주"
 queries = [
   "청주시립도서관 작가 강연 {month}",
@@ -187,6 +217,9 @@ queries = [
   "청주시립도서관 강연 개최",
   "청주 작가와의 만남 도서관 오는",
   "충북 도서관 인문학 강연 {nextmonth}",
+  "청주시립도서관 {nextmonth} 강연",
+  "청주 오창도서관 OR 상당도서관 OR 가경도서관 작가 강연",
+  "청주시도서관평생학습본부 인문학 {month}",
 ]
 urls = [
   "https://library.cheongju.go.kr/lib/front/",
@@ -209,7 +242,7 @@ urls = []
 [[missions]]
 name = "도서전·독서대전·북페스티벌"
 every = 3
-city = "둘 다"
+city = "서울·청주·대전"
 queries = [
   "서울국제도서전 {year} 강연 북토크",
   "대한민국 독서대전 {year} 프로그램",
