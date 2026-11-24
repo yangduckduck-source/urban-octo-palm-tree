@@ -390,7 +390,9 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
             continue
         cur = ms.get("cursor", 0)
         qs = [fill(q) for q in rotate(m["queries"], cur, qn)]
-        us = rotate([u for u in m.get("urls", []) if u not in blocked], cur, un)
+        # always_fetch 미션(서점 행사 페이지)은 한 번 막혔던 주소도 매번 다시 연다
+        urls = [u for u in m.get("urls", []) if m.get("always_fetch") or u not in blocked]
+        us = rotate(urls, cur, m.get("urls_per_run", un))
         plan["missions"].append(m["name"])
         plan.setdefault("queries", {})[m["name"]] = qs
         out.append(f"### {m['name']} ({m['city']})")

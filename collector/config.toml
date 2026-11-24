@@ -61,9 +61,12 @@ urls = [
 ]
 
 [[missions]]
-name = "예스24·알라딘 작가와의 만남"
+name = "예스24·알라딘·교보 작가와의 만남"
 every = 1
 city = "온라인 포함"
+# 서점 행사 목록 페이지는 매 회차 전부 연다 (막힌 적이 있어도 다시 시도)
+always_fetch = true
+urls_per_run = 6
 queries = [
   "알라딘 작가와의 만남 {month}",
   "알라딘 북토크 신청기간 {month}",
@@ -82,6 +85,8 @@ urls = [
   "https://www.aladin.co.kr/m/mEventmain.aspx?eType=author",
   "https://event.yes24.com/",
   "https://m.yes24.com/yescalendar",
+  "https://store.kyobobook.co.kr/culture/bora-show",
+  "https://store.kyobobook.co.kr/culture/lecture-top-ten",
 ]
 
 [[missions]]
