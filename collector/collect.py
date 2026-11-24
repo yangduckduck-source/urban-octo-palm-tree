@@ -363,8 +363,8 @@ def rotate(items: list, start: int, n: int) -> list:
 
 
 def slot_of(now: datetime) -> int:
-    """실행 회차 번호. 하루 두 번(오전·저녁) 돌므로 날짜×2 + (오후면 1)."""
-    return now.date().toordinal() * 2 + (1 if now.hour >= 13 else 0)
+    """실행 회차 번호. 루틴은 하루 한 번 돌므로 날짜 번호를 그대로 쓴다(every = 며칠마다)."""
+    return now.date().toordinal()
 
 
 def brief(cfg: dict, today: date, existing: list[dict]) -> int:
@@ -379,7 +379,7 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
 
     slot = slot_of(datetime.now(KST))
     plan, out = {"date": today.isoformat(), "slot": slot, "missions": [], "verify": []}, []
-    out.append(f"# 오늘 {today.isoformat()}({'월화수목금토일'[today.weekday()]}) {'저녁' if slot % 2 else '오전'} 회차"
+    out.append(f"# 오늘 {today.isoformat()}({'월화수목금토일'[today.weekday()]}) 회차"
                f" · 찾을 범위 {today.isoformat()} ~ {until.isoformat()}")
     out.append("")
     out.append("## 이번 회차에 조사할 미션 (나머지 미션은 쉬는 회차)")
