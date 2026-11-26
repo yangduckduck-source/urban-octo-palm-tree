@@ -2,6 +2,10 @@
  "blocked_urls": [
   "https://lib.seoul.go.kr/"
  ],
+ "library_urls": {
+  "국립세종도서관": "https://www.mcst.go.kr/slibrary/",
+  "청주시립도서관 (청주시도서관평생학습본부)": "https://library.cheongju.go.kr/lib/front/"
+ },
  "missions": {
   "대전 도서관 강연": {
    "cursor": 3,

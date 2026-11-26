@@ -346,6 +346,7 @@ def load_state() -> dict:
     st = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {}
     st.setdefault("missions", {})
     st.setdefault("blocked_urls", [])
+    st.setdefault("library_urls", {})
     st.setdefault("verified", {})
     return st
 
@@ -398,6 +399,14 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
         out.append(f"### {m['name']} ({m['city']})")
         out += [f"- 검색: {q}" for q in qs]
         out += [f"- 열람: {u}" for u in us]
+        if m.get("targets"):
+            # 지방 도서관 직접 열람: 한 회차에 몇 곳씩 돌아가며, 찾아 둔 게시판 주소가 있으면 바로 연다
+            ts = rotate(m["targets"], cur, m.get("targets_per_run", 4))
+            plan.setdefault("targets", {})[m["name"]] = ts
+            for t in ts:
+                u = st["library_urls"].get(t)
+                out.append(f"- 도서관: {t} — " + (f"게시판: {u}" if u else
+                           "주소 미확인: 검색 1회로 공식 누리집을 찾아 행사·강좌 게시판까지 연다"))
     if not plan["missions"]:
         out.append("(없음 — 오늘은 재확인만 한다)")
     else:
@@ -427,7 +436,7 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
 
 
 def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str],
-                searched: list[str] | None = None) -> tuple[list[str], list[str]]:
+                searched: list[str] | None = None, library_urls: dict | None = None) -> tuple[list[str], list[str]]:
     """--brief 로 정한 계획 중 검색어를 모두 실행한 미션만 완료로 기록한다.
     반환: (완료 기록한 미션, 검색이 모자라 다음 회차로 미룬 미션)."""
     st = load_state()
@@ -438,6 +447,7 @@ def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str],
         if plan.get("date") == today.isoformat():
             qn = cfg["general"].get("queries_per_run", 3)
             planned = plan.get("queries", {})
+            by_name = {m["name"]: m for m in cfg["missions"]}
             for name in plan.get("missions", []):
                 need = planned.get(name, [])
                 if need and not all(norm(q) in did for q in need):
@@ -446,12 +456,16 @@ def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str],
                 ms = st["missions"].setdefault(name, {})
                 ms["last_run"] = today.isoformat()
                 ms["last_slot"] = plan.get("slot", slot_of(datetime.now(KST)))
-                ms["cursor"] = ms.get("cursor", 0) + qn
+                step = by_name.get(name, {}).get("targets_per_run", 4) if name in plan.get("targets", {}) else qn
+                ms["cursor"] = ms.get("cursor", 0) + step
                 done.append(name)
             for i in plan.get("verify", []):
                 st["verified"][i] = today.isoformat()
         PLAN.unlink()
     st["blocked_urls"] = sorted(set(st["blocked_urls"]) | {u for u in blocked if u})
+    for name, url in (library_urls or {}).items():
+        if isinstance(url, str) and url.startswith("http"):
+            st["library_urls"][name] = url
     ids = {e["id"] for e in events}
     st["verified"] = {k: v for k, v in st["verified"].items() if k in ids}
     save_state(st)
@@ -469,6 +483,7 @@ def ingest(path: Path, cfg: dict, today: date, existing: list[dict]) -> int:
     raw = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
     blocked = raw.get("blocked_urls", []) if isinstance(raw, dict) else []
     searched = raw.get("searched", []) if isinstance(raw, dict) else []
+    library_urls = raw.get("library_urls", {}) if isinstance(raw, dict) else {}
     raw = raw.get("events", []) if isinstance(raw, dict) else raw
     before = {e["id"] for e in existing}
     horizon = cfg["general"]["horizon_days"]
@@ -489,7 +504,7 @@ def ingest(path: Path, cfg: dict, today: date, existing: list[dict]) -> int:
         "count": len(events),
         "added": len(added),
     })
-    done, short = finish_plan(cfg, today, events, blocked, searched)
+    done, short = finish_plan(cfg, today, events, blocked, searched, library_urls)
     print(f"후보 {len(raw)}건 → 채택 {len(kept)}건 (새 행사 {len(added)}건), 달력 전체 {len(events)}건")
     print(f"검색 {len(searched)}회 기록됨")
     print(f"조사 완료로 기록한 미션: {', '.join(done) or '(없음)'}")
