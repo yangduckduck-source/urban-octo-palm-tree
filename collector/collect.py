@@ -372,7 +372,9 @@ def slot_of(now: datetime) -> int:
 
 UA = {"User-Agent": "Mozilla/5.0 (compatible; booktalk-calendar)"}
 TOPIC = re.compile(r"북토크|작가|인문|문학|시인|소설|철학|낭독|독서|도서관|강연|특강|강좌|책")
-NOISE = re.compile(r"진로|청소년|어린이|유아|경영|투자|부동산|AI|인공지능|건강|의료|치과|조합|창업|주식|코딩|선거|시장|의회")
+NOISE = re.compile(r"진로|청소년|어린이|유아|경영|투자|부동산|AI|인공지능|건강|의료|치과|조합|창업|주식|코딩|선거|시장|의회|"
+                   r"성료|마무리|마쳐|마쳤|성황|폐막|연수|교직원|임직원|학부모|정책")
+EVENTISH = re.compile(r"강연|북토크|특강|작가와의 만남|작가 초청|북 ?콘서트|낭독|강좌|인문학|문학")
 
 
 def fetch(url: str, timeout: int = 15) -> str:
@@ -381,14 +383,18 @@ def fetch(url: str, timeout: int = 15) -> str:
     return urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
 
 
-def news_candidates(cfg: dict, st: dict, limit: int = 10) -> tuple[list[str], list[str]]:
+def news_candidates(cfg: dict, st: dict, limit: int = 8) -> tuple[list[str], list[str]]:
     """구글 뉴스에서 지역별 최근 한 달 기사 중 문학·인문 행사로 보이는 제목만 고른다(이미 본 기사는 뺀다)."""
+    import time
     import urllib.parse
     import xml.etree.ElementTree as ET
     seen, out, links = set(st.get("news_seen", [])), [], []
     for grp in cfg.get("news", []):
         rows = []
         for q in grp["queries"]:
+            if len([r for r in rows if r.startswith("- [N")]) >= limit:
+                break  # 이 지역 후보가 충분하면 더 묻지 않는다
+            time.sleep(1.5)  # 연속 요청 시 429(Too Many Requests)를 피한다
             u = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
                 {"q": f"{q} when:{grp.get('days', 30)}d", "hl": "ko", "gl": "KR", "ceid": "KR:ko"})
             try:
@@ -398,13 +404,14 @@ def news_candidates(cfg: dict, st: dict, limit: int = 10) -> tuple[list[str], li
                 continue
             for it in items:
                 title, link = it.findtext("title", ""), it.findtext("link", "")
-                if link in seen or link in links or not TOPIC.search(title) or NOISE.search(title):
+                if (link in seen or link in links or not TOPIC.search(title) or not EVENTISH.search(title)
+                        or NOISE.search(title) or len([r for r in rows if r.startswith("- [N")]) >= limit):
                     continue
                 links.append(link)
                 d = it.findtext("pubDate", "")[5:16]
-                rows.append(f"- [{d}] {title}")
+                rows.append(f"- [N{len(links)}] ({d}) {title}")
         out.append(f"### {grp['region']}")
-        out += rows[:limit] or ["(새 기사 없음)"]
+        out += rows or ["(새 기사 없음)"]
     return out, links
 
 
@@ -479,7 +486,9 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
         plan["news_links"] = links
         out.append("")
         out.append("## 최근 한 달 지역·온라인 뉴스 후보 (구글 뉴스, 스크립트가 가져옴 · 처음 보는 기사만)")
-        out.append("제목이 성인 대상 문학·글쓰기·철학·인문 강연/북토크로 보이면 그 제목으로 한 번 검색해 날짜·시간·장소를 확인하고, 찾을 범위 안이면 inbox에 적는다.")
+        out.append(f"→ 후보 {len(links)}건을 **모두** 검토하고, 검토한 번호를 inbox의 \"news_reviewed\"에 적는다(예: [\"N1\", \"N2\"]).")
+        out.append("  제목만으로 관심 밖·지난 행사가 분명하면 검색 없이 검토 완료로 적고, 행사로 보이면 제목으로 한 번 검색해 확인한다.")
+        out.append("  검토하지 않은 번호는 다음 회차에 다시 나온다.")
         out += rows
 
     week = (today + timedelta(days=7)).isoformat()
@@ -503,11 +512,13 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
 
 
 def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str],
-                searched: list[str] | None = None, library_urls: dict | None = None) -> tuple[list[str], list[str]]:
+                searched: list[str] | None = None, library_urls: dict | None = None,
+                news_reviewed: list[str] | None = None) -> tuple[list[str], list[str]]:
     """--brief 로 정한 계획 중 검색어를 모두 실행한 미션만 완료로 기록한다.
     반환: (완료 기록한 미션, 검색이 모자라 다음 회차로 미룬 미션)."""
     st = load_state()
     done, short = [], []
+    skipped_news = 0
     did = {norm(q) for q in (searched or [])}
     if PLAN.exists():
         plan = json.loads(PLAN.read_text(encoding="utf-8"))
@@ -526,7 +537,10 @@ def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str],
                 step = by_name.get(name, {}).get("targets_per_run", 4) if name in plan.get("targets", {}) else qn
                 ms["cursor"] = ms.get("cursor", 0) + step
                 done.append(name)
-            st["news_seen"] = (st.get("news_seen", []) + plan.get("news_links", []))[-800:]
+            nl = plan.get("news_links", [])
+            ok = [nl[int(n[1:]) - 1] for n in (news_reviewed or []) if re.fullmatch(r"N\d+", str(n)) and int(str(n)[1:]) <= len(nl)]
+            st["news_seen"] = (st.get("news_seen", []) + ok)[-800:]
+            skipped_news = len(nl) - len(set(ok))
             for i in plan.get("verify", []):
                 st["verified"][i] = today.isoformat()
         PLAN.unlink()
@@ -537,6 +551,8 @@ def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str],
     ids = {e["id"] for e in events}
     st["verified"] = {k: v for k, v in st["verified"].items() if k in ids}
     save_state(st)
+    if skipped_news:
+        short.append(f"뉴스 후보 {skipped_news}건 미검토")
     return done, short
 
 
@@ -552,6 +568,7 @@ def ingest(path: Path, cfg: dict, today: date, existing: list[dict]) -> int:
     blocked = raw.get("blocked_urls", []) if isinstance(raw, dict) else []
     searched = raw.get("searched", []) if isinstance(raw, dict) else []
     library_urls = raw.get("library_urls", {}) if isinstance(raw, dict) else {}
+    news_reviewed = raw.get("news_reviewed", []) if isinstance(raw, dict) else []
     raw = raw.get("events", []) if isinstance(raw, dict) else raw
     before = {e["id"] for e in existing}
     horizon = cfg["general"]["horizon_days"]
@@ -572,7 +589,7 @@ def ingest(path: Path, cfg: dict, today: date, existing: list[dict]) -> int:
         "count": len(events),
         "added": len(added),
     })
-    done, short = finish_plan(cfg, today, events, blocked, searched, library_urls)
+    done, short = finish_plan(cfg, today, events, blocked, searched, library_urls, news_reviewed)
     print(f"후보 {len(raw)}건 → 채택 {len(kept)}건 (새 행사 {len(added)}건), 달력 전체 {len(events)}건")
     print(f"검색 {len(searched)}회 기록됨")
     print(f"조사 완료로 기록한 미션: {', '.join(done) or '(없음)'}")
