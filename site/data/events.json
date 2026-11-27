@@ -1,15 +1,20 @@
 {
  "meta": {
-  "updated_at": "2026-11-27T09:34+09:00",
+  "updated_at": "2026-11-28T08:53+09:00",
   "runs": [
    {
-    "mission": "뉴스 후보",
-    "found": 2,
-    "kept": 2
+    "mission": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+    "found": 4,
+    "kept": 4
+   },
+   {
+    "mission": "청주 도서관·문화기관",
+    "found": 1,
+    "kept": 1
    }
   ],
-  "count": 121,
-  "added": 2
+  "count": 126,
+  "added": 5
  },
  "events": [
   {
@@ -3408,6 +3413,38 @@
    "score": 45
   },
   {
+   "source": "청주 도서관·문화기관",
+   "title": "청주 인문학 강좌 '무심 지혜의 언덕' 2강 — 진성수 ‘인생의 흐름을 읽다’(주역)",
+   "date": "2026-12-10",
+   "start": "19:00",
+   "end": "",
+   "city": "청주",
+   "venue": "충북연구원 대회의실",
+   "speakers": [
+    "진성수"
+   ],
+   "book": "",
+   "categories": [
+    "철학",
+    "인문"
+   ],
+   "format": "강좌",
+   "audience": "누구나",
+   "festival": "",
+   "price": "무료",
+   "price_note": "",
+   "registration": "청주충북환경운동연합 안내(무료 시민 강좌)",
+   "url": "https://www.goodmorningcc.com/news/articleView.html?idxno=456277",
+   "summary": "전북대 철학과 진성수 교수의 주역 특강. 무료 공개.",
+   "confidence": "보도",
+   "relevance": 0.7,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "id": "2a1febbeed",
+   "score": 64
+  },
+  {
    "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
    "title": "알라딘 김현우 X 하승우 북토크",
    "date": "2026-12-10",
@@ -3438,6 +3475,38 @@
    "last_seen": "2026-11-24",
    "id": "9ee3cb0038",
    "score": 49
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 조승리 X 이다혜 북토크 — 쌉쌀한 이별맛 맥주",
+   "date": "2026-12-10",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "프란치스코 교육회관 (서울 중구)",
+   "speakers": [
+    "조승리",
+    "이다혜"
+   ],
+   "book": "쌉쌀한 이별맛 맥주",
+   "categories": [
+    "문학"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent.aspx?EventId=318846",
+   "summary": "『쌉쌀한 이별맛 맥주』 출간 기념 작가 대담. 신청 11/26~12/7.",
+   "confidence": "확정",
+   "relevance": 0.6,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "id": "2d4710b120",
+   "score": 65
   },
   {
    "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
@@ -3569,6 +3638,39 @@
   },
   {
    "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 조민진 X 정여울 북토크 — 그림 같은 말",
+   "date": "2026-12-15",
+   "start": "19:30",
+   "end": "",
+   "city": "서울",
+   "venue": "언제라도 여행 (서울 마포구)",
+   "speakers": [
+    "조민진",
+    "정여울"
+   ],
+   "book": "그림 같은 말",
+   "categories": [
+    "문학",
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent.aspx?EventId=318755",
+   "summary": "『그림 같은 말』 출간 기념 저자 대담. 신청 11/24~12/11.",
+   "confidence": "확정",
+   "relevance": 0.6,
+   "speaker_weight": 0.6,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "id": "db65b6fc2e",
+   "score": 69
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
    "title": "알라딘 1인 출판 대담회",
    "date": "2026-12-15",
    "start": "19:30",
@@ -3690,6 +3792,35 @@
   },
   {
    "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 <쇠락의 두 가지 유형> <수호자들> 온라인 북토크",
+   "date": "2026-12-16",
+   "start": "19:30",
+   "end": "",
+   "city": "온라인",
+   "venue": "줌(ZOOM)",
+   "speakers": [],
+   "book": "쇠락의 두 가지 유형·수호자들",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent.aspx?EventId=318828",
+   "summary": "알라딘 온라인 북토크. 신청 11/26~12/14.",
+   "confidence": "확정",
+   "relevance": 0.45,
+   "speaker_weight": 0.5,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "id": "eb92492806",
+   "score": 52
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
    "title": "알라딘 이은희 북토크",
    "date": "2026-12-16",
    "start": "19:30",
@@ -3718,6 +3849,37 @@
    "last_seen": "2026-11-24",
    "id": "aa4f22fe61",
    "score": 44
+  },
+  {
+   "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
+   "title": "알라딘 허윤정 북토크 — 환자가 눈앞에 있었음",
+   "date": "2026-12-17",
+   "start": "19:00",
+   "end": "",
+   "city": "서울",
+   "venue": "알라딘빌딩 1층 강연장",
+   "speakers": [
+    "허윤정"
+   ],
+   "book": "환자가 눈앞에 있었음",
+   "categories": [
+    "인문"
+   ],
+   "format": "북토크",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "알라딘 이벤트 페이지에서 신청",
+   "url": "https://www.aladin.co.kr/events/wevent.aspx?EventId=318756",
+   "summary": "『환자가 눈앞에 있었음』 저자 북토크. 신청 11/24~12/14.",
+   "confidence": "확정",
+   "relevance": 0.4,
+   "speaker_weight": 0.4,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "id": "b1e848dd93",
+   "score": 49
   },
   {
    "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
