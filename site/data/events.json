@@ -1,9 +1,15 @@
 {
  "meta": {
-  "updated_at": "2026-11-27T09:23+09:00",
-  "runs": [],
-  "count": 119,
-  "added": 0
+  "updated_at": "2026-11-27T09:34+09:00",
+  "runs": [
+   {
+    "mission": "뉴스 후보",
+    "found": 2,
+    "kept": 2
+   }
+  ],
+  "count": 121,
+  "added": 2
  },
  "events": [
   {
@@ -3182,6 +3188,38 @@
    "score": 38
   },
   {
+   "source": "뉴스 후보",
+   "start": "19:00",
+   "end": "20:40",
+   "venue": "줌",
+   "speakers": [
+    "김규범"
+   ],
+   "book": "",
+   "categories": [
+    "문학",
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "성인",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "용인중앙도서관 홈페이지 문화행사 신청",
+   "url": "http://www.lecturernews.com/news/articleView.html?idxno=214375",
+   "summary": "고전문학을 통해 인생의 의미와 삶의 방향을 되짚는 신중년·성인 대상 온라인 인문학 강연.",
+   "confidence": "보도",
+   "relevance": 0.7,
+   "speaker_weight": 0.4,
+   "title": "용인중앙도서관 클라이맥스 인문학 특강 5강 — 김규범 ‘인생의 다음 계절을 위한 고전’",
+   "date": "2026-12-03",
+   "city": "온라인",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "id": "2a256a5b1a",
+   "score": 63
+  },
+  {
    "source": "예스24·알라딘·교보 작가와의 만남 (온라인 포함)",
    "title": "알라딘 김종영 북콘서트",
    "date": "2026-12-04",
@@ -3211,6 +3249,37 @@
    "last_seen": "2026-11-24",
    "id": "cf8fd30e80",
    "score": 44
+  },
+  {
+   "source": "뉴스 후보",
+   "start": "15:00",
+   "end": "17:00",
+   "venue": "세종시교육청교육문화원 도서관 종합자료실",
+   "speakers": [
+    "한다혜"
+   ],
+   "book": "",
+   "categories": [
+    "인문"
+   ],
+   "format": "강연",
+   "audience": "누구나",
+   "festival": "",
+   "price": "미확인",
+   "price_note": "",
+   "registration": "교육문화원 누리집, 선착순",
+   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1195305",
+   "summary": "소비 트렌드 10대 키워드로 보는 2027 대한민국.",
+   "confidence": "보도",
+   "relevance": 0.2,
+   "speaker_weight": 0.4,
+   "title": "세종교육문화원 특별강연 — 한다혜 ‘트렌드 코리아 2027’",
+   "date": "2026-12-05",
+   "city": "세종",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "id": "90a7b5b8b3",
+   "score": 40
   },
   {
    "source": "예스24·알라딘 작가와의 만남",
