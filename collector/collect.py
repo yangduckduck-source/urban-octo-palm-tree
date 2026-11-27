@@ -383,33 +383,57 @@ def fetch(url: str, timeout: int = 15) -> str:
     return urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
 
 
-def news_candidates(cfg: dict, st: dict, limit: int = 8) -> tuple[list[str], list[str]]:
-    """구글 뉴스에서 지역별 최근 한 달 기사 중 문학·인문 행사로 보이는 제목만 고른다(이미 본 기사는 뺀다)."""
+def article_lines(url: str, title: str, limit: int = 4) -> list[str]:
+    """기사 본문에서 날짜·시간·장소·신청이 들어간 문장만 뽑는다."""
+    import html as H
+    try:
+        b = fetch(url)
+    except Exception:
+        return []
+    t = H.unescape(re.sub(r"<[^>]+>", "\n", re.sub(r"(?is)<(script|style).*?</\1>", "", b)))
+    rows = []
+    for ln in t.split("\n"):
+        ln = re.sub(r"\s+", " ", ln).strip()
+        if (25 < len(ln) < 400 and ln != title and ln not in rows
+                and re.search(r"\d+월|\d+일|오전|오후|\d{1,2}시|신청|접수", ln)
+                and re.search(r"강연|북토크|작가|특강|강좌|인문|문학|도서관|낭독|콘서트", ln)):
+            rows.append(ln)
+    return rows[:limit]
+
+
+def news_candidates(cfg: dict, st: dict, today: date, limit: int = 8) -> tuple[list[str], list[str]]:
+    """네이버 뉴스에서 지역별 최근 30일 기사 중 문학·인문 행사로 보이는 것을 골라, 본문의 날짜·장소 문장까지 붙인다.
+    이미 검토한 기사는 뺀다."""
+    import html as H
     import time
     import urllib.parse
-    import xml.etree.ElementTree as ET
     seen, out, links = set(st.get("news_seen", [])), [], []
+    ds, de = (today - timedelta(days=30)).strftime("%Y.%m.%d"), today.strftime("%Y.%m.%d")
     for grp in cfg.get("news", []):
-        rows = []
+        rows, n = [], 0
         for q in grp["queries"]:
-            if len([r for r in rows if r.startswith("- [N")]) >= limit:
+            if n >= limit:
                 break  # 이 지역 후보가 충분하면 더 묻지 않는다
-            time.sleep(1.5)  # 연속 요청 시 429(Too Many Requests)를 피한다
-            u = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
-                {"q": f"{q} when:{grp.get('days', 30)}d", "hl": "ko", "gl": "KR", "ceid": "KR:ko"})
+            time.sleep(1.0)
+            u = "https://search.naver.com/search.naver?" + urllib.parse.urlencode(
+                {"where": "news", "query": q, "sort": "1", "pd": "3", "ds": ds, "de": de})
             try:
-                items = ET.fromstring(fetch(u)).findall(".//item")
+                b = fetch(u)
             except Exception as exc:  # 네트워크 실패는 다음 회차에 다시
                 rows.append(f"  (검색 실패: {q} — {str(exc)[:60]})")
                 continue
-            for it in items:
-                title, link = it.findtext("title", ""), it.findtext("link", "")
-                if (link in seen or link in links or not TOPIC.search(title) or not EVENTISH.search(title)
-                        or NOISE.search(title) or len([r for r in rows if r.startswith("- [N")]) >= limit):
+            for m in re.finditer(r'<a[^>]+href="(https?://[^"]+)"[^>]*>(.*?)</a>', b, re.S):
+                link = m.group(1)
+                title = H.unescape(re.sub(r"<[^>]+>", "", m.group(2))).replace("새 창 열림", "").strip()
+                if (re.search(r"naver\.com|pstatic|naver\.me", link) or len(title) < 12 or n >= limit
+                        or link in seen or link in links or not TOPIC.search(title)
+                        or not EVENTISH.search(title) or NOISE.search(title)):
                     continue
                 links.append(link)
-                d = it.findtext("pubDate", "")[5:16]
-                rows.append(f"- [N{len(links)}] ({d}) {title}")
+                n += 1
+                rows.append(f"- [N{len(links)}] {title}")
+                rows.append(f"    {link}")
+                rows += [f"    · {x[:220]}" for x in article_lines(link, title)]
         out.append(f"### {grp['region']}")
         out += rows or ["(새 기사 없음)"]
     return out, links
@@ -482,12 +506,12 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
         out.append("  다 검색하지 않은 미션은 조사 완료로 기록되지 않고 다음 회차에 다시 나온다.")
 
     if cfg.get("news"):
-        rows, links = news_candidates(cfg, st)
+        rows, links = news_candidates(cfg, st, today)
         plan["news_links"] = links
         out.append("")
-        out.append("## 최근 한 달 지역·온라인 뉴스 후보 (구글 뉴스, 스크립트가 가져옴 · 처음 보는 기사만)")
+        out.append("## 최근 한 달 지역·온라인 뉴스 후보 (네이버 뉴스 최근 30일, 스크립트가 기사 본문의 날짜·장소 문장까지 가져옴 · 검토 안 한 기사만)")
         out.append(f"→ 후보 {len(links)}건을 **모두** 검토하고, 검토한 번호를 inbox의 \"news_reviewed\"에 적는다(예: [\"N1\", \"N2\"]).")
-        out.append("  제목만으로 관심 밖·지난 행사가 분명하면 검색 없이 검토 완료로 적고, 행사로 보이면 제목으로 한 번 검색해 확인한다.")
+        out.append("  `·` 줄(기사 본문에서 뽑은 문장)로 날짜·장소·대상을 판단한다. 모자랄 때만 한 번 검색한다. 관심 밖·지난 행사는 검토 완료로만 적는다.")
         out.append("  검토하지 않은 번호는 다음 회차에 다시 나온다.")
         out += rows
 
