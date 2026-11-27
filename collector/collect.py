@@ -368,6 +368,62 @@ def slot_of(now: datetime) -> int:
     return now.date().toordinal()
 
 
+# ── 직접 수집(스크립트가 가져옴: 루틴 세션에는 페이지 열람 도구가 없다) ─────────────
+
+UA = {"User-Agent": "Mozilla/5.0 (compatible; booktalk-calendar)"}
+TOPIC = re.compile(r"북토크|작가|인문|문학|시인|소설|철학|낭독|독서|도서관|강연|특강|강좌|책")
+NOISE = re.compile(r"진로|청소년|어린이|유아|경영|투자|부동산|AI|인공지능|건강|의료|치과|조합|창업|주식|코딩|선거|시장|의회")
+
+
+def fetch(url: str, timeout: int = 15) -> str:
+    import urllib.request
+    req = urllib.request.Request(url, headers=UA)
+    return urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
+
+
+def news_candidates(cfg: dict, st: dict, limit: int = 10) -> tuple[list[str], list[str]]:
+    """구글 뉴스에서 지역별 최근 한 달 기사 중 문학·인문 행사로 보이는 제목만 고른다(이미 본 기사는 뺀다)."""
+    import urllib.parse
+    import xml.etree.ElementTree as ET
+    seen, out, links = set(st.get("news_seen", [])), [], []
+    for grp in cfg.get("news", []):
+        rows = []
+        for q in grp["queries"]:
+            u = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
+                {"q": f"{q} when:{grp.get('days', 30)}d", "hl": "ko", "gl": "KR", "ceid": "KR:ko"})
+            try:
+                items = ET.fromstring(fetch(u)).findall(".//item")
+            except Exception as exc:  # 네트워크 실패는 다음 회차에 다시
+                rows.append(f"  (검색 실패: {q} — {str(exc)[:60]})")
+                continue
+            for it in items:
+                title, link = it.findtext("title", ""), it.findtext("link", "")
+                if link in seen or link in links or not TOPIC.search(title) or NOISE.search(title):
+                    continue
+                links.append(link)
+                d = it.findtext("pubDate", "")[5:16]
+                rows.append(f"- [{d}] {title}")
+        out.append(f"### {grp['region']}")
+        out += rows[:limit] or ["(새 기사 없음)"]
+    return out, links
+
+
+def page_lines(url: str, limit: int = 15) -> list[str]:
+    """도서관 게시판 페이지에서 행사로 보이는 줄만 뽑는다."""
+    import html as H
+    try:
+        b = fetch(url)
+    except Exception as exc:
+        return [f"  (열지 못함: {str(exc)[:60]})"]
+    t = H.unescape(re.sub(r"<[^>]+>", "\n", re.sub(r"(?is)<(script|style).*?</\1>", "", b)))
+    rows = []
+    for ln in t.split("\n"):
+        ln = re.sub(r"\s+", " ", ln).strip()
+        if 6 < len(ln) < 150 and re.search(r"강연|북토크|작가|인문|특강|문학|시인|철학|낭독", ln) and ln not in rows:
+            rows.append(ln)
+    return [f"    · {r}" for r in rows[:limit]] or ["    (행사로 보이는 줄 없음)"]
+
+
 def brief(cfg: dict, today: date, existing: list[dict]) -> int:
     """오늘 루틴이 할 일만 짧게 출력한다. 루틴은 config·events.json 대신 이 출력만 읽는다."""
     g, st = cfg["general"], load_state()
@@ -405,8 +461,11 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
             plan.setdefault("targets", {})[m["name"]] = ts
             for t in ts:
                 u = st["library_urls"].get(t)
-                out.append(f"- 도서관: {t} — " + (f"게시판: {u}" if u else
-                           "주소 미확인: 검색 1회로 공식 누리집을 찾아 행사·강좌 게시판까지 연다"))
+                if u:
+                    out.append(f"- 도서관: {t} — 게시판(스크립트가 읽음): {u}")
+                    out += page_lines(u)
+                else:
+                    out.append(f"- 도서관: {t} — 주소 미확인: 검색 1회로 공식 누리집의 행사·강좌 게시판 주소를 찾아 library_urls에 적는다")
     if not plan["missions"]:
         out.append("(없음 — 오늘은 재확인만 한다)")
     else:
@@ -414,6 +473,14 @@ def brief(cfg: dict, today: date, existing: list[dict]) -> int:
         out.append("")
         out.append(f"→ 위 '검색:' {total}개를 **하나도 빠짐없이** 그대로 검색하고, 검색한 문장을 inbox의 \"searched\" 목록에 그대로 적는다.")
         out.append("  다 검색하지 않은 미션은 조사 완료로 기록되지 않고 다음 회차에 다시 나온다.")
+
+    if cfg.get("news"):
+        rows, links = news_candidates(cfg, st)
+        plan["news_links"] = links
+        out.append("")
+        out.append("## 최근 한 달 지역·온라인 뉴스 후보 (구글 뉴스, 스크립트가 가져옴 · 처음 보는 기사만)")
+        out.append("제목이 성인 대상 문학·글쓰기·철학·인문 강연/북토크로 보이면 그 제목으로 한 번 검색해 날짜·시간·장소를 확인하고, 찾을 범위 안이면 inbox에 적는다.")
+        out += rows
 
     week = (today + timedelta(days=7)).isoformat()
     cand = [e for e in existing if today.isoformat() <= e["date"] <= week
@@ -459,6 +526,7 @@ def finish_plan(cfg: dict, today: date, events: list[dict], blocked: list[str],
                 step = by_name.get(name, {}).get("targets_per_run", 4) if name in plan.get("targets", {}) else qn
                 ms["cursor"] = ms.get("cursor", 0) + step
                 done.append(name)
+            st["news_seen"] = (st.get("news_seen", []) + plan.get("news_links", []))[-800:]
             for i in plan.get("verify", []):
                 st["verified"][i] = today.isoformat()
         PLAN.unlink()
